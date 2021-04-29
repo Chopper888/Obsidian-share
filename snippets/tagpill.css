@@ -1,0 +1,163 @@
+
+.theme-light{
+
+  /*tags*/
+
+  --tag1: #cf0000;
+
+  --tag2: #cf7c00;
+
+  --tag3: #00a71c;
+
+  --bqys1: #f37575bb;
+
+  --bqys2: #d39461bb;
+
+  --bqys3: #979b28bb;
+
+  --bqys4: #006851;
+
+  --bqys5: #cf8b30;
+
+  --bqys6: #497ab3bb;
+
+  --bqys7: #9859e0bb;
+
+  --bqys8: #cd64d6bb;
+
+  --bqys9: #b3b3b3bb;
+
+  --mycolors1: #e27d60;
+
+  --mycolors2: #e8a87c;
+
+  --mycolors3: #e8a87c;
+
+  --tag-text-color: #d6d6d6;
+
+}
+
+
+
+/* ====== Tag Pills ======== */
+
+.tag:not(.token)  {
+  content:"";
+	border: none !important;
+	border-radius:7px !important;
+  color: white;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  cursor: pointer;
+  font-family: "Nunito black";
+  font-size: 15px;
+}
+
+
+/*
+
+.cm-s-obsidian span.cm-hashtag{
+
+  background-color: var(--text-accent);
+
+  color:white;
+
+}
+
+*/
+
+.CodeMirror-line span.cm-hashtag-begin {
+	content:"";
+  background-color: rgb(30, 123, 177); /* was var(--text-accent); */
+  border: none;
+  color: white !important;
+  padding-left:8px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: "Nunito black";
+  font-size: 15px;
+}
+
+.CodeMirror-line span.cm-hashtag-begin:before {
+	content:"";
+}
+
+.CodeMirror-line span.cm-hashtag-end {
+ background-color: rgb(30, 123, 177); /* was var(--text-accent); */
+  border: none;
+  color: white !important;
+  padding-right:8px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: "Nunito black";
+  font-size: 15px;
+}
+
+/* specific colors in view mode*/
+
+ .tag:hover {
+  color: rgb(30, 123, 177);
+  background-color: var(--text-accent-hover);
+}
+
+.tag[href^="#obsidian"] {
+
+  background-color: #4d3ca6;
+
+}
+
+.tag:not(.token)[href^="#type"] {
+
+  background-color: var(--bqys6) !important;
+
+  
+
+}
+
+.tag:not(.token)[href^="#stage"] {
+
+  background-color: var(--bqys5) !important;
+
+  
+
+}
+
+.tag:not(.token)[href^="#subject"] {
+
+  background-color: var(--bqys4) !important;
+
+}
+
+/* specific colors in edit mode*/
+
+.CodeMirror-line span[class*="cm-tag-type"] {
+
+  background-color: var(--bqys6) !important;
+
+}
+
+.CodeMirror-line span[class*="cm-tag-stage"] {
+
+  background-color: var(--bqys5) !important;
+
+}
+
+.CodeMirror-line span[class*="cm-tag-subject"] {
+
+  background-color: var(--bqys4) !important;
+
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link[class^="-internal-link"] {
+
+  background-color: var(--bqys4) !important;
+
+}```
+    - I don't want to see the YAML frontmatter in my editor when I don't want to deal with. (ideally I should be able to hide it)  so I added some edits to make it less visible:
+```css
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-hmd-frontmatter:not(.cm-formatting) {
+    font-size: 0.5rem;
+	color: grey;
+}

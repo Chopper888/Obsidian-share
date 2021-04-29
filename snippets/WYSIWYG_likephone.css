@@ -1,0 +1,170 @@
+/************************************************************/
+/* WYSIWYG: imitation in Edit mode */
+/************************************************************/
+/* Source: Piotr, ishgunacar, pihentagy, others on the forum
+/************************************************************/
+/* Editor font: make thicker so it is like in Preview
+/* Remove markdown clutter
+/* Unordered lists: turn into bullets as you type, as per Typora
+/* Blockquote in edit mode with left border rendered instead of ">"
+/* Tag pills in edit mode
+/* Coloured headings for editor and preview, same font-weight in Edit & Preview
+/* Horizontal line in edit mode. Changes --- to full-width line.
+/* Checkboxes instead of brackets in edit mode
+
+/* Note: change colours to your own taste *?
+
+/* ============================================================================*/
+
+/* For Edit mode use same font and font size as for Preview mode */
+
+/* Editor font: make thicker so it is like in Preview */
+
+
+
+
+.cm-s-obsidian .CodeMirror-line * {
+-webkit-font-smoothing: auto;
+}
+
+/* Remove markdown clutter */
+.cm-formatting,
+.cm-comment {
+ opacity: 0.1 !important;		
+}
+
+div:not(.CodeMirror-activeline)>.cm-string.cm-url,
+div:not(.CodeMirror-activeline)>.cm-formatting-link,
+div:not(.CodeMirror-activeline)>.cm-formatting-link:not(.cm-link),
+div:not(.CodeMirror-activeline)>.cm-hmd-barelink,
+div:not(.CodeMirror-activeline)>.cm-hmd-internal-link {
+	display: none;
+}
+
+div:not(.CodeMirror-activeline) >.cm-attribute{
+	display: none;
+}
+
+  /* Tag pills in edit mode */
+   div:not(.CodeMirror-activeline) > .cm-hashtag-end:before {
+    content: '';
+
+  }
+  .tag, div:not(.CodeMirror-activeline) > .cm-hashtag-end {
+  background-color: rgb(30, 123, 177); /* was var(--text-accent); */
+  border: none;
+  color: white !important;
+  font-size: 14px;
+  padding: 2px 8px;
+  padding-top: -2px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 7px;
+  }
+  .tag:hover {
+  color: white;
+  background-color: var(--text-accent-hover);
+  }
+
+
+
+
+span.cm-formatting-list-ul {
+  color : transparent !important;
+  margin-top: 50% !important;
+}
+
+
+
+span.cm-formatting-list,
+span.cm-formatting-code-block.cm-hmd-codeblock,
+span.cm-formatting-task {
+  display: inline !important;
+  font-family: var(--font-monospace);
+  opacity: 1 !important;;
+}
+
+/* Blockquote: in edit mode with left border rendered instead of > */
+div:not(.CodeMirror-activeline)>.cm-formatting.cm-formatting-quote,
+div:not(.CodeMirror-activeline)>.cm-hmd-indent-in-quote {
+  display: inline !important;
+  color: transparent !important;
+}
+
+div:not(.CodeMirror-activeline)>.HyperMD-quote {
+  background-color:rgba(231, 226, 226, 0.52);
+  border-left: 3px solid var(--text-selection);
+  border-color: rgb(21, 62, 122) !important;
+}
+
+/* Horizontal line in edit mode. Changes --- to full-width line */
+
+.cm-hr {
+	color: transparent !important;
+	content: '' !important;
+}
+
+.cm-hr:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 80%;
+  font-weight: bold;
+  background: var(--text-faint) !important;
+  left: 10%;
+}
+
+/* Checkboxes instead of brackets in edit mode */
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-meta,
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property {
+  color: transparent !important;
+  position: relative;
+  display: inline !important;
+  margin-right: -0.1rem;
+  content: '';
+}
+
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-meta:after,
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after {
+  content: "☐" !important;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  opacity: 1 !important;
+  color:var(--text-accent);
+  font-size: 30px;
+}
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after {
+  content: "☒" !important;
+  color: var(--text-accent) !important;
+  opacity: 1 !important;
+  font-size:30px;
+}
+
+.cm-formatting-task.cm-property ~ span {
+  color: var(--text-faint) !important;
+  opacity: 1 !important;
+}
+
+/* except image markdown */
+.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
+cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+  display: inline !important;
+}
+
+/*Change links color*/
+.cm-s-obsidian .cm-url {
+	color: rgb(15, 112, 223) !important;
+	text-decoration: underline;  }
+
+.markdown-preview-section hr {
+  margin: 0 !important;
+}
+.markdown-preview-section hr:after {
+	background: lightgrey !important ;
+	opacity: 100%;
+}

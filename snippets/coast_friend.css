@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+::marker {
+	letter-spacing: 0.2rem !important;
+}
+
+/* ====== Tag Pills ======== */
+
+.tag:not(.token)  {
+	content:"";
+	border-radius:7px !important;
+	color: white !important;
+	padding: 1px 8px !important;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	background-color:var(--text-accent)
+}
+
+.cm-s-obsidian span.cm-hashtag{
+  background-color: var(--text-accent);
+  color:white;
+}
+
+.CodeMirror-line span.cm-hashtag-begin {
+  color: rgba(0, 0, 0, 0.178) !important;
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 105% !important;
+  border-radius: 5px !important;
+  background-color: transparent
+}
+
+.CodeMirror-line span.cm-hashtag-begin:before {
+	content:"";
+}
+
+.CodeMirror-line span.cm-hashtag-end{
+	content:"";
+	color: white !important;
+	padding: 1px 8px !important;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	  background-color: var(--text-accent);
+  color:white;
+  border-radius: 5px !important
+}
+.markdown-preview-section a:hover {
+	text-shadow: 1px 1px 0 rgba(182, 176, 238, 0.438) !important;
+}
+
+.markdown-preview-view th, .markdown-preview-view td {
+	border-right: 1px solid var(--shade-plus-darker) !important;
+}
+
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
+	margin-top: 2px !important;
+	margin-left: 0 !important;
+	color: transparent;
+	content:'';
+}
+
+.outliner-plugin-bls .cm-s-obsidian .CodeMirror-line {
+	text-indent: 0 !important;
+}

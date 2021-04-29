@@ -1,0 +1,225 @@
+/* condense line spacing on file explorer title list. also avoids character-level word breaks */
+.nav-file-title-content,
+.search-result-file-title,
+.search-result-file-match {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: normal !important;
+    word-break: keep-all;
+}
+
+/* file xplor : smaller & bold vault title */
+.nav-folder.mod-root > .nav-folder-title {
+    padding-left: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    top:-6px;   /* higher */
+    cursor: default;
+    color: var(--base2);
+}
+
+/* Enhancing the view of folders in left pane */
+/* by Shamama on https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/112 */
+
+/* outliner for the outline */
+.outline-heading-children{
+    border-left: 1px solid rgba(118,158,165,0.2);
+    border-radius:0 0px 0px 0;
+    transition:all 0.5s ease-in-out;
+  }
+ 
+.outline-heading-children:hover{
+    border-left-color:rgba(118,158,165,0.4);
+  }
+
+/* Connectining lines for files and folders in left pane*/
+.nav-folder,.nav-file{
+    margin:0 !important;
+    border-left: 1px solid rgba(118,158,165,0.2);
+  }
+
+/* == File Explorer - animation for active file as per Obuntu === */
+.nav-file-title,
+.nav-folder-title {
+  padding: 0px 14px 0px 20px;
+}
+
+.nav-folder-title {
+  font-weight: bold;
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+  padding-left: 6px;
+  font-size: 14px;
+  font-weight: bolder;
+  top: -6px;
+  cursor: default;
+}
+
+.nav-file.is-active > .nav-file-title,
+.nav-file.is-active > .nav-file-title:hover {
+  background-color: var(--background-primary);
+  border-radius: 6px;
+  font-weight: bold;
+  /* color: var(--text-accent); */
+  border-left: 2px solid var(--text-accent);
+  transition: all 0.5s ease;
+}
+
+.nav-file.is-active > .nav-file-title {
+  padding-left: 5px;
+  /* margin-left: 5px; */
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--background-primary);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.nav-file-tag {
+  background-color: var(--background-secondary-alt);
+  top: -1px;
+}
+
+/* Folder and file icons */
+
+.nav-folder-children .nav-folder-title-content::before { content: '📂 '; }
+
+/* add colour to folder icons - needs 2 lines of .nav-folder-children above to work*/
+.nav-folder-title-content::before {
+  font-size: 17px;
+  margin-right: 5px !important;
+}
+
+/*hover color*/
+.nav-folder-title:hover .nav-folder-title-content::before  {
+  /* hover color   #69fafd  👆   CSS filter 👇  */
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+}
+
+/* change font size of file explorer */
+.nav-file-title, .nav-folder-title { font-size: 14px; line-height: 15px; }
+
+/* change font size of search results */
+.search-result-file-title { font-size: xyz; }
+.search-result-file-matches { font-size: xyz; }
+
+/* Reduce space of header buttons/icons - Blue Topaz */
+div.nav-header{
+  padding: 0px 5px 5px 5px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  line-height: 0px;
+}
+div.nav-buttons-container{
+  margin: 0px 0px 0px 0px;
+}
+input.search-input{
+  margin: 0px 10px -3px 10px;
+}
+.nav-action-button{
+  margin: 0px 2px 0px 2px !important;
+}
+.workspace-leaf-content[data-type='search'] .nav-action-button, .workspace-leaf-content[data-type='backlink'] .nav-action-button{
+  padding: 3px 3px 3px 3px;
+}
+
+/* Fix background of folder-collapse-indicator */
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+  background: none;
+}
+
+/* Line up tabs with macOS traffic lights */
+.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
+  padding: 0;}
+.workspace-tab-container-inner {
+  padding-left:30px;
+}
+
+
+/* Note: css variables do not work in embedded svgs, so
+I took the rgb equivalents of var(--text-accent) when active
+and of var(--text-faint) for not active */
+
+/* when the tab is NOT in focus */
+.theme-light
+.workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header-inner-icon:after {
+  opacity: 0.5;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(0, 0, 0);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+.theme-light
+.workspace-tab-header[aria-label="File explorer"]:hover
+  .workspace-tab-header-inner-icon:after {
+  opacity: 0.5;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(0, 125, 228);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+/* when the tab is in focus */
+.theme-light
+.workspace-tab-header[aria-label="File explorer"].is-active
+  .workspace-tab-header-inner-icon:after {
+  opacity: 0.5;
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(0, 125, 228);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+/* when the tab is NOT in focus */
+.theme-dark
+  .workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header-inner-icon:after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(122,122,122);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+.theme-dark
+  .workspace-tab-header[aria-label="File explorer"]:hover
+  .workspace-tab-header-inner-icon:after {  
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(83, 170, 245);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+/* when the tab is in focus */
+.theme-dark
+  .workspace-tab-header[aria-label="File explorer"].is-active
+  .workspace-tab-header-inner-icon:after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(83, 170, 245);"><path d="M21,4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v16c0,1.103,0.897,2,2,2h14c1.103,0,2-0.897,2-2V4z M5,4h14v7H5V4z M5,20 v-7h14.001v7H5z"></path><path d="M14 7L10 7 10 6 8 6 8 9 16 9 16 6 14 6zM14 15L14 16 10 16 10 15 8 15 8 18 16 18 16 15z"></path></svg>');
+}
+
+.workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header-inner-icon:after,
+.view-header-icon:after,
+.search-input-clear-button:before,
+.document-search-close-button:before {
+  line-height: 1;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header-inner-icon
+  > svg {
+    display: none;
+}
+
+
+/* Wrap long nav text */
+.nav-file-title, .nav-folder-title {
+    white-space: normal;
+    width: auto;
+}
+
+/* Indent wrapped nav text */
+.nav-file-title-content {
+    margin-left: 10px;
+    text-indent: -10px;
+}
+
+/* Set background color when hovering over a title */
+.nav-file-title-content:hover {
+  background-color: var(--base4);
+}
+
+
+

@@ -1,0 +1,277 @@
+{
+  "main": {
+    "id": "d534eb96153b2679",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef44dacff136c6c2",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b42b03fc39bdb2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master 1/Stage/memoire.md",
+                "mode": "source"
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "5b42b03fc39bdb2e",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":122,\"ch\":115},\"to\":{\"line\":122,\"ch\":115}},\"scroll\":111.4047619047619}"
+                }
+              ]
+            }
+          },
+          {
+            "id": "678b0b78600d4278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master 1/Stage/memoire.md",
+                "mode": "preview"
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "678b0b78600d4278",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
+                  "eState": "{}"
+                }
+              ]
+            }
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2674898e8017b71f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0444cbda68632d50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47c131ea376939d7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d56284dbc35373aa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#ICM",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d6bed1d0fc5d86f7",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ef207476e33093d2",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b0d2c9f2a0faf754",
+    "type": "split",
+    "children": [
+      {
+        "id": "8872d195538454b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32704b7a5886e6a0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c6b3e20aa1b4b970",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c0aad0f98e5fa477",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Master 1/Stage/memoire.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a29e8c204ac14f2e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Master 1/Stage/memoire.md"
+              }
+            }
+          },
+          {
+            "id": "77063fa93549a6de",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "18c6daca819527f6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "47f4096b19c9a19c",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "cf90bf39068bab18",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "afc5508db6013a22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cac24030f83f2374",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2dee5851b557c1cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee18941ab1e161b3",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "a965912f9f1ea495",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51af45e34bcfcdf0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Master 1/Stage/Source/PDF Biblio/10654_2009_Article_9411.pdf"
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "51af45e34bcfcdf0",
+                  "group": null,
+                  "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Source/PDF Biblio/10654_2009_Article_9411.pdf\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "51af45e34bcfcdf0",
+                  "group": null,
+                  "state": "{\"type\":\"empty\",\"state\":{}}",
+                  "eState": "{}"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5b42b03fc39bdb2e",
+  "lastOpenFiles": [
+    "Master 1/Stage/memoire.md",
+    "Organisation/TodoIst.md",
+    "Master 1/Stage/Source/PDF Biblio/10654_2009_Article_9411.pdf",
+    "Master 1/Stage/Source/PDF Biblio/talbot2019-1.pdf",
+    "Organisation/Todo.md",
+    "Organisation/Mémoire todo.md",
+    "Master 1/Stage/Source/Brouillon.pdf",
+    "Master 1/Stage/source/10654_2009_Article_9411.pdf",
+    "Master 1/Stage/source/talbot2019-1.pdf",
+    "Master 1/Stage/source/Sauerbrei et al. - 2020 - State of the art in selection of variables and fun.pdf"
+  ]
+}
