@@ -160,3 +160,7 @@ cm-formatting-header:before {
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul {
 	color: transparent !important;
 }
+
+.cm-s-obsidian .HyperMD-table-row {
+	white-space: normal;
+}
