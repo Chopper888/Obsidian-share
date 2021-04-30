@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/memoire.md",
-            "mode": "source"
+            "file": "Master 1/Stage/Source/article_export.md",
+            "mode": "preview"
           }
         },
         "pane-relief:history-v1": {
@@ -19,8 +19,62 @@
             {
               "leaf": "110bef3197beee05",
               "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Source/article_export.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Source/Brouillon.pdf\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"image\",\"state\":{\"file\":\"Master 1/Stage/Source/logo.png\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":165.32258064516128}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":1.1039}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiche RP.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Références OC/Ashling/References/References.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Références OC/Ashling/Ashling.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "110bef3197beee05",
+              "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":15.1667}"
+              "eState": "{\"scroll\":114.146875}"
             },
             {
               "leaf": "110bef3197beee05",
@@ -81,60 +135,6 @@
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
               "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":39},\"to\":{\"line\":3,\"ch\":39}}}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":3},\"to\":{\"line\":2,\"ch\":3}}}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"image\",\"state\":{\"file\":\"Master 1/Stage/Source/logo.png\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":2},\"to\":{\"line\":3,\"ch\":2}}}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "110bef3197beee05",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":8},\"to\":{\"line\":1,\"ch\":8}}}"
             }
           ]
         }
@@ -209,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/memoire.md"
+                "file": "Master 1/Stage/Source/article_export.md"
               }
             }
           },
@@ -226,6 +226,31 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6607570e40779514",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Master 1/Stage/Source/article_export.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dcdd368a7aacd42b",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
               "state": {}
             }
           }
@@ -268,15 +293,15 @@
   },
   "active": "110bef3197beee05",
   "lastOpenFiles": [
+    "Master 1/Stage/Source/article_export.md",
+    "Master 1/Stage/Source/Brouillon.pdf",
+    "Master 1/Stage/Source/logo.png",
     "Master 1/Stage/memoire.md",
     "Master 1/Stage/Memoire.pdf",
-    "Master 1/Stage/Source/logo.png",
-    "Master 1/Stage/Source/article_export.md",
-    "Organisation/TodoIst.md",
-    "Master 1/Stage/Source/PDF Biblio/10654_2009_Article_9411.pdf",
-    "Master 1/Stage/Source/PDF Biblio/talbot2019-1.pdf",
-    "Organisation/Todo.md",
-    "Organisation/Mémoire todo.md",
-    "Master 1/Stage/Source/Brouillon.pdf"
+    "Ecriture/Fiche RP/Fiches/Fiches.md",
+    "Ecriture/Fiche RP/Fiche RP.md",
+    "Ecriture/Fiche RP/Références OC/Ashling/References/References.md",
+    "Ecriture/Fiche RP/Références OC/Ashling/Ashling.md",
+    "Organisation/TodoIst.md"
   ]
 }
