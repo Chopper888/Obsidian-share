@@ -71,3 +71,18 @@
 .outliner-plugin-bls .cm-s-obsidian .CodeMirror-line {
 	text-indent: 0 !important;
 }
+
+.cc-pretty-preview .markdown-preview-section > div > * {
+margin : revert;
+}
+
+.markdown-preview-section ul {
+padding-inline-start: revert !important;
+margin-bottom: -2em !important;
+position: relative !important;
+top: -1em !important;
+}
+
+.cc-pretty-preview .markdown-preview-view h1, .markdown-preview-view h1 {
+margin-bottom: -0.5em !important;
+}
