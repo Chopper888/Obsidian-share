@@ -3598,7 +3598,7 @@ function createHeading(opts) {
         if (opts.config.resetFn) {
             setting.addExtraButton((b) => {
                 b.setIcon("reset")
-                    .setTooltip('Reset all settings to default')
+                    .setTooltip("Reset all settings to default")
                     .onClick(opts.config.resetFn);
             });
         }
@@ -3936,33 +3936,38 @@ function createSettings(opts) {
                 const config = setting;
                 let targetContainer = getTargetContainer(containerStack);
                 if (config.level > containerLevel) {
+                    // Nest one level
                     createHeading({
                         config,
                         containerEl: targetContainer,
-                    });
-                    targetContainer.createDiv({ cls: "style-settings-container" }, (container) => {
-                        containerStack.push(container);
                     });
                 }
                 else if (config.level === containerLevel) {
+                    // Same level
                     containerStack.pop();
                     targetContainer = getTargetContainer(containerStack);
                     createHeading({
                         config,
                         containerEl: targetContainer,
-                    });
-                    targetContainer.createDiv({ cls: "style-settings-container" }, (container) => {
-                        containerStack.push(container);
                     });
                 }
                 else {
-                    containerStack.pop();
+                    // Step up to the appropriate level
+                    while (containerStack.length > 1 &&
+                        parseInt(containerStack[containerStack.length - 1].dataset.level) >=
+                            config.level) {
+                        containerStack.pop();
+                    }
                     targetContainer = getTargetContainer(containerStack);
                     createHeading({
                         config,
                         containerEl: targetContainer,
                     });
                 }
+                targetContainer.createDiv({ cls: "style-settings-container" }, (container) => {
+                    container.dataset.level = config.level.toString();
+                    containerStack.push(container);
+                });
                 containerLevel = config.level;
                 break;
             }

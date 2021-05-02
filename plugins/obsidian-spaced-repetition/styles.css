@@ -1,14 +1,9 @@
-.sr-help-div {
-    width: 100%;
-    text-align: center;
-    margin-top: 16px;
-}
-
 .sr-link {
     color: var(--text-accent);
     text-decoration: underline;
     cursor: pointer;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .sr-response {
@@ -60,4 +55,5 @@
 #sr-context {
     font-style: italic;
     font-weight: bold;
+    margin-top: 16px;
 }

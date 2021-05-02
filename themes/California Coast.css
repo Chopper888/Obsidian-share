@@ -379,8 +379,7 @@ settings:
 
   --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --text-editor: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --text-editor: -apple-system, BlinkMacSystemFont, Seaford, sans-serif;
   --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
 
   /* Sizes, weights, padding */

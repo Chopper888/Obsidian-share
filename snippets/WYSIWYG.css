@@ -51,7 +51,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-attribute{
 
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
-	color: transparent;
+	display: none;
 }
 
 
