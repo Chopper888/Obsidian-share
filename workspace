@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6f7f313776ef5b7d",
+        "id": "0d472fd6a3207b19",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "📥 Inbox/draft.md",
+            "file": "Master 1/Stage/memoire.md",
             "mode": "source"
           }
         },
@@ -17,124 +17,16 @@
           "pos": 0,
           "stack": [
             {
-              "leaf": "6f7f313776ef5b7d",
+              "leaf": "0d472fd6a3207b19",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
               "eState": "{\"scroll\":0}"
             },
             {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Quinn Jazee.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":0}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/References/References.md\",\"mode\":\"source\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":0}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Aout.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":179.7962962962963}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Juillet.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":220.62962962962962}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Juin.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":179.179012345679}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Mai.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":43.568627450980394}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Juin.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Mai.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Juin.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Picrew.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/References/References.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "6f7f313776ef5b7d",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/References/References.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
+              "leaf": "0d472fd6a3207b19",
+              "group": "470d75bbabf79719",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":53.31645569620253}"
             }
           ]
         }
@@ -193,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345
+    "width": 295
   },
   "right": {
     "id": "b0d2c9f2a0faf754",
@@ -209,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📥 Inbox/draft.md"
+                "file": "Master 1/Stage/memoire.md"
               }
             }
           },
@@ -235,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📥 Inbox/draft.md",
+                "file": "Master 1/Stage/memoire.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -263,7 +155,7 @@
             }
           },
           {
-            "id": "94a0f71be68dd1d5",
+            "id": "10a099b9645c4358",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -271,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "b666c73441aa0513",
@@ -289,11 +181,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 286,
     "collapsed": true
   },
-  "active": "6f7f313776ef5b7d",
+  "active": "0d472fd6a3207b19",
   "lastOpenFiles": [
+    "Master 1/Stage/memoire.md",
     "📥 Inbox/draft.md",
     "Ecriture/Ecriture.md",
     "Ecriture/Fiches/OC/Untitled.md",
@@ -302,7 +195,6 @@
     "Master 1/Stage/Data/2020/CCM/Untitled 1.md",
     "Master 1/Stage/Data/2020/CCM/Untitled.md",
     "Master 1/Stage/Data/2020/CCM/Juin.md",
-    "Master 1/Stage/Data/2020/CCM/Mai.md",
-    "Master 1/Master 1.md"
+    "Master 1/Stage/Data/2020/CCM/Mai.md"
   ]
 }
