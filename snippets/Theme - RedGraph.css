@@ -31,7 +31,7 @@ is-flashing {
 }
 
 .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
-	font-family: Seaford !important;
+	font-family: Seaford, sans-serif !important;
 	line-height: 80% !important;
 }
 

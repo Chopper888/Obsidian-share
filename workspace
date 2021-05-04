@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "📥 Inbox/Livre SW.md",
+            "file": "Master 1/Stage/Data/2020/CCM/Septembre.md",
             "mode": "source"
           }
         },
@@ -19,74 +19,122 @@
             {
               "leaf": "0d472fd6a3207b19",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":15.625}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":169,\"ch\":33},\"to\":{\"line\":169,\"ch\":33}},\"scroll\":0.2945}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Octobre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":57.1275720164609}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":169,\"ch\":33},\"to\":{\"line\":169,\"ch\":33}},\"scroll\":0.2945}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Aout.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":40.617283950617285}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Octobre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":102.16255144032922}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0.294478527607362}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Octobre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":131.95138888888889}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Aout.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Octobre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":158.6851851851852}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Untitled.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Semestre 1/Semestre 1.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Semestre 1/Biostatiques Et Modelisation/Biostatiques Et Modelisation.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"empty\",\"state\":{}}",
+              "eState": "{}"
             },
             {
               "leaf": "0d472fd6a3207b19",
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
               "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":0},\"to\":{\"line\":1,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":108,\"ch\":2},\"to\":{\"line\":108,\"ch\":2}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":26},\"to\":{\"line\":7,\"ch\":26}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":27,\"ch\":2},\"to\":{\"line\":27,\"ch\":2}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Quick Capture.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":27,\"ch\":2},\"to\":{\"line\":27,\"ch\":2}},\"scroll\":9.592592592592592}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":166.80555555555554}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": "470d75bbabf79719",
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":53.31645569620253}"
             }
           ]
         }
@@ -161,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📥 Inbox/Livre SW.md"
+                "file": "Master 1/Stage/Data/2020/CCM/Septembre.md"
               }
             }
           },
@@ -187,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📥 Inbox/Livre SW.md",
+                "file": "Master 1/Stage/Data/2020/CCM/Septembre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,15 +294,15 @@
   },
   "active": "0d472fd6a3207b19",
   "lastOpenFiles": [
-    "📥 Inbox/Livre SW.md",
-    "📥 Inbox/draft.md",
-    "Template/templater/Quick Capture.md",
-    "Template/Quick Capture.md",
-    "Template/Template.md",
+    "Master 1/Stage/Data/2020/CCM/Septembre.md",
+    "Master 1/Stage/Data/2020/CCM/Octobre.md",
+    "Master 1/Stage/Data/2020/CCM/Aout.md",
+    "Master 1/Stage/Data/2020/CCM/Untitled.md",
     "Master 1/Stage/memoire.md",
-    "Ecriture/Ecriture.md",
-    "Ecriture/Fiches/OC/Untitled.md",
-    "Ecriture/Fiches/OC/Ashling May/References/References.md",
-    "Ecriture/Fiches/Fiches.md"
+    "Template/Template.md",
+    "Master 1/Semestre 1/Semestre 1.md",
+    "Master 1/Semestre 1/Biostatiques Et Modelisation/Biostatiques Et Modelisation.md",
+    "Master 1/Master 1.md",
+    "📥 Inbox/Livre SW.md"
   ]
 }

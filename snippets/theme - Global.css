@@ -1,22 +1,22 @@
 @font-face {
 	font-family: "Seaford";
-	src: url(".obsidian/src/seaford.ttf")
+	src: url("/Home/.obsidian/src/seaford.ttf")
 }
 
 @font-face {
 	font-family: "Seaford";
-	src: url(".obsidian/src/seaford-bold.ttf");
+	src: url("/Home/.obsidian/src/seaford-bold.ttf");
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Bierstadt";
-	src: url(".obsidian/src/Bierstadt.ttf")
+	src: url("/Home/.obsidian/src/bierstadt.ttf")
 }
 
 @font-face {
 	font-family: "Bierstadt";
-	src: url(".obsidian/src/Bierstadt-bold.ttf");
+	src: url("/Home/.obsidian/src/bierstad-bold.ttf");
 	font-weight: bold;
 }
 
@@ -31,14 +31,14 @@
   --color-white-rgb: 255, 255, 255;
 
   --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --text-editor: -apple-system, BlinkMacSystemFont, Bierstadt, sans-serif;
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
+  --text-editor: -apple-system, BlinkMacSystemFont, Constantia, Bierstadt, sans-serif !important;
   --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
 
 }
 
 .cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3, .cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
-	font-family: Seaford !important;
+	font-family: Seaford, sans-serif !important;
 }
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
