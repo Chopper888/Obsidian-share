@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/memoire.md",
+            "file": "📥 Inbox/Livre SW.md",
             "mode": "source"
           }
         },
@@ -19,8 +19,68 @@
             {
               "leaf": "0d472fd6a3207b19",
               "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":15.625}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":0},\"to\":{\"line\":1,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":108,\"ch\":2},\"to\":{\"line\":108,\"ch\":2}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":7,\"ch\":26},\"to\":{\"line\":7,\"ch\":26}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/templater/Quick Capture.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":27,\"ch\":2},\"to\":{\"line\":27,\"ch\":2}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Quick Capture.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":27,\"ch\":2},\"to\":{\"line\":27,\"ch\":2}},\"scroll\":9.592592592592592}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":0}"
+              "eState": "{\"scroll\":166.80555555555554}"
             },
             {
               "leaf": "0d472fd6a3207b19",
@@ -101,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/memoire.md"
+                "file": "📥 Inbox/Livre SW.md"
               }
             }
           },
@@ -127,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master 1/Stage/memoire.md",
+                "file": "📥 Inbox/Livre SW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,15 +246,15 @@
   },
   "active": "0d472fd6a3207b19",
   "lastOpenFiles": [
-    "Master 1/Stage/memoire.md",
+    "📥 Inbox/Livre SW.md",
     "📥 Inbox/draft.md",
+    "Template/templater/Quick Capture.md",
+    "Template/Quick Capture.md",
+    "Template/Template.md",
+    "Master 1/Stage/memoire.md",
     "Ecriture/Ecriture.md",
     "Ecriture/Fiches/OC/Untitled.md",
     "Ecriture/Fiches/OC/Ashling May/References/References.md",
-    "Ecriture/Fiches/Fiches.md",
-    "Master 1/Stage/Data/2020/CCM/Untitled 1.md",
-    "Master 1/Stage/Data/2020/CCM/Untitled.md",
-    "Master 1/Stage/Data/2020/CCM/Juin.md",
-    "Master 1/Stage/Data/2020/CCM/Mai.md"
+    "Ecriture/Fiches/Fiches.md"
   ]
 }
