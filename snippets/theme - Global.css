@@ -41,17 +41,13 @@
 	font-family: Seaford !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: Seaford !important;
-}
-
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
 	margin-top: 2px !important;
 	margin-left: 1em !important;
 	color: transparent;
 	content:'';
 	letter-spacing: 0 !important;
-	position: relative;
+	position: relative !important;
 }
 
 .outliner-plugin-bls .cm-s-obsidian .CodeMirror-line {
@@ -59,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cc-pretty-preview .markdown-preview-section > div > * {
-margin : revert;
+	margin : 0 0 3%;
 }
 
 .outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
@@ -69,3 +65,8 @@ margin : revert;
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
 	letter-spacing: 0 !important;
 }
+
+ul {
+	margin-block-start: 0 !important;
+	bottom:25%;
+}	

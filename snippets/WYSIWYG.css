@@ -1,48 +1,23 @@
-/************************************************************/
-/* WYSIWYG: imitation in Edit mode */
-/************************************************************/
-/* Source: Piotr, ishgunacar, pihentagy, others on the forum
-/************************************************************/
-/* Editor font: make thicker so it is like in Preview
-/* Remove markdown clutter
-/* Unordered lists: turn into bullets as you type, as per Typora
-/* Blockquote in edit mode with left border rendered instead of ">"
-/* Tag pills in edit mode
-/* Coloured headings for editor and preview, same font-weight in Edit & Preview
-/* Horizontal line in edit mode. Changes --- to full-width line.
-/* Checkboxes instead of brackets in edit mode
-
-/* Note: change colours to your own taste *?
-
-/* ============================================================================*/
-
-/* For Edit mode use same font and font size as for Preview mode */
-
-/* Editor font: make thicker so it is like in Preview */
-
-
-
-
 .cm-s-obsidian .CodeMirror-line * {
 -webkit-font-smoothing: auto;
 }
 
 /* Remove markdown clutter */
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment, 
+div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
  color: transparent;		/* the space between word is normal. Its more praticable to have that than display:none.*/
 }
 
-.CodeMirror-line span.cm-hmd-barelink,
-.CodeMirror-line span.cm-hmd-internal-link {
-opacity: 0.3;
+div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-hmd-barelink {
+	display: none;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link)
 {
-	display: none !important;
+	display: none;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-attribute{
@@ -94,7 +69,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
   position: absolute;
   height: 1px;
   width: 100%;
-  background: var(--text-highlight-bg-active);
+  background: var(--background-modifier-border);
   left: 0;
   top: 50%;
 }
@@ -138,13 +113,7 @@ span.cm-formatting-task.cm-property ~ span {
 	color: rgb(15, 112, 223) !important;
 	text-decoration: underline;  }
 
-.markdown-preview-section hr {
-  margin: 0 !important;
-}
-.markdown-preview-section hr:after {
-	background: lightgrey !important ;
-	opacity: 100%;
-}
+
 
 cm-formatting-header:before {
 	content:"" !important;
@@ -163,4 +132,16 @@ cm-formatting-header:before {
 
 .cm-s-obsidian .HyperMD-table-row {
 	white-space: normal;
+}
+
+p{
+	margin-block-start: 3% !important;
+	margin-block-end: 0 !important;
+}
+
+.outliner-plugin-bls .cm-s-obsidian .HyperMD-list-line {
+	padding-top: 0 !important;
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header {
+	display: none !important;
 }
