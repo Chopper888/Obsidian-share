@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/Data/2020/CCM/Septembre.md",
+            "file": "Ecriture/Fiches/[SWTOR] Alem Raashen.md",
             "mode": "source"
           }
         },
@@ -19,8 +19,50 @@
             {
               "leaf": "0d472fd6a3207b19",
               "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":10},\"to\":{\"line\":2,\"ch\":10}},\"scroll\":0}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":0},\"to\":{\"line\":1,\"ch\":0}}}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":0},\"to\":{\"line\":4,\"ch\":0}}}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "0d472fd6a3207b19",
+              "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":169,\"ch\":33},\"to\":{\"line\":169,\"ch\":33}},\"scroll\":0.2945}"
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":43.5679}"
             },
             {
               "leaf": "0d472fd6a3207b19",
@@ -93,48 +135,6 @@
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"preview\"}}",
               "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Septembre.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Untitled.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Semestre 1/Semestre 1.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Semestre 1/Biostatiques Et Modelisation/Biostatiques Et Modelisation.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"empty\",\"state\":{}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/draft.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":0},\"to\":{\"line\":1,\"ch\":0}},\"scroll\":0}"
             }
           ]
         }
@@ -209,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/Data/2020/CCM/Septembre.md"
+                "file": "Ecriture/Fiches/[SWTOR] Alem Raashen.md"
               }
             }
           },
@@ -235,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master 1/Stage/Data/2020/CCM/Septembre.md",
+                "file": "Ecriture/Fiches/[SWTOR] Alem Raashen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -294,15 +294,15 @@
   },
   "active": "0d472fd6a3207b19",
   "lastOpenFiles": [
+    "Ecriture/Fiches/[SWTOR] jsp.md",
+    "Ecriture/Fiches/Fiches.md",
+    "Ecriture/Ecriture.md",
+    "📥 Inbox/Livre SW.md",
+    "📥 Inbox/draft.md",
+    "Template/Template.md",
+    "Master 1/Master 1.md",
     "Master 1/Stage/Data/2020/CCM/Septembre.md",
     "Master 1/Stage/Data/2020/CCM/Octobre.md",
-    "Master 1/Stage/Data/2020/CCM/Aout.md",
-    "Master 1/Stage/Data/2020/CCM/Untitled.md",
-    "Master 1/Stage/memoire.md",
-    "Template/Template.md",
-    "Master 1/Semestre 1/Semestre 1.md",
-    "Master 1/Semestre 1/Biostatiques Et Modelisation/Biostatiques Et Modelisation.md",
-    "Master 1/Master 1.md",
-    "📥 Inbox/Livre SW.md"
+    "Master 1/Stage/Data/2020/CCM/Aout.md"
   ]
 }
