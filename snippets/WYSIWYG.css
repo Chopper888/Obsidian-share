@@ -6,27 +6,23 @@
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment, 
 div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
- color: transparent;		/* the space between word is normal. Its more praticable to have that than display:none.*/
-}
-
-div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-hmd-barelink {
-	display: none;
+ visibility: hidden;		/* the space between word is normal. Its more praticable to have that than display:none.*/
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link)
 {
-	display: none;
+	visibility: hidden;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-attribute{
-	display: none;
+	visibility: hidden;
 }
 
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
-	display: none;
+	visibility: hidden;
 }
 
 
