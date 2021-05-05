@@ -13,7 +13,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link)
 {
-	visibility: hidden;
+	display: none;
 }
 
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
