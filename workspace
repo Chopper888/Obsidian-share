@@ -20,7 +20,19 @@
               "leaf": "7575f16ccd0c7bdc",
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":13.727083333333333}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
               "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":11.59875}"
             },
             {
               "leaf": "7575f16ccd0c7bdc",
@@ -123,18 +135,6 @@
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/Illustration/Illustration.md\",\"mode\":\"source\"}}",
               "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":48},\"to\":{\"line\":3,\"ch\":48}}}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[Sadhé] Eilwellyn Beausang.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":32,\"ch\":0},\"to\":{\"line\":32,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":0},\"to\":{\"line\":1,\"ch\":0}},\"scroll\":0}"
             }
           ]
         }
@@ -285,6 +285,7 @@
   "active": "7575f16ccd0c7bdc",
   "lastOpenFiles": [
     "Ecriture/Fiches/[SWTOR] Alem Raashen.md",
+    "Ecriture/Ecriture.md",
     "Ecriture/Fiches/OC/Ashling May/Ashling May.md",
     "Ecriture/Fiche RP/Références OC/Références OC.md",
     "Ecriture/Fiche RP/Fiches/Fiches.md",
@@ -292,7 +293,6 @@
     "Ecriture/Fiches/Fiches.md",
     "Ecriture/Univers/Bibliothèque infinie/Présentation.md",
     "Ecriture/Fiches/OC/Ashling May/Illustration/Illustration.md",
-    "Ecriture/Fiches/[Sadhé] Eilwellyn Beausang.md",
-    "Ecriture/Fiches/OC/Ambre Loiseau.md"
+    "Ecriture/Fiches/[Sadhé] Eilwellyn Beausang.md"
   ]
 }
