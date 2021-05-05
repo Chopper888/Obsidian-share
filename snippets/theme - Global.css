@@ -41,18 +41,9 @@
 	font-family: Seaford, sans-serif !important;
 }
 
-.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-	margin-top: 2px !important;
-	margin-left: 1em !important;
-	color: transparent;
-	content:'';
-	letter-spacing: 0 !important;
-	position: relative !important;
-}
 
-.outliner-plugin-bls .cm-s-obsidian .CodeMirror-line {
-	text-indent: 0 !important;
-}
+
+
 
 .cc-pretty-preview .markdown-preview-section > div > * {
 	margin : 3% 0 3%;
@@ -63,10 +54,29 @@
 }
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-	letter-spacing: 0 !important;
+	letter-spacing: -100em !important;
+	margin-left: 0.5em !important;
 }
 
 ul {
 	margin-block-start: 0 !important;
 	bottom:25%;
+	position: relative;
+	top: -1em !important;
+	margin-bottom: -1.8em !important;
 }	
+
+i#flexbox {
+display: flex;
+font-style: normal;
+}
+
+i#flexbox > i {
+flex: 1;
+font-style: normal;
+padding:0px 7px; 
+}
+
+span.cm-list-1 {
+	margin-left: 1em !important;
+}

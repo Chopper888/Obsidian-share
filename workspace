@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ecriture/Fiches/[SWTOR] Alem Raashen.md",
-            "mode": "source"
+            "file": "Template/Fiche Sadh.md",
+            "mode": "preview"
           }
         },
         "pane-relief:history-v1": {
@@ -19,122 +19,122 @@
             {
               "leaf": "7575f16ccd0c7bdc",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":13.727083333333333}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Fiche Sadh.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Organisation/TodoIst.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Organisation/Mémoire todo.md\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Organisation/Todo.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":40,\"ch\":4},\"to\":{\"line\":40,\"ch\":4}},\"scroll\":168.44444444444446}"
             },
             {
               "leaf": "7575f16ccd0c7bdc",
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":0}"
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[Azelyss] Hayleen May.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ambre Loiseau.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
             },
             {
               "leaf": "7575f16ccd0c7bdc",
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":11.59875}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/Ashling May.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"empty\",\"state\":{}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiche RP.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiche RP.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Références OC/Références OC.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Univers/Bibliothèque infinie/Présentation.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":54.8}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Références OC/Références OC.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":0.0688}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiche RP.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiche RP/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "7575f16ccd0c7bdc",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/Ashling May.md\",\"mode\":\"source\"}}",
               "eState": "{\"scroll\":0}"
             },
             {
               "leaf": "7575f16ccd0c7bdc",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ashling May/Illustration/Illustration.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":48},\"to\":{\"line\":3,\"ch\":48}}}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Univers/Bibliothèque infinie/Présentation.md\",\"mode\":\"source\"}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":372},\"to\":{\"line\":8,\"ch\":372}},\"scroll\":0}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Taho tuto.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "7575f16ccd0c7bdc",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
             }
           ]
         }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecriture/Fiches/[SWTOR] Alem Raashen.md"
+                "file": "Template/Fiche Sadh.md"
               }
             }
           }
@@ -284,15 +284,15 @@
   },
   "active": "7575f16ccd0c7bdc",
   "lastOpenFiles": [
-    "Ecriture/Fiches/[SWTOR] Alem Raashen.md",
+    "Template/Fiche Sadh.md",
+    "Template/Template.md",
+    "Organisation/TodoIst.md",
+    "Organisation/Mémoire todo.md",
+    "Organisation/Todo.md",
+    "Master 1/Stage/Memoire.pdf",
+    "Master 1/Stage/memoire.md",
     "Ecriture/Ecriture.md",
-    "Ecriture/Fiches/OC/Ashling May/Ashling May.md",
-    "Ecriture/Fiche RP/Références OC/Références OC.md",
-    "Ecriture/Fiche RP/Fiches/Fiches.md",
-    "Ecriture/Fiche RP/Fiche RP.md",
-    "Ecriture/Fiches/Fiches.md",
-    "Ecriture/Univers/Bibliothèque infinie/Présentation.md",
-    "Ecriture/Fiches/OC/Ashling May/Illustration/Illustration.md",
-    "Ecriture/Fiches/[Sadhé] Eilwellyn Beausang.md"
+    "Ecriture/Fiches/[Azelyss] Hayleen May.md",
+    "Ecriture/Fiches/Fiches.md"
   ]
 }
