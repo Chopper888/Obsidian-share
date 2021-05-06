@@ -31,7 +31,7 @@ export default class PandocPluginSettingTab extends PluginSettingTab {
         const createError = (text: string) =>
             containerEl.createEl('p', { cls: 'pandoc-plugin-error', text });
         
-        for (const binary of this.plugin.programs) {
+        for (const binary in this.plugin.features) {
             const path = this.plugin.features[binary];
             if (path === undefined) {
                 createError(this.errorMessages[binary]);
@@ -51,6 +51,32 @@ export default class PandocPluginSettingTab extends PluginSettingTab {
                 }));
 
         new Setting(containerEl)
+            .setName("Inject app CSS (HTML output only)")
+            .setDesc("This applies app & plugin CSS to HTML exports, but the files become a little bigger.")
+            .addDropdown(dropdown => dropdown
+                .addOptions({
+                    "current": "Current theme",
+                    "none": "Neither theme",
+                    "light": "Light theme",
+                    "dark": "Dark theme",
+                })
+                .setValue(this.plugin.settings.injectAppCSS)
+                .onChange(async (value: string) => {
+                    this.plugin.settings.injectAppCSS = value as 'current' | 'none' | 'light' | 'dark';
+                    await this.plugin.saveSettings();
+                }));
+
+                new Setting(containerEl)
+            .setName("Inject entire 3rd party theme CSS file (HTML output only)")
+            .setDesc("The output might look better, but the files can become *much* bigger. Don't enable unless you need to.")
+            .addToggle(toggle => toggle
+                .setValue(this.plugin.settings.injectThemeCSS)
+                .onChange(async (value: boolean) => {
+                    this.plugin.settings.injectThemeCSS = value;
+                    await this.plugin.saveSettings();
+                }));
+
+        new Setting(containerEl)
             .setName("Internal link processing")
             .setDesc("This controls how [[wiki-links]] are formatted. Doesn't affect HTML output.")
             .addDropdown(dropdown => dropdown
@@ -66,6 +92,17 @@ export default class PandocPluginSettingTab extends PluginSettingTab {
                 }));
 
         new Setting(containerEl)
+            .setName("Export folder")
+            .setDesc("Absolute path to an export folder, like 'C:\Users\Example\Documents' or '/home/user/zettelkasten'. If left blank, files are saved next to where they were exported from.")
+            .addText(text => text
+                .setPlaceholder('same as target')
+                .setValue(this.plugin.settings.outputFolder)
+                .onChange(async (value: string) => {
+                    this.plugin.settings.outputFolder = value;
+                    await this.plugin.saveSettings();
+                }));
+
+        new Setting(containerEl)
             .setName("Show Pandoc command line interface commands")
             .setDesc("Doesn't apply to HTML exports. Using the CLI will have slightly different results due to how this plugin works.")
             .addToggle(toggle => toggle
@@ -76,62 +113,24 @@ export default class PandocPluginSettingTab extends PluginSettingTab {
                 }));
 
         new Setting(containerEl)
-            .setName("Show YAML frontmatter in exported files")
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.settings.displayYAMLFrontmatter)
-                .onChange(async (value: boolean) => {
-                    this.plugin.settings.displayYAMLFrontmatter = value;
-                    await this.plugin.saveSettings();
-                }));
-
-        new Setting(containerEl)
-            .setName("High DPI Mermaid diagrams")
-            .setDesc("Renders Mermaid diagrams at twice the resolution. Try toggling if diagrams look bad.")
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.settings.highDPIDiagrams)
-                .onChange(async (value: boolean) => {
-                    this.plugin.settings.highDPIDiagrams = value;
-                    await this.plugin.saveSettings();
-                }));
-
-        new Setting(containerEl)
-            .setName("Inject MathJax CSS into HTML output")
-            .setDesc("Only applies to files containing math. This makes math look good, but the files become bigger.")
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.settings.injectMathJaxCSS)
-                .onChange(async (value: boolean) => {
-                    this.plugin.settings.injectMathJaxCSS = value;
-                    await this.plugin.saveSettings();
-                }));
-
-        new Setting(containerEl)
-            .setName("Use the light theme CSS in HTML output")
-            .setDesc("This uses the default Obsidian light theme colours.")
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.settings.injectAppCSS)
-                .onChange(async (value: boolean) => {
-                    this.plugin.settings.injectAppCSS = value;
-                    await this.plugin.saveSettings();
-                }));
-
-        new Setting(containerEl)
-            .setName("Inject community plugin CSS (HTML output only)")
-            .setDesc("This styles any 3rd party embeds, but the files become bigger.")
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.settings.injectPluginCSS)
-                .onChange(async (value: boolean) => {
-                    this.plugin.settings.injectPluginCSS = value;
-                    await this.plugin.saveSettings();
-                }));
-
-        new Setting(containerEl)
-            .setName("[[Wikilink]] resolution file extension")
-            .setDesc("If specified, it turns [[note#heading]] to <a href='note.extension#heading'> instead of <a href='note#heading'>")
+            .setName("Pandoc path")
+            .setDesc("Optional override for Pandoc's path if you have command not found issues. On Mac/Linux use the output of 'which pandoc' in a terminal; on Windows use the output of 'Get-Command pandoc' in powershell.")
             .addText(text => text
-                .setPlaceholder('File extension (eg "md" or "html")')
-                .setValue(this.plugin.settings.addExtensionsToInternalLinks)
+                .setPlaceholder('pandoc')
+                .setValue(this.plugin.settings.pandoc)
                 .onChange(async (value: string) => {
-                    this.plugin.settings.addExtensionsToInternalLinks = value;
+                    this.plugin.settings.pandoc = value;
+                    await this.plugin.saveSettings();
+                }));
+
+        new Setting(containerEl)
+            .setName("PDFLaTeX path")
+            .setDesc("Optional override for pdflatex's path. Same as above but with 'which pdflatex'")
+            .addText(text => text
+                .setPlaceholder('pdflatex')
+                .setValue(this.plugin.settings.pdflatex)
+                .onChange(async (value: string) => {
+                    this.plugin.settings.pdflatex = value;
                     await this.plugin.saveSettings();
                 }));
     }

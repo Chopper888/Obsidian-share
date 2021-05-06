@@ -12,14 +12,13 @@ import * as path from 'path';
 
 import { App, Modal, Notice, Plugin, PluginSettingTab, Setting, FileSystemAdapter, MarkdownRenderer, Component } from 'obsidian';
 import { lookpath } from 'lookpath';
-import { pandoc, inputExtensions, outputFormats, OutputFormat, needsLaTeX } from './pandoc';
+import { pandoc, inputExtensions, outputFormats, OutputFormat, needsLaTeX, needsPandoc } from './pandoc';
 
 import render from './renderer';
 import PandocPluginSettingTab from './settings';
 import { PandocPluginSettings, DEFAULT_SETTINGS, replaceFileExtension, fileExists } from './global';
 export default class PandocPlugin extends Plugin {
     settings: PandocPluginSettings;
-    programs = ['pandoc', 'latex'];
     features: { [key: string]: string | undefined } = {};
 
     async onload() {
@@ -37,16 +36,13 @@ export default class PandocPlugin extends Plugin {
 
     registerCommands() {
         for (let [prettyName, pandocFormat, extension, shortName] of outputFormats) {
-            if (needsLaTeX(pandocFormat as OutputFormat)
-                && !this.features['latex']) continue;
+
             const name = 'Export as ' + prettyName;
             this.addCommand({
                 id: 'pandoc-export-' + pandocFormat, name,
                 checkCallback: (checking: boolean) => {
-                    let leaf = this.app.workspace.activeLeaf;
-                    if (!leaf) return false;
-                    if (!this.features.pandoc && pandocFormat !== 'html') return false;
-                    if (!this.currentFileCanBeExported()) return false;
+                    if (!this.app.workspace.activeLeaf) return false;
+                    if (!this.currentFileCanBeExported(pandocFormat as OutputFormat)) return false;
                     if (!checking) {
                         this.startPandocExport(this.getCurrentFile(), pandocFormat as OutputFormat, extension, shortName);
                     }
@@ -63,12 +59,15 @@ export default class PandocPlugin extends Plugin {
     getCurrentFile(): string | null {
         const fileData = this.app.workspace.getActiveFile();
         if (!fileData) return null;
-        const { basename, extension } = fileData;
-        const filename = `${basename}.${extension}`;
+        const filename = fileData.path;
         return path.join(this.vaultBasePath(), filename);
     }
 
-    currentFileCanBeExported(): boolean {
+    currentFileCanBeExported(format: OutputFormat): boolean {
+        // Is it an available output type?
+        if (needsPandoc(format) && !this.features['pandoc']) return false;
+        if (needsLaTeX(format) && !this.features['pdflatex']) return false;
+        // Is it a supported input type?
         const file = this.getCurrentFile();
         if (!file) return false;
         for (const ext of inputExtensions) {
@@ -78,9 +77,8 @@ export default class PandocPlugin extends Plugin {
     }
 
     async createBinaryMap() {
-        for (const binary of this.programs) {
-            this.features[binary] = await lookpath(binary);
-        }
+        this.features['pandoc'] = this.settings.pandoc || await lookpath('pandoc');
+        this.features['pdflatex'] = this.settings.pdflatex || await lookpath('pdflatex');
     }
 
     async startPandocExport(inputFile: string, format: OutputFormat, extension: string, shortName: string) {
@@ -94,7 +92,10 @@ export default class PandocPlugin extends Plugin {
             const markdown = (this.app.workspace.activeLeaf.view as any).data;
             const { html, title } = await render(this.settings, markdown, inputFile, this.vaultBasePath(), format);
 
-            const outputFile = replaceFileExtension(inputFile, extension);
+            let outputFile: string = replaceFileExtension(inputFile, extension);
+            if (this.settings.outputFolder) {
+                outputFile = path.join(this.settings.outputFolder, path.basename(outputFile));
+            }
 
             if (format === 'html') {
                 // Write to HTML file
@@ -102,7 +103,11 @@ export default class PandocPlugin extends Plugin {
                 new Notice('Successfully exported via Pandoc to ' + outputFile);
             } else {
                 // Spawn Pandoc
-                const { error, command } = await pandoc({ file: 'STDIN', contents: html, format: 'html', title }, { file: outputFile, format });
+                const { error, command } = await pandoc(
+                    { file: 'STDIN', contents: html, format: 'html', title,
+                        pandoc: this.settings.pandoc, pdflatex: this.settings.pdflatex },
+                    { file: outputFile, format }
+                );
                 // Never give warnings for plain-text exports
                 if (error.length && format !== 'plain') {
                     new Notice('Exported via Pandoc to ' + outputFile + ' with warnings');

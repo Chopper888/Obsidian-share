@@ -36,7 +36,8 @@ export const inputExtensions = ['md', 'docx', 'csv', 'html', 'tex', 'odt'];
 // Subset of output formats, will add more later
 // Note: you need a `-o -` in the command to output odt, docx, epub or pdf output (presumably as they are binary formats or something)
 export type OutputFormat = 'asciidoc' | 'beamer' | 'commonmark_x' | 'docx' | 'epub'
-  | 'html' | 'ipynb' | 'pdf' | 'json' | 'latex' | 'odt' | 'plain' | 'pptx' | 'revealjs';
+  | 'html' | 'ipynb' | 'pdf' | 'json' | 'latex' | 'odt' | 'plain' | 'pptx' | 'revealjs'
+  | 'beamer' | 'rtf';
 
 // List of [pretty name, pandoc format name, file extension, shortened pretty name]
 export const outputFormats = [
@@ -51,7 +52,9 @@ export const outputFormats = [
     ['ePub', 'epub', 'epub', 'ePub'],
     ['PDF (via LaTeX)', 'pdf', 'pdf', 'PDF'],
     ['Jupyter Notebook', 'ipynb', 'ipynb', 'Jupyter'],
-    ['Reveal.js Slides', 'revealjs', 'reveal.html', 'Reveal.js']
+    ['Reveal.js Slides', 'revealjs', 'reveal.html', 'Reveal.js'],
+    ['Beamer Slides', 'beamer', 'beamer.tex', 'Beamer'],
+    ['reStructured Text (RST)', 'rst', 'rst', 'RST'],
 ];
 
 export interface PandocInput {
@@ -59,6 +62,8 @@ export interface PandocInput {
     format?: InputFormat,  // -f/--from format, if left blank it's inferred by Pandoc
     contents?: string,
     title?: string,  // used as metadata for HTML <title>, etc. defaults to the file base name
+    pandoc?: string, // optional path to Pandoc if it's not in the current PATH variable
+    pdflatex?: string, // ditto for pdflatex
 }
 
 export interface PandocOutput {
@@ -67,20 +72,26 @@ export interface PandocOutput {
 }
 
 export function needsLaTeX(format: OutputFormat): boolean {
-    return format !== 'latex' && format !== 'pdf';
+    return format === 'pdf';
+}
+
+export function needsPandoc(format: OutputFormat): boolean {
+    return format !== 'html';
 }
 
 export function needsStandaloneFlag(output: PandocOutput): boolean {
     return output.file.endsWith('html')
         || output.format === 'html'
         || output.format === 'revealjs'
-        || output.format === 'latex';
+        || output.format === 'latex'
+        || output.format === 'beamer';
 }
 
 // Note: we apply Unicode stripping for STDIN, otherwise you're on your own
 export function needsUnicodeStripped(output: PandocOutput): boolean {
     return output.format === 'latex'
-        || output.format === 'pdf';
+        || output.format === 'pdf'
+        || output.format === 'beamer';
 }
 
 // Note: extraParams is a list of strings like ['-o', 'file.md']
@@ -133,12 +144,28 @@ export const pandoc = async (input: PandocInput, output: PandocOutput, extraPara
         // Spawn a Pandoc child process
         // Assumes Pandoc is installed and that the arguments are valid
         // The arguments aren't sanitised, so be careful!
-        pandoc = spawn('pandoc', args);
+        const env = Object.assign(process.env);
+
+        if (input.pdflatex) {
+            // Workaround for Windows having different PATH delimiters
+            // to *every other operating system in existence*
+            // *sigh*
+            if (process.platform === 'win32')
+                env.PATH += ";"
+            else
+                env.PATH += ":";
+            env.PATH += path.dirname(input.pdflatex);
+        }
+        pandoc = spawn(input.pandoc || 'pandoc', args, { env: process.env });
 
         if (stdin) {
+            const contents = input.contents;
+            /*
+            // TODO: we need to strip characters like the footnote sign but not other language characters
             const contents = needsUnicodeStripped(output)
                 ? input.contents.replace(/[^\x00-\x7F]/g, "")
                 : input.contents;
+            */
             pandoc.stdin.write(contents);
             pandoc.stdin.end();
         }

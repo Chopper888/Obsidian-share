@@ -114,6 +114,11 @@ span.cm-formatting-task.cm-property ~ span {
 	color: rgb(15, 112, 223) !important;
 	text-decoration: underline;  }
 
+span.cm-string.cm-url {
+	font-size: 60%;
+	opacity: 0.5;
+}
+
 
 
 cm-formatting-header:before {

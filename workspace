@@ -1,253 +1,32 @@
 {
   "main": {
-    "id": "d534eb96153b2679",
+    "id": "de7fe5e82d600498",
     "type": "split",
     "children": [
       {
-        "id": "0d472fd6a3207b19",
+        "id": "31013bfc80a2949c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "Template/Fiche Sadh.md",
+            "file": "Master 1/Stage/Data/2020/CCM/Juillet.md",
             "mode": "preview"
-=======
-            "file": "Master 1/Stage/Data/2010/ICM/ICM - Février 2010.md",
-            "mode": "source"
->>>>>>> main
           }
-        },
-        "pane-relief:history-v1": {
-          "pos": 0,
-          "stack": [
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Fiche Sadh.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2010/ICM/ICM - Février 2010.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":0}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Template/Template.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2010/ICM/Janvier.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":133,\"ch\":0},\"to\":{\"line\":133,\"ch\":0}},\"scroll\":122.68518518518519}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Organisation/TodoIst.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2010/ICM/Février.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":0}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"Organisation/Mémoire todo.md\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2010/ICM/Janvier.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":120.68518518518519}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Organisation/Todo.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Décembre.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":235.8050108932462}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"pdf\",\"state\":{\"file\":\"Master 1/Stage/Memoire.pdf\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Novembre.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":175.78518518518518}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/memoire.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":40,\"ch\":4},\"to\":{\"line\":40,\"ch\":4}},\"scroll\":168.44444444444446}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":3},\"to\":{\"line\":3,\"ch\":3}}}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"source\"}}",
->>>>>>> main
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[Azelyss] Hayleen May.md\",\"mode\":\"preview\"}}",
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Picrew.md\",\"mode\":\"source\"}}",
->>>>>>> main
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ambre Loiseau.md\",\"mode\":\"source\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Azrael Blakes.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":85,\"ch\":0},\"to\":{\"line\":85,\"ch\":0}},\"scroll\":77.65740526802219}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":0}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"source\"}}",
-              "eState": "{}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":3},\"to\":{\"line\":3,\"ch\":3}},\"scroll\":0}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Univers/Bibliothèque infinie/Présentation.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":8,\"ch\":372},\"to\":{\"line\":8,\"ch\":372}},\"scroll\":0}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Stage/Data/2020/CCM/Novembre.md\",\"mode\":\"source\"}}",
-              "eState": "{\"scroll\":32.51851851851852}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
->>>>>>> main
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Taho tuto.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Azrael Blakes.md\",\"mode\":\"preview\"}}",
-              "eState": "{\"scroll\":77.8131353974122}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/OC/Ambre Loiseau.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
->>>>>>> main
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"📥 Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/[SWTOR] Alem Raashen.md\",\"mode\":\"source\"}}",
->>>>>>> main
-              "eState": "{}"
-            },
-            {
-              "leaf": "0d472fd6a3207b19",
-              "group": null,
-<<<<<<< HEAD
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
-              "eState": "{}"
-=======
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Fiches/Fiches.md\",\"mode\":\"source\"}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
->>>>>>> main
-            }
-          ]
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "2674898e8017b71f",
+    "id": "a7a706f89775ef43",
     "type": "split",
     "children": [
       {
-        "id": "0444cbda68632d50",
+        "id": "c6b3f39817b3f416",
         "type": "tabs",
         "children": [
           {
-            "id": "47c131ea376939d7",
+            "id": "b37b90c0a2724227",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -255,12 +34,12 @@
             }
           },
           {
-            "id": "d56284dbc35373aa",
+            "id": "3aac369d940143ca",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "draft",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -268,93 +47,56 @@
                 "sortOrder": "alphabetical"
               }
             }
+          }
+        ]
+      },
+      {
+        "id": "1fb9f8e9f6645d2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ed0d1b1619de142",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Master 1/Stage/Data/2020/CCM/Juillet.md"
+              }
+            }
           },
           {
-            "id": "d6bed1d0fc5d86f7",
+            "id": "1f85ad3bbd1f1324",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "ef207476e33093d2",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
           }
-        ]
-      },
-      {
-        "id": "10519b5da7670581",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a29e8c204ac14f2e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "Template/Fiche Sadh.md"
-=======
-                "file": "Master 1/Stage/Data/2010/ICM/ICM - Février 2010.md"
->>>>>>> main
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 196,
-    "collapsed": true
+    "width": 410
   },
   "right": {
-    "id": "b0d2c9f2a0faf754",
+    "id": "4c05761b7d59ed38",
     "type": "split",
     "children": [
       {
-        "id": "8872d195538454b5",
+        "id": "4a38ef854bd698e2",
         "type": "tabs",
         "children": [
           {
-            "id": "d24ce7cc6e8f34a2",
+            "id": "6353aa905dbd895f",
             "type": "leaf",
             "state": {
-              "type": "side-panel-control-view",
+              "type": "todo",
               "state": {}
             }
           },
           {
-            "id": "a033a060077cc290",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "6607570e40779514",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Master 1/Stage/Data/2010/ICM/ICM - Février 2010.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "c43e880056411057",
+            "id": "24de9ce1361c184d",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -362,7 +104,7 @@
             }
           },
           {
-            "id": "e946a5fe92a607db",
+            "id": "0ee3b907bf813890",
             "type": "leaf",
             "state": {
               "type": "online.larslockefeer.obsidian-plugin-todo",
@@ -370,7 +112,7 @@
             }
           },
           {
-            "id": "10a099b9645c4358",
+            "id": "dfd7a34747e7695a",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -378,51 +120,24 @@
             }
           }
         ],
-        "currentTab": 5
-      },
-      {
-        "id": "b666c73441aa0513",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ee18941ab1e161b3",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          }
-        ]
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 286,
+    "width": 100,
     "collapsed": true
   },
-  "active": "0d472fd6a3207b19",
+  "active": "31013bfc80a2949c",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Template/Fiche Sadh.md",
-    "Template/Template.md",
-    "Organisation/TodoIst.md",
-    "Organisation/Mémoire todo.md",
-    "Organisation/Todo.md",
-    "Master 1/Stage/Memoire.pdf",
-    "Master 1/Stage/memoire.md",
-    "Ecriture/Ecriture.md",
-    "Ecriture/Fiches/[Azelyss] Hayleen May.md",
-    "Ecriture/Fiches/Fiches.md"
-=======
-    "Master 1/Stage/Data/2010/ICM/Février.md",
-    "Master 1/Stage/Data/2010/ICM/Janvier.md",
-    "Master 1/Stage/Data/2010/ICM/Untitled.md",
-    "Master 1/Stage/Data/2020/CCM/Untitled.md",
-    "Master 1/Stage/Data/2020/CCM/Novembre.md",
+    "Master 1/Stage/Data/2020/CCM/Juillet.md",
     "Master 1/Master 1.md",
+    "Template/Template.md",
     "Ecriture/Ecriture.md",
-    "Ecriture/Picrew.md",
-    "Ecriture/Fiches/Fiches.md",
-    "Ecriture/Fiches/OC/Azrael Blakes.md"
->>>>>>> main
+    "Master 1/Stage/Data/2020/CCM/Octobre.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Juin 2010.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Mai 2010.md",
+    "Master 1/Stage/Data/2010/ICM/Untitled.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Avril 2010.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Mars - 2010.md"
   ]
 }

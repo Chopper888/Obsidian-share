@@ -19,7 +19,9 @@ import { outputFormats } from 'pandoc';
 
 // Note: parentFiles is for internal use (to prevent recursively embedded notes)
 // inputFile must be an absolute file path
-export default async function render (settings: PandocPluginSettings, markdown: string, inputFile: string, vaultBasePath: string, outputFormat: string, parentFiles: string[] = []): Promise<{ html: string, title: string }> {
+export default async function render (settings: PandocPluginSettings, markdown: string, inputFile: string, vaultBasePath: string,
+    outputFormat: string, parentFiles: string[] = []): Promise<{ html: string, title: string }>
+{
     // Use Obsidian's markdown renderer to render to a hidden <div>
     const wrapper = document.createElement('div');
     wrapper.style.display = 'hidden';
@@ -27,7 +29,8 @@ export default async function render (settings: PandocPluginSettings, markdown: 
     await MarkdownRenderer.renderMarkdown(markdown, wrapper, path.dirname(inputFile), {} as Component);
 
     // Post-process the HTML in-place
-    await postProcessRenderedHTML(settings, inputFile, wrapper, vaultBasePath, outputFormat, parentFiles);
+    await postProcessRenderedHTML(settings, inputFile, wrapper, vaultBasePath, outputFormat,
+        parentFiles, await mermaidCSS(settings, vaultBasePath));
     const renderedMarkdown = wrapper.innerHTML;
     document.body.removeChild(wrapper);
 
@@ -100,17 +103,62 @@ async function getCustomCSS(settings: PandocPluginSettings, vaultBasePath: strin
     }
 }
 
+async function getAppConfig(vaultBasePath: string): Promise<any> {
+    return JSON.parse((await fs.promises.readFile(path.join(vaultBasePath, '.obsidian', 'config'))).toString());
+}
+
+async function currentThemeIsLight(vaultBasePath: string, config: any = null): Promise<boolean> {
+    try {
+        if (!config) config = await getAppConfig(vaultBasePath);
+        return config.theme !== 'obsidian';
+    } catch (e) {
+        return true;
+    }
+}
+
+async function mermaidCSS(settings: PandocPluginSettings, vaultBasePath: string): Promise<string> {
+    // We always inject CSS into Mermaid diagrams, using light theme if the user has requested no CSS
+    //   otherwise the diagrams look terrible. The output is a PNG either way
+    let light = true;
+    if (settings.injectAppCSS === 'dark') light = false;
+    if (settings.injectAppCSS === 'current') {
+        light = await currentThemeIsLight(vaultBasePath);
+    }
+    return appCSSVariables(light);
+}
+
+// Gets a small subset of app CSS and 3rd party theme CSS if desired
+async function getThemeCSS(settings: PandocPluginSettings, vaultBasePath: string): Promise<string> {
+    if (settings.injectAppCSS === 'none') return '';
+    try {
+        const config = await getAppConfig(vaultBasePath);
+        let light = await currentThemeIsLight(vaultBasePath, config);
+        if (settings.injectAppCSS === 'light') light = true;
+        if (settings.injectAppCSS === 'dark') light = false;
+        let css;
+        try {
+            css = settings.injectThemeCSS
+              ? await fs.promises.readFile(path.join(vaultBasePath, '.obsidian', 'themes', config.cssTheme + '.css'))
+              : '';
+              console.log(css.toString())
+        } catch (e) {
+            console.error("Pandoc plugin couldn't load theme CSS. Error: " + e.toString());
+        }
+        return appCSS(light) + css.toString();
+    } catch (e) {
+        return '';
+    }
+}
+
 async function getDesiredCSS(settings: PandocPluginSettings, html: string, vaultBasePath: string): Promise<string> {
-    let css = '';
-    // Inject light theme app CSS if the user wants it
-    if (settings.injectAppCSS) css = appCSS;
-    // Inject plugin CSS if the user wants it
-    if (settings.injectPluginCSS)
+    let css = await getThemeCSS(settings, vaultBasePath);
+    if (settings.injectAppCSS !== 'none') {
         css += ' ' + Array.from(document.querySelectorAll('style'))
             .map(s => s.innerHTML).join(' ');
+    }
     // Inject MathJax font CSS if needed (at this stage embedded notes are
-    //  already embedded so this covers all cases)
-    if (settings.injectMathJaxCSS && html.indexOf('jax="CHTML"') !== -1)
+    //  already embedded so doesn't duplicate CSS)
+    if (html.indexOf('jax="CHTML"') !== -1)
         css += ' ' + mathJaxFontCSS;
     // Inject custom local CSS file if it exists
     css += await getCustomCSS(settings, vaultBasePath);
@@ -135,7 +183,9 @@ async function standaloneHTML(settings: PandocPluginSettings, html: string, titl
         `</html>`;
 }
 
-async function postProcessRenderedHTML(settings: PandocPluginSettings, inputFile: string, wrapper: HTMLElement, vaultBasePath: string, outputFormat: string, parentFiles: string[] = []) {
+async function postProcessRenderedHTML(settings: PandocPluginSettings, inputFile: string, wrapper: HTMLElement,
+    vaultBasePath: string, outputFormat: string, parentFiles: string[] = [], css: string = '')
+{
     const dirname = path.dirname(inputFile);
     // Fix <span src="image.png">
     for (let span of Array.from(wrapper.querySelectorAll('span[src$=".png"], span[src$=".jpg"], span[src$=".gif"], span[src$=".jpeg"]'))) {
@@ -213,7 +263,7 @@ async function postProcessRenderedHTML(settings: PandocPluginSettings, inputFile
         // Insert the CSS variables as a CSS string (even if the user doesn't want CSS injected; Mermaid diagrams look terrible otherwise)
         // TODO: it injects light theme CSS, do we want this?
         let style: HTMLStyleElement = svg.querySelector('style') || svg.appendChild(document.createElement('style'));
-        style.innerHTML += appCSSVariables;
+        style.innerHTML += css;
         // Inject a marker (arrowhead) for Mermaid.js diagrams and use it at the end of paths
         svg.innerHTML += `"<marker id="mermaid_arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker>"`;
         svg.innerHTML = svg.innerHTML.replace(/app:\/\/obsidian\.md\/index\.html#arrowhead\d*/g, "#mermaid_arrowhead");

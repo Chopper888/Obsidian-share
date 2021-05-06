@@ -41,10 +41,6 @@
 	font-family: Seaford, sans-serif !important;
 }
 
-
-
-
-
 .cc-pretty-preview .markdown-preview-section > div > * {
 	margin : 3% 0 3%;
 }
@@ -79,4 +75,8 @@ padding:0px 7px;
 
 span.cm-list-1 {
 	margin-left: 1em !important;
+}
+
+span.cm-hr {
+	filter: none !important;
 }
