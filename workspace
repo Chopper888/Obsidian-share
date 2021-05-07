@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/Data/2020/CCM/Juillet.md",
-            "mode": "preview"
+            "file": "Master 1/Stage/Data/2010/ICM/ICM - Septembre 2010.md",
+            "mode": "source"
           }
         }
       }
@@ -47,22 +47,6 @@
                 "sortOrder": "alphabetical"
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "1fb9f8e9f6645d2d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0ed0d1b1619de142",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Master 1/Stage/Data/2020/CCM/Juillet.md"
-              }
-            }
           },
           {
             "id": "1f85ad3bbd1f1324",
@@ -72,12 +56,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 410
+    "width": 314
   },
   "right": {
     "id": "4c05761b7d59ed38",
@@ -86,6 +69,24 @@
       {
         "id": "4a38ef854bd698e2",
         "type": "tabs",
+        "dimension": 62.04819277108434,
+        "children": [
+          {
+            "id": "0ed0d1b1619de142",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Master 1/Stage/Data/2010/ICM/ICM - Septembre 2010.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9592b0d01a3e5941",
+        "type": "tabs",
+        "dimension": 37.95180722891566,
         "children": [
           {
             "id": "6353aa905dbd895f",
@@ -120,24 +121,23 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 100,
-    "collapsed": true
+    "width": 253
   },
   "active": "31013bfc80a2949c",
   "lastOpenFiles": [
-    "Master 1/Stage/Data/2020/CCM/Juillet.md",
+    "Master 1/Stage/Data/2010/ICM/Untitled.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Aout 2010.md",
+    "Master 1/Stage/Data/2010/ICM/ICM - Juillet 2020.md",
     "Master 1/Master 1.md",
     "Template/Template.md",
     "Ecriture/Ecriture.md",
-    "Master 1/Stage/Data/2020/CCM/Octobre.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Juin 2010.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Mai 2010.md",
-    "Master 1/Stage/Data/2010/ICM/Untitled.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Avril 2010.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Mars - 2010.md"
+    "Ecriture/Fiches/Fiches.md",
+    "Master 1/Semestre 1/Semestre 1.md",
+    "Ecriture/Fiches/OC/Ashling May/Ashling May.md",
+    "Ecriture/Picrew.md"
   ]
 }

@@ -1,0 +1,123 @@
+.theme-dark {
+	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=darkgrey&height=18');
+	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=darkgrey&height=16');
+	--m1: url('https://api.iconify.design/cil:school.svg?color=darkgrey&height=18');
+	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=darkgrey&height=18');
+	--template: url('https://api.iconify.design/tabler:template.svg?color=darkgrey&height=18');
+	--fiches:url('https://api.iconify.design/uil:notes.svg?height=18&color=darkgrey');
+	--oc:url('https://api.iconify.design/uil:notes.svg?color=darkgrey&height=18');
+	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
+	--univers: url('https://api.iconify.design/jam:universe.svg?color=darkgrey&height=18');
+}
+
+.theme-light {
+	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=darkgrey&height=18');
+	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=darkgrey&height=16');
+	--m1: url('https://api.iconify.design/cil:school.svg?color=darkgrey&height=18');
+	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=darkgrey&height=18');
+	--template: url('https://api.iconify.design/tabler:template.svg?color=darkgrey&height=18');
+	--fiches:url('https://api.iconify.design/uil:notes.svg?height=18&color=darkgrey');
+	--oc:url('https://api.iconify.design/uil:notes.svg?color=darkgrey&height=18');
+	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
+	--univers: url('https://api.iconify.design/jam:universe.svg?color=darkgrey&height=18');
+}
+
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture"] .nav-folder-title-content::before {
+	content: var(--ecriture);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Inbox"] .nav-folder-title-content::before {
+	content: var(--inbox);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Master 1"] .nav-folder-title-content::before {
+	content: var(--m1);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Organisation"] .nav-folder-title-content::before {
+	content: var(--organisation);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Template"] .nav-folder-title-content::before {
+	content: var(--template);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture/Fiches"] .nav-folder-title-content::before {
+	content: var(--fiches);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Ecriture/Fiches/OC"] .nav-folder-title-content::before {
+	content: var(--oc);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+.nav-folder-title[data-path^="Ecriture/Univers"] .nav-folder-title-content::before {
+	content: var(--univers);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
