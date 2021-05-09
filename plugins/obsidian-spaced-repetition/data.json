@@ -1,1 +1,1 @@
-{"settings":{"baseEase":250,"maxLinkFactor":1,"openRandomNote":true,"lapsesIntervalChange":0.5,"autoNextNote":true,"reviewCertainTags":true,"tagsToReview":["#Fac"],"flashcardsTag":"#flashcards","singleLineCommentOnSameLine":true,"buryRelatedCards":true}}
+{"settings":{"baseEase":250,"maxLinkFactor":1,"openRandomNote":true,"lapsesIntervalChange":0.5,"autoNextNote":true,"reviewCertainTags":true,"tagsToReview":["#Fac"],"flashcardsTag":"#flashcards","singleLineCommentOnSameLine":true,"buryRelatedCards":true,"flashcardTags":["#flashcards"]}}
