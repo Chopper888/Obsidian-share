@@ -21,12 +21,12 @@
 }
 
 
-:root {
+:root, .theme-light {
   --accent-h: 211; /* Accent hue */
   --accent-s: 100%; /* Accent saturation */
   --accent-l: 50%; /* Accent lightness Light Mode */
   --accent-d: calc(var(--accent-l) + 2%); /* Accent lightness Dark Mode */
-
+  --border-dt: lightgrey;
   --color-black-rgb: 0, 0, 0;
   --color-white-rgb: 255, 255, 255;
 
@@ -35,6 +35,10 @@
   --text-editor: -apple-system, BlinkMacSystemFont, Constantia, Bierstadt, sans-serif !important;
   --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
 
+}
+
+.theme-dark {
+	--border: darkgrey;
 }
 
 .cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3, .cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
@@ -53,14 +57,14 @@
 	letter-spacing: -100em !important;
 	margin-left: 0.5em !important;
 }
-
+/*
 ul {
 	margin-block-start: 0 !important;
 	bottom:25%;
 	position: relative;
 	top: -1em !important;
 	margin-bottom: -1.8em !important;
-}	
+}	*/
 
 i#flexbox {
 display: flex;
@@ -79,4 +83,21 @@ span.cm-list-1 {
 
 span.cm-hr {
 	filter: none !important;
+}
+
+.table-view-table > thead > tr > th {
+	background-color: lightgrey;
+	text-align:center;
+	border-left: 1px solid rgb(202, 191, 191) !important;
+	border-right: 1px solid rgb(202, 191, 191) !important;
+	border-top:1px solid rgb(202, 191, 191) !important;
+}
+
+.table-view-table > tbody > tr > td {
+	border: 1px solid var(--border-dt) !important;
+	padding-left: 2em !important
+}
+
+ul.dataview.dataview-ul.dataview-result-list-ul{
+	padding-left: 0.5em !important;
 }

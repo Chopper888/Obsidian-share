@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "31013bfc80a2949c",
+        "id": "7624c139af688b92",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/Data/2020/CCM/Décembre.md",
-            "mode": "source"
+            "file": "Ecriture/Univers/Univers.md",
+            "mode": "preview"
           }
         }
       }
@@ -77,7 +77,32 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/Data/2020/CCM/Décembre.md"
+                "file": "Ecriture/Univers/Univers.md"
+              }
+            }
+          },
+          {
+            "id": "904a3612059e4ebb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e627d22e415fbae4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ecriture/Univers/Univers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -127,17 +152,17 @@
     "direction": "horizontal",
     "width": 253
   },
-  "active": "31013bfc80a2949c",
+  "active": "7624c139af688b92",
   "lastOpenFiles": [
-    "Master 1/Stage/Data/2020/CCM/Décembre.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Octobre 2010.md",
-    "Master 1/Stage/Data/2010/ICM/Untitled.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Aout 2010.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Juillet 2020.md",
-    "Master 1/Master 1.md",
-    "Template/Template.md",
+    "Ecriture/Univers/Univers.md",
+    "Ecriture/Personnages/Personnages.md",
     "Ecriture/Ecriture.md",
-    "Ecriture/Fiches/Fiches.md",
-    "Master 1/Semestre 1/Semestre 1.md"
+    "Master 1/Master 1.md",
+    "Ecriture/Personnages/OC/OC.md",
+    "Ecriture/Personnages/Fiches/Fiches.md",
+    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
+    "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
+    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "Ecriture/Personnages/OC/Ashling May/Ashling May.md"
   ]
 }

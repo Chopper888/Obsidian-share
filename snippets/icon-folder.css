@@ -8,33 +8,59 @@
 	--oc:url('https://api.iconify.design/uil:notes.svg?color=darkgrey&height=18');
 	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
 	--univers: url('https://api.iconify.design/jam:universe.svg?color=darkgrey&height=18');
+	--bg-template: lightgrey;
+	--bg-orga: rgba(212, 122, 122, 0.397);
+	--bg-master: rgba(40, 168, 211, 0.473);
 }
 
 .theme-light {
-	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=darkgrey&height=18');
-	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=darkgrey&height=16');
-	--m1: url('https://api.iconify.design/cil:school.svg?color=darkgrey&height=18');
-	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=darkgrey&height=18');
-	--template: url('https://api.iconify.design/tabler:template.svg?color=darkgrey&height=18');
-	--fiches:url('https://api.iconify.design/uil:notes.svg?height=18&color=darkgrey');
-	--oc:url('https://api.iconify.design/uil:notes.svg?color=darkgrey&height=18');
+	/* Inbox */
+	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%2345a877&height=16');
+	--inbox-font: #45a893;
+	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%2345a877&height=18');
+	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%2345a877&height=18');
+	
+	/*Template */
+	--template: url('https://api.iconify.design/carbon:template.svg?color=%23009ebd&height=18');
+	--template-font : #009ebd;
+	--indicator-template: url('https://api.iconify.design/codicon:note.svg?color=%23009ebd&height=18');
+
+	/* Ecriture */
+	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%237a98c8&height=18');
+	--ecriture-font: #7a98c8;
+	--indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%237a98c8&height=18');
+
+	/* Personnages */
+	--perso:url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%23b1c3e4&height=18');
+	--perso-font: #b1c3e4;
+	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
+
+	/* OC */
+	--oc:url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%2392b7d1&height=18');
+	--oc-font: #92b7d1;
+	--indicator-oc :  url('https://api.iconify.design/codicon:note.svg?color=%2392b7d1&height=18');
+	
+	/* Fiches */
+	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%2397cfba&height=18');
+	--fiches-font: #97cfba;
+	--indic-fiches : url('https://api.iconify.design/codicon:note.svg?color=%2397cfba&height=18');
+
+	/* Univers */
+	--univers: url('https://api.iconify.design/jam:universe.svg?color=%23b1c3e4&height=18');
+	--univers-font: #b1c3e4;
+	--indic-univers : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
+
+	/* M1 */
+	--m1: url('https://api.iconify.design/cil:school.svg?color=%23827ac8&height=18');
+	--m1-font: #827ac8;
+	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23827ac8&height=18');
+	
 	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-	--univers: url('https://api.iconify.design/jam:universe.svg?color=darkgrey&height=18');
 }
 
+/* Inbox*/
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture"] .nav-folder-title-content::before {
-	content: var(--ecriture);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
-}
-
-.nav-folder-title[data-path^="Inbox"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="00. Inbox"] .nav-folder-title-content::before {
 	content: var(--inbox);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
 	transform: translate(-2px, 3px); /* to position the icon */
@@ -44,6 +70,48 @@
 	width: 16px;
 	margin: -4px 2px 0 0;
 }
+
+.nav-folder-title[data-path^="00. Inbox"], .nav-file-title[data-path*="00. Inbox"]{
+	color: var(--inbox-font) !important;
+}
+
+.nav-file-title[data-path*="00. Inbox"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator-inbox);
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="00. Inbox/10. Organisation"] .nav-folder-title-content::before {
+	content: var(--organisation);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+/* Template */
+.nav-folder-title[data-path^="0.1. Template"] .nav-folder-title-content::before {
+	content: var(--template);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="0.1. Template"], .nav-file-title[data-path*="0.1. Template"]{
+	color: var(--template-font) !important;
+}
+
+.nav-file-title[data-path*="0.1. Template"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator-template);
+}
+
+/* Master 1 */
+
 
 .nav-folder-title[data-path^="Master 1"] .nav-folder-title-content::before {
 	content: var(--m1);
@@ -56,9 +124,17 @@
 	margin: -4px 2px 0 0;
 }
 
+.nav-folder-title[data-path^="Master 1"], .nav-file-title[data-path*="Master 1"]{
+	color: var(--m1-font) !important;
+}
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Organisation"] .nav-folder-title-content::before {
-	content: var(--organisation);
+.nav-file-title[data-path*="Master 1"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator-m1);
+}
+
+/* Ecriture */
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture"] .nav-folder-title-content::before {
+	content: var(--ecriture);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
 	transform: translate(-2px, 3px); /* to position the icon */
 	background-repeat: no-repeat;
@@ -68,8 +144,19 @@
 	margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Template"] .nav-folder-title-content::before {
-	content: var(--template);
+.nav-folder-title[data-path^="Ecriture"], .nav-file-title[data-path*="Ecriture"]{
+	color: var(--ecriture-font) !important;
+}
+
+.nav-file-title[data-path*="Ecriture"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator-ecri);
+}
+
+
+/* Personnages */
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture/Personnages"] .nav-folder-title-content::before {
+	content: var(--perso);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
 	transform: translate(-2px, 3px); /* to position the icon */
 	background-repeat: no-repeat;
@@ -79,7 +166,12 @@
 	margin: -4px 2px 0 0;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture/Fiches"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Ecriture/Personnages"], .nav-file-title[data-path*="Ecriture/Personnages"]{
+	color: var(--perso-font) !important;
+}
+
+/* Fiches */
+.nav-folder-title[data-path^="Ecriture/Personnages/Fiches"] .nav-folder-title-content::before {
 	content: var(--fiches);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
 	transform: translate(-2px, 3px); /* to position the icon */
@@ -90,7 +182,17 @@
 	margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture/Fiches/OC"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Ecriture/Personnages/Fiches"], .nav-file-title[data-path*="Ecriture/Personnages/Fiches"]{
+	color: var(--fiches-font) !important;
+}
+
+.nav-file-title[data-path*="Ecriture/Personnages/Fiches"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indic-fiches);
+}
+
+/* OC */
+
+.nav-folder-title[data-path^="Ecriture/Personnages/OC"] .nav-folder-title-content::before {
 	content: var(--oc);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
 	transform: translate(-2px, 3px); /* to position the icon */
@@ -100,6 +202,38 @@
 	width: 16px;
 	margin: -4px 2px 0 0;
 }
+
+.nav-folder-title[data-path^="Ecriture/Personnages/OC"], .nav-file-title[data-path*="Ecriture/Personnages/OC"]{
+	color: var(--oc-font) !important;
+}
+
+.nav-file-title[data-path*="Ecriture/Personnages/OC"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indicator-oc);
+}
+
+
+/* Univers */
+
+.nav-folder-title[data-path^="Ecriture/Univers"] .nav-folder-title-content::before {
+	content: var(--univers);
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-2px, 3px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Ecriture/Univers"], .nav-file-title[data-path*="Ecriture/Univers"]{
+	color: var(--univers-font) !important;
+}
+
+.nav-file-title[data-path*="Ecriture/Univers"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indic-univers);
+}
+
+/* Files */
 
 .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
 	content: var(--indicator);
@@ -111,13 +245,13 @@
 	width: 16px;
 	margin: -4px 2px 0 0;
 }
-.nav-folder-title[data-path^="Ecriture/Univers"] .nav-folder-title-content::before {
-	content: var(--univers);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+
+
+/* Hover */
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+	background-color: transparent !important;
+}
+
+.nav-folder-title[data-path^="/"] {
+	display: none;
 }
