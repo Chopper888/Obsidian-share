@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "af3149883a3e7a01",
+        "id": "77a3e4360914ce21",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md",
+            "file": "00. Inbox/draft.md",
             "mode": "source"
           }
         }
@@ -69,7 +69,7 @@
       {
         "id": "4a38ef854bd698e2",
         "type": "tabs",
-        "dimension": 63.25301204819277,
+        "dimension": 63.25301204819278,
         "children": [
           {
             "id": "0ed0d1b1619de142",
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md"
+                "file": "00. Inbox/draft.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md",
+                "file": "00. Inbox/draft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,17 +144,17 @@
     "direction": "horizontal",
     "width": 317
   },
-  "active": "af3149883a3e7a01",
+  "active": "77a3e4360914ce21",
   "lastOpenFiles": [
-    "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md",
-    "Master 1/Stage/Data/2010/CCM/CCM - Janvier 2010.md",
-    "Master 1/Stage/Data/2010/CCM/Untitled.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Decembre 2010.md",
-    "Master 1/Stage/Data/2010/ICM/ICM - Novembre 2010.md",
-    "Master 1/Stage/Data/2010/ICM/Untitled.md",
     "00. Inbox/draft.md",
-    "00. Inbox/10. Organisation/TodoIst.md",
-    "00. Inbox/10. Organisation/Mémoire todo.md",
+    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
+    "Ecriture/Univers/Univers.md",
+    "0.1. Template/YAML - UNIVERS.md",
+    "0.1. Template/YAML - REF.md",
+    "0.1. Template/YAML - FICHE - RAINDROP BI.md",
+    "0.1. Template/Fiche Sadhé.md",
+    "0.1. Template/Fiche personnage.md",
+    "00. Inbox/Livre SW.md",
     "Ecriture/Ecriture.md"
   ]
 }

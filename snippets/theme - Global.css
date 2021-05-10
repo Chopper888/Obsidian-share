@@ -111,3 +111,7 @@ ul.dataview.dataview-ul.dataview-result-list-ul{
 .theme-light code[class*="language-"], .theme-light pre[class*="language-"] {
 	font-weight: bold;
 }
+
+.markdown-preview-view pre code {
+	font-weight: bold;
+}

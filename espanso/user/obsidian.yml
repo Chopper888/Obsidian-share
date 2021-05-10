@@ -1,0 +1,40 @@
+name: Obsidian
+enable_passive: true
+filter_title: "Obsidian"
+
+
+matches: 
+  - trigger: ":rain"
+    replace: "<iframe src='{{clipboard}}' style='border: none;position: absolute;width: 1500;height: 100%;left: -420px;top: -48px'>$|$</iframe>"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+  - trigger: ":ref"
+    form: |
+      ---
+      type: Référence
+      RP: ❌
+      name: {{name}}
+      ---
+  
+  - trigger: ":fiche"
+    form: |
+      ---
+      type: fiche
+      RP: {{rp}}
+      genre: {{genre}}
+      name: {{name}}
+      ---
+  
+  - trigger: ":univers"
+    form: |
+      ---
+      type: {{typ}}
+      univers: {{univ}}
+      name: {{nam}}
+      ---
+  - trigger: ":code"
+    replace: |
+      ```
+      $|$
+      ```
