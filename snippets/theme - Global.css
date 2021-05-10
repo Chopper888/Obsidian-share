@@ -20,6 +20,7 @@
 	font-weight: bold;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 
 :root, .theme-light {
   --accent-h: 211; /* Accent hue */
@@ -33,7 +34,7 @@
   --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
   --text-editor: -apple-system, BlinkMacSystemFont, Constantia, Bierstadt, sans-serif !important;
-  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
+  --font-monospace: 'Ubuntu Mono', monospace;
 
 }
 
@@ -101,4 +102,12 @@ span.cm-hr {
 
 ul.dataview.dataview-ul.dataview-result-list-ul{
 	padding-left: 0.5em !important;
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+	font-weight: bold;
+}
+
+.theme-light code[class*="language-"], .theme-light pre[class*="language-"] {
+	font-weight: bold;
 }
