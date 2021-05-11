@@ -21,9 +21,9 @@
 	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%235CAFC1&height=18');
 
 	/* Fiches */
-	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%2345a893&height=18');
-	--fiches-font: #45a893;
-	--indic-fiches : url('https://api.iconify.design/codicon:note.svg?color=%2345a893&height=18');
+	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%23549083&height=18');
+	--fiches-font: #549083;
+	--indic-fiches : url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
 
 	/* OC */
 	--oc:url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%23009ebd&height=18');
