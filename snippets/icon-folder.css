@@ -2,7 +2,7 @@
 	/* Inbox */
 	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%23549083&height=16');
 	--inbox-font: #549083;
-	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%2549083&height=18');
+	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
 	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23549083&height=18');
 	
 	/*Template */
@@ -240,4 +240,8 @@ body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, bod
 
 .nav-folder-title[data-path^="/"] {
 	display: none;
+}
+
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+	color: currentColor !important;
 }

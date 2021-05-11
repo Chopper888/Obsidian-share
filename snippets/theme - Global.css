@@ -20,7 +20,10 @@
 	font-weight: bold;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&family=PT+Mono');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+
 
 :root, .theme-light {
   --accent-h: 211; /* Accent hue */
@@ -31,12 +34,15 @@
   --color-black-rgb: 0, 0, 0;
   --color-white-rgb: 255, 255, 255;
 
-  --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  --text: -apple-system, BlinkMacSystemFont, 'Fira Code', Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
-  --text-editor: -apple-system, BlinkMacSystemFont, Constantia, Bierstadt, sans-serif !important;
+  --text-editor:  -apple-system, BlinkMacSystemFont,Bierstadt, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
   --font-monospace: 'Ubuntu Mono', monospace;
 
 }
+
+
 
 .theme-dark {
 	--border: darkgrey;
@@ -44,6 +50,11 @@
 
 .cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3, .cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
 	font-family: Seaford, sans-serif !important;
+	
+}
+
+pre.CodeMirror-line {
+	font-family: 'iA Writer Quattro S', monospace !important;
 }
 
 .cc-pretty-preview .markdown-preview-section > div > * {
@@ -61,6 +72,7 @@
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
 	letter-spacing: 0 !important;
 	margin-left: 0.5em !important;
+	margin-top: 0;
 }
 
 ul {
@@ -97,6 +109,7 @@ span.cm-hr {
 	border-left: 1px solid rgb(202, 191, 191) !important;
 	border-right: 1px solid rgb(202, 191, 191) !important;
 	border-top:1px solid rgb(202, 191, 191) !important;
+	color: black;
 }
 
 .table-view-table > tbody > tr > td {
@@ -119,3 +132,8 @@ ul.dataview.dataview-ul.dataview-result-list-ul{
 .markdown-preview-view pre code {
 	font-weight: bold;
 }
+
+body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
+	background-color: var(--background-nav-alt);
+}
+
