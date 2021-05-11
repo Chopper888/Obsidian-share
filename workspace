@@ -9,153 +9,215 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Master 1.md",
-            "mode": "preview"
+            "file": "Ecriture/Personnages/Fiches/Fiches.md",
+            "mode": "source"
           }
+        },
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Fiches.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Kali May - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Azraël Blakes - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/OC/Azraël Blakes.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":-1.2}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":-0.00952380952380949}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Univers/Univers.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":38.765625}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/Taho tuto.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":4.116071428571429}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":6.0285714285714285}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/draft.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/10. Organisation/TodoIst.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/10. Organisation/Notes.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"00. Inbox/10. Organisation/Mémoire todo.md\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Eilwellyn Beausang - Sadhé.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":31.69684994919273}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":17.485714285714284}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Personnages.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"source\"}}",
+              "eState": "{}"
+            }
+          ]
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a7a706f89775ef43",
-    "type": "split",
+    "id": "90917cc164a231cd",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "c6b3f39817b3f416",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b37b90c0a2724227",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "3aac369d940143ca",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "1f85ad3bbd1f1324",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 382
-  },
-  "right": {
-    "id": "4c05761b7d59ed38",
-    "type": "split",
-    "children": [
-      {
-        "id": "4a38ef854bd698e2",
-        "type": "tabs",
-        "dimension": 46.787148594377506,
-        "children": [
-          {
-            "id": "0ed0d1b1619de142",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Master 1/Master 1.md"
-              }
-            }
-          },
-          {
-            "id": "e627d22e415fbae4",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Master 1/Master 1.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "ca83a9a6406c12a7",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          }
-        ]
+        "id": "ec0369b47bec11ce",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
       },
       {
-        "id": "9592b0d01a3e5941",
-        "type": "tabs",
-        "dimension": 53.21285140562249,
-        "children": [
-          {
-            "id": "6353aa905dbd895f",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
-            "id": "24de9ce1361c184d",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "0ee3b907bf813890",
-            "type": "leaf",
-            "state": {
-              "type": "online.larslockefeer.obsidian-plugin-todo",
-              "state": {}
-            }
+        "id": "64924324ed364387",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ],
-        "currentTab": 1
+        }
+      },
+      {
+        "id": "70df84b1727eba4c",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
       }
-    ],
-    "direction": "horizontal",
-    "width": 323,
-    "collapsed": true
+    ]
+  },
+  "right": {
+    "id": "1b82fd3847717576",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "86a9b79386e99057",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "96fe4a2a908bc3c3",
+        "type": "leaf",
+        "state": {
+          "type": "online.larslockefeer.obsidian-plugin-todo",
+          "state": {}
+        }
+      },
+      {
+        "id": "9e2c4fc89f9a9609",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Ecriture/Personnages/Fiches/Fiches.md"
+          }
+        }
+      },
+      {
+        "id": "e7050404176886ad",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
+      }
+    ]
   },
   "active": "abd0635d69fc4984",
   "lastOpenFiles": [
-    "Master 1/Master 1.md",
-    "Ecriture/Ecriture.md",
-    "Ecriture/Personnages/Personnages.md",
-    "Ecriture/Personnages/OC/OC.md",
     "Ecriture/Personnages/Fiches/Fiches.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
+    "Ecriture/Personnages/Fiches/Kali May - BI.md",
+    "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
+    "Ecriture/Personnages/OC/Azraël Blakes.md",
+    "Ecriture/Ecriture.md",
     "Ecriture/Univers/Univers.md",
-    "00. Inbox/draft.md",
-    "00. Inbox/10. Organisation/Mémoire todo.md",
-    "00. Inbox/20. Perso/Detail competence Maths  Stats.md"
+    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "00. Inbox/Taho tuto.md",
+    "00. Inbox/Livre SW.md",
+    "00. Inbox/draft.md"
   ]
 }
