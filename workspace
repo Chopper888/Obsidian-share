@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Ecriture/Personnages/Personnages.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -148,14 +148,14 @@
   "active": "abd0635d69fc4984",
   "lastOpenFiles": [
     "Ecriture/Personnages/Personnages.md",
+    "Ecriture/Personnages/Fiches/Fiches.md",
+    "Ecriture/Univers/Univers.md",
     "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md",
     "Ecriture/Univers/La Bibliothèque Infinie/Contexte Général.md",
     "Ecriture/Univers/La Bibliothèque Infinie/Bibliothèque Infinie.md",
     "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
     "Ecriture/Ecriture.md",
     "Master 1/Master 1.md",
-    "Ecriture/Personnages/OC/OC.md",
-    "Ecriture/Personnages/Fiches/Fiches.md",
-    "Ecriture/Univers/Univers.md"
+    "Ecriture/Personnages/OC/OC.md"
   ]
 }
