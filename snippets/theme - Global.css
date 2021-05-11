@@ -54,8 +54,12 @@
 	border-left: 0 !important
 }
 
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {
+	letter-spacing: 0.5rem !important;
+}
+
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-	letter-spacing: -100em !important;
+	letter-spacing: 0 !important;
 	margin-left: 0.5em !important;
 }
 

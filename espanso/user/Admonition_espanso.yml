@@ -4,7 +4,6 @@
 # For example : :faq or /faq will type the admonition question. 
 name: "Admonition"
 parent: "Obsidian"
-exclude_default_entries: true
 
 matches:
 #Title

@@ -92,11 +92,15 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
   left: 0px;
   color:var(--text-accent);
   font-size: 30px;
+  display: inline !important;
+  visibility: visible !important;
 }
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
   content: "☒" !important;
   color: var(--text-accent) !important;
   font-size:30px;
+  display: inline !important;
+  visibility: visible !important;
 }
 
 span.cm-formatting-task.cm-property ~ span {
@@ -139,7 +143,6 @@ cm-formatting-header:before {
 .cm-s-obsidian .HyperMD-table-row {
 	white-space: normal;
 }
-
 
 .outliner-plugin-bls .cm-s-obsidian .HyperMD-list-line {
 	padding-top: 0 !important;

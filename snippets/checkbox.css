@@ -6,13 +6,12 @@
   position: relative;
   width: 16px;
   height: 16px;
-  margin: 0;
-  margin-right: 4px;
   margin-bottom: 2px;
   transition: background-color 200ms ease-out 0s;
   cursor: pointer;
   filter: none;
   border-radius: 4px;
+  margin-left: 0.5rem ;
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked {

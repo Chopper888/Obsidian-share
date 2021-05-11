@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "00. Inbox/draft.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -147,14 +147,14 @@
   "active": "77a3e4360914ce21",
   "lastOpenFiles": [
     "00. Inbox/draft.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
+    "Ecriture/Personnages/Fiches/Fiches.md",
+    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "Ecriture/Ecriture.md",
+    "0.1. Template/templater/Meta.md",
+    "Master 1/Stage/memoire.md",
+    "Master 1/Master 1.md",
+    "0.1. Template/templater/Quick Capture.md",
     "Ecriture/Univers/Univers.md",
-    "0.1. Template/YAML - UNIVERS.md",
-    "0.1. Template/YAML - REF.md",
-    "0.1. Template/YAML - FICHE - RAINDROP BI.md",
-    "0.1. Template/Fiche Sadhé.md",
-    "0.1. Template/Fiche personnage.md",
-    "00. Inbox/Livre SW.md",
-    "Ecriture/Ecriture.md"
+    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md"
   ]
 }
