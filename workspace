@@ -9,9 +9,140 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< Updated upstream
             "file": "Ecriture/Personnages/Personnages.md",
             "mode": "preview"
           }
+=======
+            "file": "00. Inbox/Obsidian.md",
+            "mode": "preview"
+          }
+        },
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/Obsidian.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Azraël Blakes - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":47.95454545454545}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":11.427104722792608}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/draft.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Master 1/Master 1.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"excalidraw\",\"state\":{\"file\":\"Excalidraw/Drawing 2021-05-11 19.26.00.excalidraw\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Fiches.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Kali May - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Azraël Blakes - BI.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/OC/Azraël Blakes.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":-1.2}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":-0.00952380952380949}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Univers/Univers.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Ecriture.md\",\"mode\":\"preview\"}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":38.765625}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/Taho tuto.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":4.116071428571429}"
+            },
+            {
+              "leaf": "abd0635d69fc4984",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"00. Inbox/Livre SW.md\",\"mode\":\"preview\"}}",
+              "eState": "{\"scroll\":6.0285714285714285}"
+            }
+          ]
+>>>>>>> Stashed changes
         }
       }
     ],
@@ -67,6 +198,7 @@
     "type": "split",
     "children": [
       {
+<<<<<<< Updated upstream
         "id": "4a38ef854bd698e2",
         "type": "tabs",
         "dimension": 51.70682730923695,
@@ -105,6 +237,14 @@
               "type": "review-queue-list-view",
               "state": {}
             }
+=======
+        "id": "9e2c4fc89f9a9609",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "00. Inbox/Obsidian.md"
+>>>>>>> Stashed changes
           }
         ],
         "currentTab": 1
@@ -148,6 +288,7 @@
   },
   "active": "6ffe40910cb91c90",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "Ecriture/Personnages/Personnages.md",
     "Ecriture/Personnages/Fiches/Fiches.md",
     "Ecriture/Personnages/OC/OC.md",
@@ -157,6 +298,17 @@
     "00. Inbox/Bookmark Obsidian.md",
     "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
     "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+=======
+    "00. Inbox/Obsidian.md",
+    "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
+    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "Ecriture/Ecriture.md",
+    "Master 1/Master 1.md",
+    "00. Inbox/draft.md",
+    "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
+    "Excalidraw/Drawing 2021-05-11 19.26.00.excalidraw",
+    "Ecriture/Personnages/Fiches/Fiches.md",
+>>>>>>> Stashed changes
     "Ecriture/Personnages/Fiches/Kali May - BI.md"
   ]
 }
