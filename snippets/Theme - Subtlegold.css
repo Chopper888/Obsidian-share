@@ -93,3 +93,21 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .zoteroCitekey, .zoteroAuthors {
 	color: #808080 !important;
 }
+
+.menu {
+	background-color: var(--background-secondary) !important;
+	border: black;
+}
+
+.menu-separator {
+	border-bottom: 1px solid #3c3c3c;
+}
+
+.nav-file-title.is-being-dragged, .nav-folder-title.is-being-dragged {
+	background-color: #3c3c3c;
+}
+
+.nav-file-tag {
+	background-color: #3c3c3c;
+	color: #808080;
+}

@@ -1,9 +1,9 @@
-.theme-light {
+:root {
 	/* Inbox */
-	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%2345a877&height=16');
-	--inbox-font: #45a893;
-	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%2345a877&height=18');
-	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%2345a877&height=18');
+	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%23549083&height=16');
+	--inbox-font: #549083;
+	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%2549083&height=18');
+	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23549083&height=18');
 	
 	/*Template */
 	--template: url('https://api.iconify.design/carbon:template.svg?color=%23009ebd&height=18');
@@ -11,14 +11,14 @@
 	--indicator-template: url('https://api.iconify.design/codicon:note.svg?color=%23009ebd&height=18');
 
 	/* Ecriture */
-	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%237a98c8&height=18');
-	--ecriture-font: #7a98c8;
-	--indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%237a98c8&height=18');
+	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%235D79D5&height=18');
+	--ecriture-font: #5D79D5;
+	--indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%235D79D5&height=18');
 
 	/* Personnages */
-	--perso:url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%23b1c3e4&height=18');
-	--perso-font: #b1c3e4;
-	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
+	--perso:url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%235CAFC1&height=18');
+	--perso-font: #5CAFC1;
+	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%235CAFC1&height=18');
 
 	/* Fiches */
 	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%2345a893&height=18');
@@ -31,59 +31,14 @@
 	--indicator-oc :  url('https://api.iconify.design/codicon:note.svg?color=%23009ebd&height=18');
 
 	/* Univers */
-	--univers: url('https://api.iconify.design/jam:universe.svg?color=%23b1c3e4&height=18');
-	--univers-font: #b1c3e4;
-	--indic-univers : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
+	--univers: url('https://api.iconify.design/jam:universe.svg?color=%235CAFC1&height=18');
+	--univers-font: #5CAFC1;
+	--indic-univers : url('https://api.iconify.design/codicon:note.svg?color=%235CAFC1&height=18');
 
 	/* M1 */
-	--m1: url('https://api.iconify.design/cil:school.svg?color=%23827ac8&height=18');
-	--m1-font: #827ac8;
-	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23827ac8&height=18');
-	
-	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-}
-
-.theme-light {
-	/* Inbox */
-	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%2345a877&height=16');
-	--inbox-font: #45a893;
-	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%2345a877&height=18');
-	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%2345a877&height=18');
-	
-	/*Template */
-	--template: url('https://api.iconify.design/carbon:template.svg?color=%23009ebd&height=18');
-	--template-font : #009ebd;
-	--indicator-template: url('https://api.iconify.design/codicon:note.svg?color=%23009ebd&height=18');
-
-	/* Ecriture */
-	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%237a98c8&height=18');
-	--ecriture-font: #7a98c8;
-	--indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%237a98c8&height=18');
-
-	/* Personnages */
-	--perso:url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%23b1c3e4&height=18');
-	--perso-font: #b1c3e4;
-	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
-
-	/* Fiches */
-	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%2345a893&height=18');
-	--fiches-font: #45a893;
-	--indic-fiches : url('https://api.iconify.design/codicon:note.svg?color=%2345a893&height=18');
-
-	/* OC */
-	--oc:url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%23009ebd&height=18');
-	--oc-font: #009ebd;
-	--indicator-oc :  url('https://api.iconify.design/codicon:note.svg?color=%23009ebd&height=18');
-
-	/* Univers */
-	--univers: url('https://api.iconify.design/jam:universe.svg?color=%23b1c3e4&height=18');
-	--univers-font: #b1c3e4;
-	--indic-univers : url('https://api.iconify.design/codicon:note.svg?color=%23b1c3e4&height=18');
-
-	/* M1 */
-	--m1: url('https://api.iconify.design/cil:school.svg?color=%23827ac8&height=18');
-	--m1-font: #827ac8;
-	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23827ac8&height=18');
+	--m1: url('https://api.iconify.design/cil:school.svg?color=%23717A96&height=18');
+	--m1-font: #717A96;
+	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23717A96&height=18');
 	
 	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
 }
@@ -268,13 +223,14 @@
 .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
 	content: var(--indicator);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
+	transform: translate(-5px, 6px); /* to position the icon */
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 16px;
 	width: 16px;
 	margin: -4px 2px 0 0;
-}
+	padding-right: 10px; 
+	}
 
 
 /* Hover */

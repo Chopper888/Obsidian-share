@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
+            "file": "Master 1/Master 1.md",
             "mode": "source"
           }
         }
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311
+    "width": 364
   },
   "right": {
     "id": "4c05761b7d59ed38",
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md"
+                "file": "Master 1/Master 1.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
+                "file": "Master 1/Master 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,15 +147,15 @@
   },
   "active": "ddde30df90fedbe3",
   "lastOpenFiles": [
-    "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
-    "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md",
-    "Ecriture/Ecriture.md",
     "Master 1/Master 1.md",
-    "00. Inbox/10. Organisation/TodoIst.md",
-    "Master 1/Stage/Data/2010/CCM/Untitled.md",
-    "Ecriture/Personnages/Personnages.md",
+    "Master 1/Stage/Data/2010/CCM/CCM - Avril 2010.md",
+    "Master 1/Semestre 1/Semestre 1.md",
+    "Master 1/Semestre 1/Introduction Aux Essais Therapeutiques/Introduction Aux Essais Therapeutiques.md",
+    "Ecriture/Ecriture.md",
     "Ecriture/Univers/Univers.md",
-    "00. Inbox/draft.md",
-    "Ecriture/Personnages/Fiches/Fiches.md"
+    "Ecriture/Personnages/Personnages.md",
+    "Ecriture/Personnages/OC/OC.md",
+    "Master 1/Stage/Data/2010/CCM/Untitled.md",
+    "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md"
   ]
 }
