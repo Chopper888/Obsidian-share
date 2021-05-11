@@ -39,13 +39,14 @@
   --text-editor:  -apple-system, BlinkMacSystemFont,Bierstadt, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
   --font-monospace: 'Ubuntu Mono', monospace;
-
+	--bullet: rgb(68, 64, 64);
 }
 
 
 
 .theme-dark {
 	--border: darkgrey;
+	--bullet: lightgrey;
 }
 
 .cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3, .cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
@@ -80,6 +81,7 @@ ul {
 	bottom:25%;
 	position: relative;
 	top: 0 !important;
+	color:var(--bullet);
 	
 }	
 

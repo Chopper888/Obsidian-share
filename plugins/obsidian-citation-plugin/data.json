@@ -1,1 +1,0 @@
-{"citationExportFormat":"biblatex","literatureNoteTitleTemplate":"@{{DOI}}","literatureNoteFolder":"Master 1\\Stage\\Notes","literatureNoteContentTemplate":"# {{title}}\nhttps://doi.org/{{DOI}}","markdownCitationTemplate":"[@{{citekey}} - {{title}}]","alternativeMarkdownCitationTemplate":"{{title}}","citationExportPath":"Master 1\\Stage\\Source\\docs.bib"}
