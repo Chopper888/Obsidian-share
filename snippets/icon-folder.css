@@ -135,6 +135,7 @@
 
 .nav-file-title[data-path*="Ecriture"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
 	content: var(--indicator-ecri);
+	display: inline-block;
 }
 
 
@@ -153,6 +154,11 @@
 
 .nav-folder-title[data-path^="Ecriture/Personnages"], .nav-file-title[data-path*="Ecriture/Personnages"]{
 	color: var(--perso-font) !important;
+}
+
+.nav-file-title[data-path*="Ecriture/Personnages"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--indic-perso);
+	display: inline-block;
 }
 
 /* Fiches */
@@ -223,7 +229,7 @@
 .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
 	content: var(--indicator);
 	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-5px, 6px); /* to position the icon */
+	transform: translate(-5px, 5px); /* to position the icon */
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 16px;

@@ -4,28 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ddde30df90fedbe3",
+        "id": "abd0635d69fc4984",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00. Inbox/draft.md",
-            "mode": "source"
-          }
-        },
-        "group": "9bedbaed76f2ac8d"
-      },
-      {
-        "id": "3f1dee2d9e72f138",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "00. Inbox/draft.md",
+            "file": "Master 1/Master 1.md",
             "mode": "preview"
           }
-        },
-        "group": "9bedbaed76f2ac8d"
+        }
       }
     ],
     "direction": "vertical"
@@ -73,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364
+    "width": 382
   },
   "right": {
     "id": "4c05761b7d59ed38",
@@ -90,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00. Inbox/draft.md"
+                "file": "Master 1/Master 1.md"
               }
             }
           },
@@ -100,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00. Inbox/draft.md",
+                "file": "Master 1/Master 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,17 +145,17 @@
     "width": 323,
     "collapsed": true
   },
-  "active": "ddde30df90fedbe3",
+  "active": "abd0635d69fc4984",
   "lastOpenFiles": [
-    "00. Inbox/draft.md",
-    "Ecriture/Personnages/Personnages.md",
-    "Ecriture/Univers/Univers.md",
-    "Ecriture/Ecriture.md",
     "Master 1/Master 1.md",
-    "00. Inbox/10. Organisation/Mémoire todo.md",
-    "00. Inbox/20. Perso/Detail competence Maths  Stats.md",
+    "Ecriture/Ecriture.md",
+    "Ecriture/Personnages/Personnages.md",
+    "Ecriture/Personnages/OC/OC.md",
+    "Ecriture/Personnages/Fiches/Fiches.md",
     "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/Bibliothèque Infinie.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/Contexte Général.md"
+    "Ecriture/Univers/Univers.md",
+    "00. Inbox/draft.md",
+    "00. Inbox/10. Organisation/Mémoire todo.md",
+    "00. Inbox/20. Perso/Detail competence Maths  Stats.md"
   ]
 }
