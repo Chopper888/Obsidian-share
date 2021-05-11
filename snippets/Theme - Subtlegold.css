@@ -17,6 +17,9 @@
 	--text-accent: rgb(29, 88, 143) !important;
 	--text-accent-hover: rgb(124, 178, 228);
 	--font: rgb(192, 186, 186) !important;
+	--code-block-background: rgb(44, 42, 42);
+  	--code-block-border: #534d40;
+
 }
 
 
@@ -121,11 +124,6 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 	color: #808080;
 }
 
-.theme-dark .cm-s-obsidian .cm-hmd-frontmatter, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock {
-	background-color: #3f3c3c !important;
-	border-radius: 5px;
-	color: darkgrey !important;
-}
 .cm-s-obsidian span.cm-inline-code, .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
 	background: inherit;
 }
