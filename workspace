@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
-            "mode": "source"
+            "file": "Ecriture/Personnages/Personnages.md",
+            "mode": "preview"
           }
         }
       }
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md"
+                "file": "Ecriture/Personnages/Personnages.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
+                "file": "Ecriture/Personnages/Personnages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,15 +148,15 @@
   },
   "active": "6ffe40910cb91c90",
   "lastOpenFiles": [
-    "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
-    "Ecriture/Personnages/Fiches/Kali May - BI.md",
-    "Ecriture/Personnages/Fiches/Eden Blake - Sadhé.md",
-    "Ecriture/Personnages/Fiches/Hayleen May - Azelyss.md",
     "Ecriture/Personnages/Personnages.md",
-    "00. Inbox/Raindrop.md",
-    "00. Inbox/Taho tuto.md",
-    "00. Inbox/draft.md",
-    "Ecriture/Picrew.md",
-    "Ecriture/Personnages/Fiches/Fiches.md"
+    "Ecriture/Personnages/Fiches/Fiches.md",
+    "Ecriture/Personnages/OC/OC.md",
+    "Ecriture/Personnages/OC/Ashling May/Ashling May.md",
+    "Ecriture/Personnages/OC/Ashling May/Illustration/Illustration.md",
+    "00. Inbox/Obsidian.md",
+    "00. Inbox/Bookmark Obsidian.md",
+    "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
+    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "Ecriture/Personnages/Fiches/Kali May - BI.md"
   ]
 }

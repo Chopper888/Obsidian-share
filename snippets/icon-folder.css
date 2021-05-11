@@ -41,6 +41,7 @@
 	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23717A96&height=18');
 	
 	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
+	--bookmark:url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%23549083&height=18');
 }
 
 /* Inbox*/
@@ -250,4 +251,16 @@ body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, bod
 
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	color: currentColor !important;
+}
+
+.nav-file-title[data-path*="00. Inbox/Obsidian.md"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
+	content: var(--bookmark) !important;
+	background-size: 14px 14px; /* adopt this to your file tree font height */
+	transform: translate(-5px, 5px); /* to position the icon */
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: -4px 2px 0 0;
+	padding-right: 10px; 
 }

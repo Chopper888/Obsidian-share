@@ -1,7 +1,6 @@
 name: Obsidian
 filter_title: "Obsidian"
 
-
 matches: 
   - trigger: ":rbi"
     replace: "<iframe src='{{clipboard}}' style='border: none;position: absolute;width: 1500;height: 100%;left: -420px;top: -48px'>$|$</iframe>"
