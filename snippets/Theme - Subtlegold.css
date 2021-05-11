@@ -128,3 +128,11 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .cm-s-obsidian span.cm-inline-code, .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
 	background: inherit;
 }
+
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning) {
+	border: 1px solid var(--code-block-border);
+}
+
+.community-plugin-info h1, .community-plugin-info h2, .community-plugin-info h3, .community-plugin-info h4, .community-plugin-info h5,.community-plugin-info h6, .community-plugin-info p, .community-plugin-info li, .community-plugin-info ul, .community-plugin-info .markdown-preview-view th, .community-plugin-info .markdown-preview-view td {
+	color: lightgrey;
+}
