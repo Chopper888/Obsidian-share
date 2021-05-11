@@ -9,7 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< Updated upstream
             "file": "Ecriture/Personnages/Fiches/Fiches.md",
+=======
+            "file": "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md",
+>>>>>>> Stashed changes
             "mode": "source"
           }
         },
@@ -172,12 +176,55 @@
     "type": "mobile-drawer",
     "children": [
       {
+<<<<<<< Updated upstream
         "id": "86a9b79386e99057",
         "type": "leaf",
         "state": {
           "type": "calendar",
           "state": {}
         }
+=======
+        "id": "4a38ef854bd698e2",
+        "type": "tabs",
+        "dimension": 46.787148594377506,
+        "children": [
+          {
+            "id": "0ed0d1b1619de142",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md"
+              }
+            }
+          },
+          {
+            "id": "e627d22e415fbae4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ca83a9a6406c12a7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+>>>>>>> Stashed changes
       },
       {
         "id": "96fe4a2a908bc3c3",
@@ -209,6 +256,7 @@
   },
   "active": "abd0635d69fc4984",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "Ecriture/Personnages/Fiches/Fiches.md",
     "Ecriture/Personnages/Fiches/Kali May - BI.md",
     "Ecriture/Personnages/Fiches/Azraël Blakes - BI.md",
@@ -219,5 +267,17 @@
     "00. Inbox/Taho tuto.md",
     "00. Inbox/Livre SW.md",
     "00. Inbox/draft.md"
+=======
+    "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md",
+    "Ecriture/Univers/La Bibliothèque Infinie/Contexte Général.md",
+    "Ecriture/Univers/La Bibliothèque Infinie/Bibliothèque Infinie.md",
+    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md",
+    "Ecriture/Ecriture.md",
+    "Master 1/Master 1.md",
+    "Ecriture/Personnages/Personnages.md",
+    "Ecriture/Personnages/OC/OC.md",
+    "Ecriture/Personnages/Fiches/Fiches.md",
+    "Ecriture/Univers/Univers.md"
+>>>>>>> Stashed changes
   ]
 }
