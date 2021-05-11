@@ -68,7 +68,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 3px;
   width: 100%;
   background: var(--background-modifier-border);
   left: 0;
@@ -122,8 +122,6 @@ span.cm-string.cm-url {
 	font-size: 60%;
 	opacity: 0.5;
 }
-
-
 
 cm-formatting-header:before {
 	content:"" !important;

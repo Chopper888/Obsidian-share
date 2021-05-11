@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "77a3e4360914ce21",
+        "id": "ddde30df90fedbe3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00. Inbox/draft.md",
-            "mode": "preview"
+            "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
+            "mode": "source"
           }
         }
       }
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314
+    "width": 311
   },
   "right": {
     "id": "4c05761b7d59ed38",
@@ -69,7 +69,7 @@
       {
         "id": "4a38ef854bd698e2",
         "type": "tabs",
-        "dimension": 63.25301204819278,
+        "dimension": 46.787148594377506,
         "children": [
           {
             "id": "0ed0d1b1619de142",
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00. Inbox/draft.md"
+                "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00. Inbox/draft.md",
+                "file": "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
       {
         "id": "9592b0d01a3e5941",
         "type": "tabs",
-        "dimension": 36.74698795180723,
+        "dimension": 53.21285140562249,
         "children": [
           {
             "id": "6353aa905dbd895f",
@@ -142,19 +142,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317
+    "width": 323,
+    "collapsed": true
   },
-  "active": "77a3e4360914ce21",
+  "active": "ddde30df90fedbe3",
   "lastOpenFiles": [
-    "00. Inbox/draft.md",
-    "Ecriture/Personnages/Fiches/Fiches.md",
-    "Ecriture/Personnages/Fiches/Alem Raashen - SWTOR.md",
+    "Master 1/Stage/Data/2010/CCM/CCM - Mars 2010.md",
+    "Master 1/Stage/Data/2010/CCM/CCM - Février 2010.md",
     "Ecriture/Ecriture.md",
-    "0.1. Template/templater/Meta.md",
-    "Master 1/Stage/memoire.md",
     "Master 1/Master 1.md",
-    "0.1. Template/templater/Quick Capture.md",
+    "00. Inbox/10. Organisation/TodoIst.md",
+    "Master 1/Stage/Data/2010/CCM/Untitled.md",
+    "Ecriture/Personnages/Personnages.md",
     "Ecriture/Univers/Univers.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/La Bibliothèque Infinie.md"
+    "00. Inbox/draft.md",
+    "Ecriture/Personnages/Fiches/Fiches.md"
   ]
 }
