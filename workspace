@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "2d0288f385b36175",
+        "id": "6ffe40910cb91c90",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ecriture/Ecriture.md",
-            "mode": "preview"
+            "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
+            "mode": "source"
           }
         }
       }
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ecriture/Ecriture.md"
+                "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ecriture/Ecriture.md",
+                "file": "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,19 +143,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323
+    "width": 323,
+    "collapsed": true
   },
-  "active": "2d0288f385b36175",
+  "active": "6ffe40910cb91c90",
   "lastOpenFiles": [
-    "Ecriture/Ecriture.md",
-    "Master 1/Master 1.md",
-    "Ecriture/Univers/La Bibliothèque Infinie/Présentation.md",
-    "Ecriture/Personnages/Fiches/Fiches.md",
-    "Ecriture/Personnages/OC/Ashling May/Illustration/Illustration.md",
-    "Ecriture/Personnages/OC/Ashling May/Illustration/Commission/Commission.md",
-    "Ecriture/Personnages/OC/Ashling May/Illustration/Autres/Autres.md",
-    "Ecriture/Personnages/OC/Ashling May/Ashling May.md",
+    "Ecriture/Personnages/Fiches/Eilwellyn Beausang - BI.md",
+    "Ecriture/Personnages/Fiches/Kali May - BI.md",
+    "Ecriture/Personnages/Fiches/Eden Blake - Sadhé.md",
+    "Ecriture/Personnages/Fiches/Hayleen May - Azelyss.md",
     "Ecriture/Personnages/Personnages.md",
-    "Master 1/Stage/Data/2010/CCM/CCM - Avril 2010.md"
+    "00. Inbox/Raindrop.md",
+    "00. Inbox/Taho tuto.md",
+    "00. Inbox/draft.md",
+    "Ecriture/Picrew.md",
+    "Ecriture/Personnages/Fiches/Fiches.md"
   ]
 }
