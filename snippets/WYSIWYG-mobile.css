@@ -129,7 +129,7 @@ cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
 
 /*Change links color*/
 .cm-s-obsidian .cm-url {
-	color: rgb(15, 112, 223) !important;
+	color: rgb(31, 136, 255) !important;
 	text-decoration: underline;  }
 
 .markdown-preview-section hr {

@@ -7,7 +7,7 @@
 	--background-secondary:#292C2E;
 	--background-secondary-alt:#292C2E;
 	--background-primary-alt:#292C2E;
-	--text-accent: rgb(29, 88, 143) !important;
+	--text-accent: rgb(35, 124, 207) !important;
 	--text-accent-hover: rgb(124, 178, 228);
 	--font: #3c3c3c;
 	--text-normal:var(--text-nav);
@@ -15,7 +15,7 @@
 }
 
 .theme-dark {
-	--text-accent: rgb(29, 88, 143) !important;
+	--text-accent: rgb(44, 133, 218) !important;
 	--text-accent-hover: rgb(124, 178, 228);
 	--font: rgb(192, 186, 186) !important;
 	--code-block-background: rgb(44, 42, 42);
