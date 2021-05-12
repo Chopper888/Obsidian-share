@@ -58,6 +58,26 @@
 
 .setting-item-control select, .dropdown:hover, .setting-item-control option {
 	background-color: var(--background-secondary) !important;
+	border: 1px solid #3c3c3c !important;
+}
+
+.kanban-plugin__board-settings-modal .choices__list--single {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23483699%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-color: var(--background-secondary) !important;
+	border: 1px solid #3c3c3c !important;
+}
+
+.choices__item--selectable {
+	background-color: var(--background-secondary) !important;
+}
+
+.choices__list--dropdown {
+	border: 1px solid #3c3c3c !important;
+
+}
+
+.kanban-plugin__board-settings-modal .choices[data-type*="select-one"] .choices__input {
+	border-bottom-color: #3c3c3c !important;
 }
 
 .checkbox-container {
@@ -74,7 +94,7 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 }
 
 ::selection {
-	background-color:currentColor;
+	background-color:#3c3c3c;
 }
 
 .day.svelte-q3wqg9:hover {
@@ -129,10 +149,35 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 	background: inherit;
 }
 
-.modal.mod-settings button:not(.mod-cta):not(.mod-warning) {
-	border: 1px solid var(--code-block-border);
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning), .modal button:not(.mod-cta):not(.mod-warning) {
+	border: 1px solid #3c3c3c;
 }
 
 .community-plugin-info h1, .community-plugin-info h2, .community-plugin-info h3, .community-plugin-info h4, .community-plugin-info h5,.community-plugin-info h6, .community-plugin-info p, .community-plugin-info li, .community-plugin-info ul, .community-plugin-info .markdown-preview-view th, .community-plugin-info .markdown-preview-view td {
 	color: lightgrey;
+}
+
+#zoteroSettingTab .text-monospace, #citationTemplateVariables {
+	color: #808080;
+}
+
+#zoteroSettingTab textarea, textarea {
+	background-color: var(--background-secondary);
+	border-color: #3c3c3c;
+}
+
+.kanban-plugin__item-content-wrapper {
+	background-color: #3c3c3c !important;
+}
+
+.kanban-plugin, .kanban-plugin__lane, .kanban-plugin__item-content-wrapper, button.kanban-plugin__new-lane-button {
+	background-color: var(--background-primary) !important;
+}
+.kanban-plugin__item-input {
+		background-color: var(--background-primary) !important;
+		color: black;
+
+}
+.todoist-p4, .task-metadata {
+	color: black;
 }
