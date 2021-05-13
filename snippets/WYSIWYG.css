@@ -40,6 +40,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 span.cm-formatting-task {
   display: inline !important;
   font-family: var(--font-monospace);
+  visibility: visible;
 }
 
 /* Blockquote: in edit mode with left border rendered instead of > */

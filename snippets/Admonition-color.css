@@ -62,3 +62,8 @@ color: rgba(68, 138, 255);
 .admonition-title-icon {
 	color: inherit !important;
 }
+
+.admonition {
+	background-color: var(--background-primary) !important;
+	color: var(--font) !important
+}

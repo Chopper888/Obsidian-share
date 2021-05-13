@@ -177,3 +177,11 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .todoist-p4, .task-metadata {
 	color: black;
 }
+
+.workspace-leaf-resize-handle {
+	background-color: transparent !important;
+}
+
+.choices__inner {
+	border: 0 !important;
+}
