@@ -8,3 +8,7 @@ workspace
 sync.json
 
 command-palette.json
+
+config 2
+
+workspace 2
