@@ -93,10 +93,6 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 	border: none;
 }
 
-::selection {
-	background-color:#3c3c3c;
-}
-
 .day.svelte-q3wqg9:hover {
 	background-color: #3c3c3c !important;
 }

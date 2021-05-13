@@ -10,8 +10,8 @@
   --text-normal: #dcddde;
   --text-muted: #888;
   --text-faint: #555;
-  --text-error: #ff3333;
-  --text-error-hover: #990000;
+  --text-error: #f67979;
+  --text-error-hover: #e75959;
   --text-highlight-bg: #dbaa205e;
   --text-on-accent: #dcddde;
   --interactive-normal: #2a2a2a;
@@ -21,7 +21,6 @@
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --text-nav-selected: #000000;
   --interactive-accent-rgb: #d6ba7c;
 }
 
@@ -38,7 +37,6 @@
   --text-accent: #d6ba7c;
   --text-faint: rgba(150, 150, 150, 255);
   --text-highlight-bg: #dbaa205e;
-  --text-nav-selected: rgba(255, 255, 255, 255);
   --text-nav: rgba(190, 190, 190, 255);
   --text-normal: rgba(44, 44, 44, 255);
   --text-accent-hover: #d6ba7c;

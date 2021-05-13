@@ -8,3 +8,7 @@ div[data-path='Master 1/stage/Ma bibliothèque'] + div.nav-folder-children
 {
     display: none;
 }
+
+.nav-file-title[data-path="00. Inbox/Changelog.md"] {
+	display: none;
+}
