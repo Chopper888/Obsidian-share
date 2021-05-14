@@ -16,6 +16,9 @@
 	--interactive-accent-rgb: rgb(99, 160, 208);
 	--interactive-accent-hover: #6db2e7;
 	--golden-brown: #63a0d0;
+	--background-secondary-alt: rgb(35, 37, 37) !important;
+	--background-nav-alt: var(--background-secondary-alt);
+	--background-nav: var(--background-nav-alt);
 }
 
 .theme-dark {
@@ -27,6 +30,7 @@
 	--interactive-accent: #63a0d0;
 	--interactive-accent-rgb: rgb(99, 160, 208);
 	--interactive-accent-hover: #6db2e7;
+	--golden-brown: #63a0d0;
 
 }
 
@@ -40,18 +44,18 @@
 }
 
 .graph-view.color-text {
-	color:#ffffff;
+	color: var(--font);
 	opacity: 1;
 }
 
 .graph-view.color-circle
 {
-	color:#d6ba7c;
+	color: var(--text-accent) !important;
 	opacity: 1;
 }
 
-.graph-view.color-line {
-	color:#d6ba7c;
+.graph-view.color-line, .graph-view.color-fill-tag {
+	color: rgb(177, 177, 246) !important;
 	opacity: 1;
 
 }
