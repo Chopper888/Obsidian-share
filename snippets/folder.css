@@ -12,4 +12,5 @@
   text-overflow: ellipsis;
   overflow: hidden;
   text-indent:0;
+  white-space: nowrap;
 }

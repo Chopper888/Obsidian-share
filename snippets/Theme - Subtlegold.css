@@ -12,6 +12,10 @@
 	--font: #3c3c3c;
 	--text-normal:var(--text-nav);
 	--code-block-border: #b6aa91;
+	--interactive-accent: #63a0d0;
+	--interactive-accent-rgb: rgb(99, 160, 208);
+	--interactive-accent-hover: #6db2e7;
+	--golden-brown: #63a0d0;
 }
 
 .theme-dark {
@@ -20,6 +24,9 @@
 	--font: rgb(192, 186, 186) !important;
 	--code-block-background: rgb(44, 42, 42);
   	--code-block-border: #534d40;
+	--interactive-accent: #63a0d0;
+	--interactive-accent-rgb: rgb(99, 160, 208);
+	--interactive-accent-hover: #6db2e7;
 
 }
 
@@ -184,4 +191,16 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 
 .choices__inner {
 	border: 0 !important;
+}
+
+.nav-action-button {
+	padding: 5px 8px 0 8px !important;
+
+}
+
+.nav-action-button.is-active {
+	background-color: rgb(124, 178, 228) !important;
+}
+.tag-pane-tag-count {
+	color: var(--background-secondary-alt);
 }
