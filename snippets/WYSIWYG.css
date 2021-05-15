@@ -4,7 +4,6 @@
 
 /* Remove markdown clutter */
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment, 
 div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
  visibility: hidden;		/* the space between word is normal. Its more praticable to have that than display:none.*/
 }
@@ -20,7 +19,7 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 	visibility: visible;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
 	opacity: 0.5;
 }
 
