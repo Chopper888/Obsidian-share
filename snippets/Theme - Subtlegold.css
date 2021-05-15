@@ -212,3 +212,4 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .plugin-tabs:not(.horizontal-to-vertical) .mod-root.workspace-split.mod-vertical > .workspace-split.mod-horizontal > .workspace-leaf:nth-of-type(n+1), .plugin-tabs .mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical > div.workspace-leaf, .plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf, .plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf.stayopen .view-header, .plugin-tabs .mod-root.workspace-split.mod-vertical > .workspace-split.mod-vertical > div.workspace-leaf .view-header, .plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf.mod-active .view-header, .plugin-tabs .maximised .view-header {
 	border: 1px solid #3c3c3c !important;
 }
+

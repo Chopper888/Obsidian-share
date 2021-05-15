@@ -141,3 +141,16 @@ body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder
 	background-color: var(--background-nav-alt);
 }
 
+ul li p,
+ol li p {
+  display: inline;
+}
+
+div[data-tag-name='p'] + div[data-tag-name='ul'] {
+    margin-top: -20px;
+}
+
+div[data-tag-name='ul'] + div[data-tag-name='p'] {
+    margin-top: -20px;
+}
+
