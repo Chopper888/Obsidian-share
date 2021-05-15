@@ -20,14 +20,8 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 	visibility: visible;
 }
 
-
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-attribute{
-	visibility: hidden;
-}
-
-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
-	color: transparent;
+	opacity: 0.5;
 }
 
 
