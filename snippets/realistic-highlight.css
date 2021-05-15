@@ -59,7 +59,3 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
     transparent calc(100% - 0.3em),
     transparent 100%) !important;
 }
-
-.cm-s-obsidian span.cm-hmd-escape-backslash {
-	font-size: 0 !important;
-}

@@ -3,15 +3,14 @@
 }
 
 /* Remove markdown clutter */
-.cm-formatting,
-.cm-comment {
+.cm-formatting{
  opacity: 0.1 !important;		
 }
 
 .cm-string.cm-url,
 .cm-formatting-link:not(.cm-link),
 .cm-hmd-barelink,
-.cm-hmd-internal-link {
+.cm-hmd-internal-link, .cm-comment, .cm-s-obsidian span.cm-hmd-escape-backslash {
 	font-size: 60%;
 	opacity: 0.5;
 }
@@ -49,11 +48,6 @@ div:not(.CodeMirror-activeline) >.cm-attribute{
 .tag:hover {
 color: white;
 background-color: var(--text-accent-hover);
-}
-
-span.cm-formatting-list-ul {
-  color : transparent !important;
-  margin-top: 50% !important;
 }
 
 span.cm-formatting-list,
@@ -139,4 +133,15 @@ cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
 .markdown-preview-section hr:after {
 	background: lightgrey !important ;
 	opacity: 100%;
+}
+
+span.cm-formatting-list-ul {
+	visibility: hidden !important;
+}
+
+span.cm-formatting-list-ul:after {
+	content: '• ';
+	margin-left: -12px;
+	color: var(--text-normal);
+	visibility: visible !important;
 }
