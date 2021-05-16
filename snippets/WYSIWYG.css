@@ -5,7 +5,7 @@
 /* Remove markdown clutter */
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
 div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
- visibility: hidden;		/* the space between word is normal. Its more praticable to have that than display:none.*/
+ display: none;		/* the space between word is normal. Its more praticable to have that than display:none.*/
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
@@ -144,4 +144,8 @@ cm-formatting-header:before {
 }
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header{
 	display: none !important;
+}
+
+span.cm-formatting.cm-formatting-strong.cm-strong, span.cm-formatting.cm-formatting-em.cm-em {
+	font-size: 50%;
 }

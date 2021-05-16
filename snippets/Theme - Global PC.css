@@ -1,4 +1,9 @@
-.markdown-source-view, .markdown-preview-view {
+.markdown-preview-view {
 max-width: 90ch;
 margin: auto;
+}
+
+.markdown-source-view {
+	max-width: 100ch;
+	margin: auto auto;
 }
