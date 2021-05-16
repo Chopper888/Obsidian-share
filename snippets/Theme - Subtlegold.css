@@ -213,3 +213,10 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 	border: 1px solid #3c3c3c !important;
 }
 
+.lt-message, .lt-title {
+	color: var(--background-modifier-border);
+}
+
+.lt-buttoncontainer > button {
+	color: var(--background-secondary-alt)
+}
