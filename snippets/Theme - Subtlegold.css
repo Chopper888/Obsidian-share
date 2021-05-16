@@ -220,3 +220,13 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .lt-buttoncontainer > button {
 	color: var(--background-secondary-alt)
 }
+
+.search-result-file-matched-text {
+	color: white;
+	font-weight: bold;
+	padding: 3px;
+}
+
+input[type="text"]::selection {
+	color: dodgerblue;
+}

@@ -19,10 +19,13 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 	visibility: visible;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 	opacity: 0.5;
 }
 
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
+	opacity: 0.1;
+}
 
 /* except list markers */ span.cm-formatting-list,
 /*code block backticks */ span.cm-formatting-code-block.cm-hmd-codeblock,
@@ -55,7 +58,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:before {
 }
 
 /* Horizontal line in edit mode. Changes --- to full-width line */
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr, div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-formatting-escape:not(span.cm-hmd-escape-backslash)  {
   color: transparent;
 }
 
@@ -139,6 +142,6 @@ cm-formatting-header:before {
 .outliner-plugin-bls .cm-s-obsidian .HyperMD-list-line {
 	padding-top: 0 !important;
 }
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header{
 	display: none !important;
 }

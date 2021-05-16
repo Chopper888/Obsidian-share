@@ -1,4 +1,4 @@
-.CodeMirror-lines, .CodeMirror-selected, .markdown-preview-section{ 
-	max-width: 85ch; 
-	margin: 0 auto; 
+.markdown-source-view, .markdown-preview-view {
+max-width: 90ch;
+margin: auto;
 }

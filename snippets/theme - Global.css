@@ -140,12 +140,6 @@ ul.dataview.dataview-ul.dataview-result-list-ul{
 body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
 	background-color: var(--background-nav-alt);
 }
-
-ul li p,
-ol li p {
-  display: inline;
-}
-
 div[data-tag-name='p'] + div[data-tag-name='ul'] {
     margin-top: -20px;
 }
@@ -154,3 +148,14 @@ div[data-tag-name='ul'] + div[data-tag-name='p'] {
     margin-top: -20px;
 }
 
+.markdown-preview-view {
+	font-size: calc(var(--editor-font-size) + 10%) !important;
+}
+
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+margin: -2% !important;
+}
+
+div[data-tag-name='h1']+ div[data-tag-name='ul'], div[data-tag-name='h2']+ div[data-tag-name='ul'], div[data-tag-name='h3']+ div[data-tag-name='ul'], div[data-tag-name='h4']+ div[data-tag-name='ul'], div[data-tag-name='h5']+ div[data-tag-name='ul'], div[data-tag-name='h6']+ div[data-tag-name='ul'] {
+	margin: 1em !important;
+}
