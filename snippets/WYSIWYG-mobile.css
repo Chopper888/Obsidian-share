@@ -134,14 +134,3 @@ cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
 	background: lightgrey !important ;
 	opacity: 100%;
 }
-
-span.cm-formatting-list-ul {
-	visibility: hidden !important;
-}
-
-span.cm-formatting-list-ul:after {
-	content: '• ';
-	margin-left: -12px;
-	color: var(--text-normal);
-	visibility: visible !important;
-}
