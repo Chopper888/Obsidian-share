@@ -13,8 +13,8 @@ div[data-path='Master 1/stage/Ma bibliothèque'] + div.nav-folder-children
 	display: none;
 }
 
-div[data-path='sync'], 
-div[data-path='sync'] + div.nav-folder-children 
+div[data-path='settings_sync'], 
+div[data-path='settings_sync'] + div.nav-folder-children 
 {
     display: none;
 }
