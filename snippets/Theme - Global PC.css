@@ -7,3 +7,47 @@ margin: auto;
 	max-width: 100ch;
 	margin: auto auto;
 }
+
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+	margin-bottom: -2%;
+	margin-left: -2%;
+	margin-top: 1%;
+}
+
+div[data-tag-name='h1']+ div[data-tag-name='ul'], 
+div[data-tag-name='h2']+ div[data-tag-name='ul'], 
+div[data-tag-name='h3']+ div[data-tag-name='ul'], 
+div[data-tag-name='h4']+ div[data-tag-name='ul'], 
+div[data-tag-name='h5']+ div[data-tag-name='ul'], 
+div[data-tag-name='h6']+ div[data-tag-name='ul']  {
+	margin: 1em;
+}
+
+div[data-tag-name='h1'] + div .block-language-dataview, 
+div[data-tag-name='h2'] + div .block-language-dataview,
+div[data-tag-name='h3'] + div .block-language-dataview,
+div[data-tag-name='h4'] + div .block-language-dataview,
+div[data-tag-name='h5'] + div .block-language-dataview,
+div[data-tag-name='h6'] + div .block-language-dataview,
+div[data-tag-name='h7'] + div .block-language-dataview{
+	margin: 0.5em;
+}
+
+h1 + table.dataview.table-view-table, 
+h2 + table.dataview.table-view-table,
+h3 + table.dataview.table-view-table, 
+h4 + table.dataview.table-view-table, 
+h5 + table.dataview.table-view-table, 
+h5 + table.dataview.table-view-table, 
+h6 + table.dataview.table-view-table {
+	margin: 0.5em;
+}
+
+
+pre.CodeMirror-line {
+	padding-left: 2% !important;
+}
+
+pre.HyperMD-list-line {
+	padding-left: 4% !important;
+}
