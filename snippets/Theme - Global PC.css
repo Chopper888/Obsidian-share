@@ -1,6 +1,6 @@
-.markdown-preview-view {
-max-width: 90ch;
-margin: auto;
+.iframe {
+max-width: 100% !important;
+margin: auto !important;
 }
 
 .markdown-source-view {
