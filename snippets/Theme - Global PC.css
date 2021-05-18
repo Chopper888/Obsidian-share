@@ -1,17 +1,18 @@
-.iframe {
-max-width: 100% !important;
-margin: auto !important;
-}
+@media screen and (min-width: 1080px){
+	.markdown-preview-view {
+	max-width: 90ch;
+	margin: auto;
+	}
 
-.markdown-source-view {
-	max-width: 100ch;
-	margin: auto auto;
-}
-
-.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
-	margin-bottom: -2%;
-	margin-left: -2%;
-	margin-top: 1%;
+	.markdown-source-view {
+		max-width: 100ch;
+		margin: auto auto;
+	}
+	.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+		margin-bottom: -2%;
+		margin-left: -2%;
+		margin-top: 1%;
+	}
 }
 
 div[data-tag-name='h1']+ div[data-tag-name='ul'], 
