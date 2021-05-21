@@ -1,20 +1,23 @@
-div[data-path='Screen'], 
-div[data-path='Screen'] + div.nav-folder-children 
-{
+div[data-path='Screen'],
+div[data-path='Screen']+div.nav-folder-children {
     display: none;
 }
-div[data-path="Master 1/stage/Ma bibliothèque"],
-div[data-path='Master 1/stage/Ma bibliothèque'] + div.nav-folder-children 
-{
+
+div[data-path="Master 1/Stage/Ma bibliothèque"],
+div[data-path='Master 1/Stage/Ma bibliothèque']+div.nav-folder-children {
+    display: none;
+}
+
+div[data-path="Master 1/Stage/Data/export"],
+div[data-path='Master 1/Stage/Data/export']+div.nav-folder-children {
     display: none;
 }
 
 .nav-file-title[data-path="00. Inbox/Changelog.md"] {
-	display: none;
+    display: none;
 }
 
-div[data-path='settings_sync'], 
-div[data-path='settings_sync'] + div.nav-folder-children 
-{
+div[data-path='settings_sync'],
+div[data-path='settings_sync']+div.nav-folder-children {
     display: none;
 }
