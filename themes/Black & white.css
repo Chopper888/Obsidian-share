@@ -361,48 +361,8 @@ div.markdown-preview-view {
     font-size: 0.6em;
 }
 
-
-/* Outliner support */
-
-.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {
-    letter-spacing: 0.5rem !important;
-}
-
-.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-    letter-spacing: 0 !important;
-    margin-left: 0.5em !important;
-    margin-top: 0;
-}
-
-.outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
-    border-left: 0 !important
-}
-
-.cm-s-obsidian span.cm-formatting-list {
-    color: var(--bullet);
-    font-size: 0.85em;
-    font-weight: 500;
-    font-family: var(--text-faint);
-}
-
-ul {
-    margin-block-start: 0 !important;
-    bottom: 25%;
-    position: relative;
-    top: 0 !important;
-    color: var(--bullet);
-}
-
 .community-plugin-info ul {
     margin-block-start: revert !important;
-}
-
-div[data-tag-name='p']+div[data-tag-name='ul'] {
-    margin-top: -20px;
-}
-
-div[data-tag-name='ul']+div[data-tag-name='p'] {
-    margin-top: -20px;
 }
 
 .cm-s-obsidian span.cm-formatting-task {
@@ -718,21 +678,6 @@ input[type="text"]::selection {
     color: var(--background-secondary-alt)
 }
 
-i#flexbox {
-    display: flex;
-    font-style: normal;
-}
-
-i#flexbox>i {
-    flex: 1;
-    font-style: normal;
-    padding: 0px 7px;
-}
-
-span.cm-hr {
-    filter: none !important;
-}
-
 
 /* Dataview */
 
@@ -791,43 +736,4 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
 .count.svelte-yzsyxo {
     background-color: #11111149 !important;
     font-size: inherit !important;
-}
-
-.tag,
-.cm-s-obsidian span.cm-hashtag {
-    background-color: var(--tag-background-color);
-    border: 1px solid var(--tag-border-color);
-    color: var(--font);
-    font-size: 1em;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    text-decoration: none;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.markdown-preview-view a.tag {
-    color: var(--font);
-}
-
-.markdown-preview-view .internal-link,
-.markdown-preview-view .external-link,
-.cm-s-obsidian span.cm-link,
-.cm-s-obsidian span.cm-hmd-internal-link {
-    background-color: var(--link-background-color);
-    color: var(--font);
-}
-
-.markdown-preview-view .internal-link.is-unresolved {
-    background-color: var(--link-background-color);
-    color: var(--text-faint);
-}
-
-
-/* Remove external link icon */
-
-.markdown-preview-view .external-link {
-    background-image: none;
-    padding-right: 0;
 }
