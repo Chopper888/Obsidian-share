@@ -566,6 +566,11 @@ input[type="text"]::selection {
     border: none;
 }
 
+.suggestion-item.is-selected {
+    background-color: var(--blue);
+    color: white;
+}
+
 
 /* Day support */
 
@@ -587,14 +592,15 @@ input[type="text"]::selection {
 
 /* Zotero plugin support*/
 
-.zoteroResult:hover {
+div.prompt-results.zoteroModalResults>div.suggestion-item>div.zoteroResult:hover,
+div.prompt-results.zoteroModalResults>div.suggestion-item.is-selected {
     background-color: #3c3c3c !important;
-    border-radius: 5px;
-    padding: 1%;
+    border-radius: 5px !important;
+    padding: 1% !important;
 }
 
-.zoteroCitekey,
-.zoteroAuthors {
+div.prompt-results.zoteroModalResults>div.suggestion-item.is-selected>div.zoteroResult div.suggestion-item.is-selected>div.zoteroResult>.zoteroCitekey,
+div.suggestion-item.is-selected>div.zoteroResult>.zoteroAuthors {
     color: #808080 !important;
 }
 
