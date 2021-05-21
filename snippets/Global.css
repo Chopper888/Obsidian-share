@@ -76,6 +76,23 @@ pre.CodeMirror-line:not(.HyperMD-list-line) {
     color: var(--font);
 }
 
+header.svelte-yzsyxo {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.count.svelte-yzsyxo {
+    color: #4a8ec2 !important;
+}
+
+ul.svelte-yzsyxo>li.compact.svelte-1q8cjhd>div.content.svelte-1q8cjhd>p>a {
+    color: #4a8ec2 !important;
+}
+
+ul.svelte-yzsyxo>li.compact.svelte-1q8cjhd>div.content.svelte-1q8cjhd>p>a:hover {
+    color: var(--tag-border-color) !important;
+}
+
 .markdown-preview-view .internal-link,
 .markdown-preview-view .external-link,
 .cm-s-obsidian span.cm-link,
