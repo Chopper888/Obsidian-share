@@ -1,6 +1,6 @@
 /* 
 
-Minimal Obsidian 2.5.5 by @kepano
+Minimal Obsidian 2.5.11 by @kepano
 
 This theme is designed to be used with the Minimal Theme Settings 
 plugin and the Hider plugin.
@@ -9,7 +9,7 @@ plugin and the Hider plugin.
 Sponsor my work on Patreon:
 https://www.patreon.com/kepano
 
-Readme:;
+Readme:
 https://github.com/kepano/obsidian-minimal
 
 ----------------------------------------------------------------
@@ -34,6 +34,7 @@ Special Features
   Image zoom
   Calendar plugin
   Dataview plugin
+  Kanban plugin
   Checklist plugin
 
 Minimal Styling
@@ -42,6 +43,7 @@ Minimal Styling
   Icons
   Tags
   Modals
+  Front matter
   Drag ghost
   Workspace
   Window frame
@@ -198,8 +200,8 @@ Disabled features */
     --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
     --text-on-accent:white;
     --icon-hex:000;
-    --interactive-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-    --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
+    --interactive-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 10%));
+    --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 0%));
     --quote-opening-modifier:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 10%));
     --interactive-accent-rgb:220, 220, 220;
     --text-selection:hsla(var(--accent-h),50%,calc(var(--base-l) - 20%), 30%);
@@ -355,24 +357,21 @@ body.plugin-sliding-panes-rotate-header {
 body.plugin-sliding-panes-rotate-header .view-header-title:before {
   display:none;
 }
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:before,
 body.plugin-sliding-panes-rotate-header .app-container .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
-  background:none;
+  background:none !important;
 }
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
     text-orientation:sideways;
 }
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf,
 body.plugin-sliding-panes .workspace-split.mod-vertical > .workspace-leaf {
-  box-shadow:var(--background-modifier-border) -1px -0px !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1) !important;
 }
 
 body.plugin-sliding-panes .mod-horizontal .workspace-leaf {
   box-shadow:none !important;
 }
-/* body.plugin-sliding-panes .CodeMirror,
-body.plugin-sliding-panes .markdown-preview-section {
-  margin-left:35px;
-}*/
 body.plugin-sliding-panes:not(.is-fullscreen) .workspace-split.is-collapsed ~ .workspace-split.mod-root .view-header {
   transition:padding 0.1s ease;
 }
@@ -531,9 +530,11 @@ body.plugin-sliding-panes .mod-root .graph-controls {
 /* --------------- */
 /* Image zoom  */
 
-.view-content .image-embed {
+.view-content .markdown-preview-view img {
   max-width:100%;
   cursor:zoom-in;}
+
+.view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active,
 .view-content .image-embed:active {
   cursor:zoom-out;
   display:block;
@@ -551,6 +552,9 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   right:0;
   bottom:0;
   background:var(--background-translucent);
+}
+.view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active {
+  padding:2.5%;
 }
 .view-content .markdown-preview-view .image-embed:active img {
   top:50%;
@@ -612,11 +616,11 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   color:var(--text-muted);
 }
 #calendar-container tr th {
-  padding:4px 0;
+  padding:2px 0;
   font-weight:500;
 }
 #calendar-container tr td {
-  padding:4px 0 4px;
+  padding:2px 0 0;
   border-radius:4px;
   cursor:var(--cursor);
   border:2px solid transparent;
@@ -662,6 +666,11 @@ body.plugin-sliding-panes .mod-root .graph-controls {
 #calendar-container .active {
   color:var(--text-normal);
 }
+
+#calendar-container .reset-button,
+#calendar-container .day {
+  cursor:var(--cursor);
+}
 #calendar-container .active,
 #calendar-container .active.today,
 #calendar-container .week-num:hover,
@@ -681,96 +690,231 @@ body.plugin-sliding-panes .mod-root .graph-controls {
 /* --------------- */
 /* Dataview Plugin */
 
+.markdown-preview-view .table-view-table {
+  font-size:calc(var(--font-normal) - 1px);
+}
 .markdown-preview-view .table-view-table > thead > tr > th {
   font-weight:600;
-  font-size:var(--font-normal);
+  font-size:vcalc(var(--font-normal) - 1px);
   color:var(--text-normal);
   border-bottom:1px solid var(--text-faint);
+  cursor:var(--cursor);
+}
+/*.markdown-preview-view .table-view-table tr:hover {
+  background:var(--text-selection);
+}*/
+
+/* --------------- */
+/* Kanban Plugin */
+
+body .workspace-leaf-content[data-type=kanban] .view-header-title-container {
+  text-align: center;
+}
+body.minimal-folding:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type=kanban] .view-header-title {
+  text-align: center;
+}
+body .kanban-plugin {
+  --interactive-accent: var(--text-selection);
+  --interactive-accent-hover: var(--background-tertiary);
+  --text-on-accent: var(--text-normal);
+  background-color: var(--background-primary);
+}
+body .kanban-plugin__board {
+  justify-content: center;
+}
+body .kanban-plugin__checkbox-label {
+  font-size:var(--font-small);
+  color:var(--text-muted);
+}
+body .kanban-plugin__item-content-wrapper {
+  box-shadow:none;
+}
+body .kanban-plugin__grow-wrap > textarea, 
+body .kanban-plugin__grow-wrap::after {
+  padding:0;
+  border:0;
+}
+body .kanban-plugin__grow-wrap > textarea, 
+body .kanban-plugin__grow-wrap::after, 
+body .kanban-plugin__item-title p {
+  font-size:calc(var(--font-normal) - 2px);
+}
+.kanban-plugin__item-input-actions button,
+.kanban-plugin__lane-input-actions button {
+  font-size:var(--font-small);
+}
+body .kanban-plugin__item {
+  background-color:var(--background-primary);
+}
+body .kanban-plugin__lane-header-wrapper  .kanban-plugin__grow-wrap > textarea,
+body .kanban-plugin__lane-input-wrapper  .kanban-plugin__grow-wrap > textarea {
+  background:transparent;
+  color:var(--text-normal);
+  font-size:0.875rem;
+  font-weight:600;
+}
+body .kanban-plugin__item-input-wrapper {
+  border:0;
+}
+body .kanban-plugin__item-input-wrapper .kanban-plugin__grow-wrap > textarea {
+  padding:6px 8px;
+  border:1px solid var(--background-modifier-border);
+}
+body .kanban-plugin__lane button.kanban-plugin__lane-settings-button.is-enabled,
+body .kanban-plugin__item .kanban-plugin__item-edit-archive-button,
+body .kanban-plugin__item button.kanban-plugin__item-edit-button,
+body .kanban-plugin__lane button.kanban-plugin__lane-settings-button,
+.kanban-plugin__item-settings-actions > button,
+.kanban-plugin__lane-action-wrapper > button {
+  background:transparent;
+  transition:color 0.1s ease-in-out;
+}
+body .kanban-plugin__item .kanban-plugin__item-edit-archive-button:hover,
+body .kanban-plugin__item button.kanban-plugin__item-edit-button.is-enabled,
+body .kanban-plugin__item button.kanban-plugin__item-edit-button:hover,
+body .kanban-plugin__lane button.kanban-plugin__lane-settings-button.is-enabled,
+body .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
+  color:var(--text-normal);
+  transition:color 0.1s ease-in-out;
+  background:transparent;
+}
+body .kanban-plugin__new-lane-button-wrapper {
+  position:fixed;
+  bottom:30px;
+}
+body .kanban-plugin__item-button-wrapper > button {
+  font-size: var(--font-small);
+  color: var(--text-muted);
+  background: transparent;
+}
+body .kanban-plugin__item-button-wrapper > button:hover {
+  color: var(--text-normal);
+  background: var(--background-tertiary);
+}
+body .kanban-plugin__item-button-wrapper {
+  padding-top:5px;
+  border-top:none;
+}
+
+body .kanban-plugin__lane-setting-wrapper > div:last-child {
+  border:none;
+  margin:0;
+}
+
+body .kanban-plugin__item.is-dragging {
+  box-shadow: 0 5px 30px rgba(0,0,0,0.15),
+    0 0 0 2px var(--text-selection);
+}
+body .kanban-plugin__lane.is-dragging {
+  box-shadow:0 5px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--background-modifier-border);
+}
+
+body .kanban-plugin__lane {
+  background:var(--background-primary);
+  padding:0;
+  border:1px solid transparent;
+}
+body .kanban-plugin__lane-items {
+  padding-bottom:0;
+  background-color:var(--background-secondary);
+}
+body button.kanban-plugin__new-lane-button {
+  background-color:transparent;
+  border:1px solid transparent;
+  text-align: center;
+  padding-right:25px;
+  color: var(--text-faint);
 }
 
 /* --------------- */
 /* Checklist Plugin */
 
-.todo-list .group .item.classic,
-.todo-list .group .item.compact,
-.todo-list .group svg,
-.todo-list .group .page {
+
+.checklist-plugin-main .group .classic,
+.checklist-plugin-main .group .compact,
+.checklist-plugin-main .group svg,
+.checklist-plugin-main .group .page {
   cursor:var(--cursor);
 }
-.todo-list {
-  padding:5px 10px 15px 15px;
+.workspace .view-content .checklist-plugin-main {
+  padding:10px 10px 15px 15px;
+  --todoList-togglePadding--compact:2px;
+  --todoList-listItemMargin--compact:2px;
 }
-.todo-list .title {
+.checklist-plugin-main .title {
   font-weight:400;
   color:var(--text-muted);
   font-size:var(--font-small);
 }
-.todo-list .group svg {
+.checklist-plugin-main .group svg {
   fill:var(--text-faint);
 }
-.todo-list .group svg:hover {
+.checklist-plugin-main .group svg:hover {
   fill:var(--text-normal);
 }
-.todo-list .group .title:hover {
+.checklist-plugin-main .group .title:hover {
   color:var(--text-normal);
 }
-.todo-list .group:not(:last-child) {
+.checklist-plugin-main .group:not(:last-child) {
   border-bottom:1px solid var(--background-modifier-border);
 }
-.todo-list .group {
-  padding:8px 0 0 0;
+.checklist-plugin-main .group {
+  padding:0 0 4px 0;
 }
-.todo-list .group .item.classic:last-child,
-.todo-list .group .item.compact:last-child {
+.checklist-plugin-main .group .classic:last-child,
+.checklist-plugin-main .group .compact:last-child {
   margin-bottom:10px;
 }
-.todo-list .group .item.classic,
-.todo-list .group .item.compact {
+.checklist-plugin-main .group .classic,
+.checklist-plugin-main .group .compact {
   font-size:var(--font-small);
 }
-.todo-list .group .item.classic,
-.todo-list .group .item.compact {
+.checklist-plugin-main .group .classic,
+.checklist-plugin-main .group .compact {
   background:transparent;
   border-radius:0;
-  margin:0 auto;
+  margin:1px auto;
   padding:0;
 }
-.todo-list .group .item.classic .content {
+.checklist-plugin-main .group .classic .content {
   padding:0;
 }
-.todo-list .group .item.classic:hover,
-.todo-list .group .item.compact:hover {
+.checklist-plugin-main .group .classic:hover,
+.checklist-plugin-main .group .compact:hover {
   background:transparent;
 }
-.todo-list .group .item.classic > .toggle,
-.todo-list .group .item.compact > .toggle {
-  padding:4px 5px 4px 0;
+.markdown-preview-view.checklist-plugin-main ul > li:not(.task-list-item)::before {
+  display:none;
 }
-.todo-list .group .item.compact > .toggle .checked {
+.checklist-plugin-main .group .compact > .toggle .checked {
   background:var(--text-accent);
   top:-1px;
   left:-1px;
   height:18px;
   width:18px;
 }
-.todo-list .group .count {
+.checklist-plugin-main .compact .toggle:hover {
+  opacity:1 !important;
+}
+.checklist-plugin-main .group .count {
   font-size:var(--font-smaller);
   padding:0;
   background:transparent;
   font-weight:400;
   color:var(--text-faint);
 }
-.todo-list .group .group-header:hover .count {
+.checklist-plugin-main .group .group-header:hover .count {
   color:var(--text-muted);
 }
-.todo-list .group .item .checkbox {
+.checklist-plugin-main .group .checkbox {
   border:1px solid var(--background-modifier-border-hover);
   min-height:18px;
   min-width:18px;
   height:18px;
   width:18px;
 }
-.todo-list .group .item .checkbox:hover {
+.checklist-plugin-main .group .checkbox:hover {
   border:1px solid var(--background-modifier-border-focus);
 }
 
@@ -792,7 +936,8 @@ body, input, button  {
 .workspace-leaf-content[data-type=markdown] {
   font-family:var(--text)
 }
-body, input, button, 
+body, input, button,
+.markdown-preview-view,
 .cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian {
   font-size:var(--font-normal);
@@ -1042,6 +1187,55 @@ input.prompt-input:hover {
   font-weight:600;
 }
 
+.menu {
+  padding:5px;
+}
+.menu-item {
+  font-size:var(--font-small);
+  border-radius:5px;
+  padding:2px 12px 2px 8px;
+  height:24px;
+  cursor:var(--cursor);
+  line-height:20px;
+}
+.menu-separator {
+  margin:6px -5px;
+
+}
+.menu-item-icon {
+  width:20px;
+}
+.menu-item-icon svg {
+  width:12px;
+  height:12px;
+}
+
+/* --------------- */
+/* Front matter */
+
+.theme-dark pre.frontmatter[class*="language-yaml"],
+.theme-light pre.frontmatter[class*="language-yaml"] {
+  padding:0 0 0px 0;
+  background:transparent;
+  font-family:var(--text);
+  line-height:1.2;
+  border-radius:0;
+  border-bottom:0px solid var(--background-modifier-border);
+}
+.markdown-preview-view .table-view-table > thead > tr > th {
+    border-color:var(--background-modifier-border);
+}
+.theme-dark .frontmatter .token,
+.theme-light .frontmatter .token,
+.markdown-preview-section .frontmatter code {
+  font-family:var(--text);
+  color:var(--text-faint) !important;
+}
+
+.markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter {
+    font-family:var(--text-editor);
+    color:var(--text-muted);
+}
 
 /* --------------- */
 /* Minimal settings */
@@ -1083,7 +1277,8 @@ input.prompt-input:hover {
 .modal button,
 .modal button.mod-cta a {
   font-size:var(--font-settings-small);
-  margin-right:0;
+  margin-right:3px;
+  margin-left:3px;
 }
 
 .setting-item {
@@ -1353,9 +1548,7 @@ border-bottom:1px solid #999;
   max-width:var(--max-width);
   width:var(--line-width);
 }
-.markdown-source-view.is-readable-line-width .CodeMirror,
-.CodeMirror,
-.markdown-preview-section {
+.markdown-source-view.is-readable-line-width .CodeMirror {
   padding-left:0;
   padding-right:0;
   margin:0 auto 0 auto;
@@ -1431,7 +1624,8 @@ border-bottom:1px solid #999;
   color:var(--text-faint);
   padding-top:3px;
 }
-.cm-s-obsidian span.cm-url {
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-url:hover {
   color:var(--text-accent);
 }
 .cm-s-obsidian span.cm-link {
@@ -1646,6 +1840,11 @@ input.document-replace-input:focus {
   width:auto;
 }
 
+.minimal-folding .workspace > .workspace-split:not(.mod-root) .workspace-leaf-content[data-type=markdown] .allow-fold-headings.markdown-preview-view .markdown-preview-sizer,
+.minimal-folding .workspace > .workspace-split:not(.mod-root) .workspace-leaf-content[data-type=markdown] .allow-fold-lists.markdown-preview-view .markdown-preview-sizer {
+  padding-left:0;
+}
+
 /* Hide embed styling for sidebar documents */
 .workspace > .workspace-split:not(.mod-root) .internal-embed .markdown-embed {
   border:none;
@@ -1733,7 +1932,7 @@ input[type=checkbox]:focus,input[type=checkbox]:hover {
   outline:0;
   border-color:var(--text-faint);
 }
-.todo-list .group .item.compact > .toggle .checked,
+.checklist-plugin-main .group .compact > .toggle .checked,
 .is-flashing input[type=checkbox]:checked,
 input[type=checkbox]:checked {
   background-color:var(--background-modifier-accent) !important;
@@ -1816,16 +2015,20 @@ input[type=checkbox]:checked {
   padding-bottom:50px;
 }
 .nav-folder-title {
-  margin:0px;
-  padding:0 10px 0 24px;
+  margin: 0 0 0 8px;
+  min-width: auto;
+  width: calc(100% - 16px);
+  padding: 0 10px 0 16px;
   cursor:var(--cursor);
 }
+.nav-folder.mod-root > .nav-folder-title.is-being-dragged-over {
+  background-color:var(--text-selection);
+}
 .nav-folder-title.is-being-dragged-over {
-  background-color:var(--background-modifier-accent);
-  border-color:var(--background-modifier-accent);
-  border-radius:0;
-  border-left:1px solid transparent;
-  border-right:1px solid transparent;
+  background-color:var(--text-selection);
+  border-color:var(--text-selection);
+  border-radius:6px;
+  border:1px solid transparent;
 }
 .nav-folder-title-content {
   padding:0px 4px 1px 0;
@@ -1967,6 +2170,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 /* Relationship lines in Preview */
 
+body.minimal-rel-preview ul {
+  position:relative;
+}
 body.minimal-rel-preview .markdown-preview-view ul ul::before {
   content:'';
   border-left:1px solid var(--background-modifier-border);
@@ -2056,7 +2262,7 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
   position:absolute;
   margin-left:-42px;
   padding-bottom:10px;
-  padding-top:8px;}
+  padding-top:0px;}
 .markdown-preview-view ul > li:not(.task-list-item) .collapse-indicator {
   padding-right:20px;}
 .markdown-preview-view ul > li:not(.task-list-item)::before {
@@ -2272,7 +2478,7 @@ input.search-input:focus {
   margin:0;
 }
 .search-result-container {
-  padding:5px 10px 5px 0px;
+  padding:5px 10px 50px 0px;
 }
 .search-result-file-title {
   line-height:1.3;
@@ -2627,11 +2833,11 @@ iframe {
 /* Blockquotes */
 
 .markdown-preview-view blockquote {
-  border-radius:0 ;
-  border:solid var(--quote-opening-modifier) ;
-  border-width:0px 0px 0px 1px ;
-  background-color:transparent ;
-  color:var(--text-muted) ;
+  border-radius:0;
+  border:solid var(--quote-opening-modifier);
+  border-width:0px 0px 0px 1px;
+  background-color:transparent;
+  color:var(--text-muted);
   padding:0 0 0 calc(var(--nested-padding) / 2);
   margin-inline-start:var(--nested-padding);
 }
@@ -2740,16 +2946,28 @@ ol > li {
   display:none;
 }
 .popover .markdown-embed .markdown-preview-view {
-  padding-top:15px;
-  padding-bottom:30px;
+  padding:10px 20px 30px;
 }
 .popover.hover-popover .markdown-embed .markdown-embed-content {
   max-height:none;
 }
-.popover.mod-empty {
-  padding:20px 15px 20px 20px;
+.popover.hover-popover.mod-empty {
+  padding:20px 20px 20px 20px;
   color:var(--text-muted);
 }
+
+.popover.hover-popover .markdown-preview-view .table-view-table,
+.popover.hover-popover .markdown-embed .markdown-preview-view {
+  font-size:1.05em;
+}
+
+.popover.hover-popover .markdown-embed h1,
+.popover.hover-popover .markdown-embed h2,
+.popover.hover-popover .markdown-embed h3,
+.popover.hover-popover .markdown-embed h4 {
+  margin-top:1rem;
+}
+
 
 /* --------------- */
 /* Graphs */
@@ -2945,6 +3163,7 @@ input[type=range]::-webkit-slider-thumb:active {
 .modal.mod-settings .vertical-tab-header {
   background:var(--background-secondary);
   padding-top:5px;
+  padding-bottom:100px;
 }
 .vertical-tab-header-group-title {
   color:var(--text-normal);
