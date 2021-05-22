@@ -58,6 +58,10 @@ pre.CodeMirror-line:not(.HyperMD-list-line) {
     padding-left: 2%;
 }
 
+pre.HyperMD-list-line.HyperMD-list-line-1.CodeMirror-line {
+    padding-left: 4% !important;
+}
+
 .tag,
 .cm-s-obsidian span.cm-hashtag-end {
     background-color: var(--tag-background-color);
@@ -155,7 +159,6 @@ div[data-tag-name='p']+div[data-tag-name="h6"] {
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
     letter-spacing: 0 !important;
-    margin-left: 0.5em !important;
     margin-top: 0;
 }
 
@@ -183,10 +186,12 @@ span.cm-header+span.cm-url {
     font-weight: 600;
 }
 
-.table-view-table>tbody>tr>td>span>a.internal-link {
+.table-view-table>tbody>tr>td>span>a,
+li.dataview-result-list-li>span[data-tag-name="p"]>a {
     background-color: transparent !important;
 }
 
-.table-view-table>tbody>tr>td>span>a.internal-link:hover {
+.table-view-table>tbody>tr>td>span>a:hover,
+li.dataview-result-list-li>span[data-tag-name="p"]>a:hover {
     color: var(--blue) !important;
 }

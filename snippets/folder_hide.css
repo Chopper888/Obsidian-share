@@ -1,5 +1,5 @@
-div[data-path='Screen'],
-div[data-path='Screen']+div.nav-folder-children {
+div[data-path='Image'],
+div[data-path='Image']+div.nav-folder-children {
     display: none;
 }
 
