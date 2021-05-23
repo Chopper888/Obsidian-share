@@ -3,3 +3,10 @@ title: Mara's files
 description: Juste un site pour partager des markdown écrit via obsidian.
 show_download: false
 logo: logo.gif
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - Agent Of Shield.md
