@@ -1,321 +1,383 @@
 :root {
-	/* Inbox */
-	--inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%23549083&height=16');
-	--inbox-font: #549083;
-	--indicator-inbox:url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
-	--organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23549083&height=18');
-	--personal : url('https://api.iconify.design/bi:person-bounding-box.svg?color=%23549083&height=16');
-
-	/*Template */
-	--template: url('https://api.iconify.design/carbon:template.svg?color=%23717A96&height=18');
-	--template-font : #717A96;
-	--indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23717A96&height=18');
-
-	/* Templater */
-	--templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23717A96&height=18');
-	--indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23717A96&height=18');
-
-	/* Ecriture */
-	--ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%235D79D5&height=18');
-	--ecriture-font: #5D79D5;
-	--indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%235D79D5&height=18');
-
-	/* Personnages */
-	--perso:url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%235da1ad&height=18');
-	--perso-font: #5da1ad;
-	--indic-perso : url('https://api.iconify.design/codicon:note.svg?color=%235da1ad&height=18');
-
-	/* Fiches */
-	--fiches:url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%23549083&height=18');
-	--fiches-font: #549083;
-	--indic-fiches : url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
-
-	/* OC */
-	--oc:url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%23c38a3f&height=18');
-	--oc-font: #c38a3f;
-	--indicator-oc :  url('https://api.iconify.design/codicon:note.svg?color=%23c38a3f&height=18');
-
-	/* Univers */
-	--univers: url('https://api.iconify.design/jam:universe.svg?color=%235da1ad&height=18');
-	--univers-font: #5da1ad;
-	--indic-univers : url('https://api.iconify.design/codicon:note.svg?color=%235da1ad&height=18');
-
-	/* M1 */
-	--m1: url('https://api.iconify.design/cil:school.svg?color=%23896ca0&height=18');
-	--m1-font: #896ca0;
-	--indicator-m1:url('https://api.iconify.design/codicon:note.svg?color=%23896ca0&height=18');
-	
-	--indicator:url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-	--bookmark:url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%23549083&height=18');
+    /* Inbox */
+    --inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%23549083&height=16');
+    --inbox-font: #549083;
+    --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
+    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23549083&height=18');
+    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%23549083&height=16');
+    /*Template */
+    --template: url('https://api.iconify.design/carbon:template.svg?color=%23a5a5af&height=18');
+    --template-font: #a5a5af;
+    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23a5a5af&height=18');
+    /* Templater */
+    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23a5a5af&height=18');
+    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23a5a5af&height=18');
+    /* Ecriture */
+    --ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%235D79D5&height=18');
+    --ecriture-font: #5D79D5;
+    --indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%235D79D5&height=18');
+    /* Personnages */
+    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%23808ed7&height=18');
+    --perso-font: #808ed7;
+    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%23808ed7&height=18');
+    /* Fiches */
+    --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%23a6b9d7&height=18');
+    --fiches-font: #a6b9d7;
+    --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%23a6b9d7&height=18');
+    /* OC */
+    --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%23a6b9d7&height=18');
+    --oc-font: #a6b9d7;
+    --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%23a6b9d7&height=18');
+    /* Univers */
+    --univers: url('https://api.iconify.design/jam:universe.svg?color=%23808ed7&height=18');
+    --univers-font: #808ed7;
+    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%23808ed7&height=18');
+    /* M1 */
+    --m1: url('https://api.iconify.design/cil:school.svg?color=%23717A96&height=18');
+    --m1-font: #717A96;
+    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23717A96&height=18');
+    --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
+    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%23549083&height=18');
 }
+
 
 /* Inbox*/
 
-.nav-folder-title[data-path^="00. Inbox"] .nav-folder-title-content::before {
-	content: var(--inbox);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+.nav-folder-title[data-path^="Box"] .nav-folder-title-content::before {
+    content: var(--inbox);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="00. Inbox"], .nav-file-title[data-path*="00. Inbox"]{
-	color: var(--inbox-font) !important;
+.nav-folder-title[data-path^="Box"],
+.nav-file-title[data-path*="Box"] {
+    color: var(--inbox-font) !important;
 }
 
-.nav-file-title[data-path*="00. Inbox"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-inbox);
+.nav-file-title[data-path*="Box"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-inbox);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="00. Inbox/Organisation"] .nav-folder-title-content::before {
-	content: var(--organisation);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Box/Organisation"] .nav-folder-title-content::before {
+    content: var(--organisation);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="00. Inbox/Perso"] .nav-folder-title-content::before {
-	content: var(--personal);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Box/Perso"] .nav-folder-title-content::before {
+    content: var(--personal);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
+
 
 /* Template */
+
 .nav-folder-title[data-path^="ZZ. Template"] .nav-folder-title-content::before {
-	content: var(--template);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--template);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="ZZ. Template"], .nav-file-title[data-path*="ZZ. Template"]{
-	color: var(--template-font) !important;
+.nav-folder-title[data-path^="ZZ. Template"],
+.nav-file-title[data-path*="ZZ. Template"] {
+    color: var(--template-font) !important;
 }
 
-.nav-file-title[data-path*="ZZ. Template"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-template);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+.nav-file-title[data-path*="ZZ. Template"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-template);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
+
 
 /* Templater */
 
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
-	content: var(--templater);
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 12px;
-	width: 16px;
-	margin: -4px 4px 0 0;
+    content: var(--templater);
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 12px;
+    width: 16px;
+    margin: -4px 4px 0 0;
 }
 
-.nav-file-title[data-path*="ZZ. Template/Templater"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-templater);
-	margin: -8px -3px 0 0 !important;
+.nav-file-title[data-path*="ZZ. Template/Templater"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-templater);
+    margin: -8px -3px 0 0 !important;
 }
+
 
 /* Master 1 */
 
-
 .nav-folder-title[data-path^="Master 1"] .nav-folder-title-content::before {
-	content: var(--m1);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--m1);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Master 1"], .nav-file-title[data-path*="Master 1"]{
-	color: var(--m1-font) !important;
+.nav-folder-title[data-path^="Master 1"],
+.nav-file-title[data-path*="Master 1"] {
+    color: var(--m1-font) !important;
 }
 
-.nav-file-title[data-path*="Master 1"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-m1);
+.nav-file-title[data-path*="Master 1"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-m1);
 }
+
 
 /* Ecriture */
+
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture"] .nav-folder-title-content::before {
-	content: var(--ecriture);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--ecriture);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture"], .nav-file-title[data-path*="Ecriture"]{
-	color: var(--ecriture-font) !important;
+.nav-folder-title[data-path^="Ecriture"],
+.nav-file-title[data-path*="Ecriture"] {
+    color: var(--ecriture-font) !important;
 }
 
-.nav-file-title[data-path*="Ecriture"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-ecri);
-	display: inline-block;
+.nav-file-title[data-path*="Ecriture"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-ecri);
+    display: inline-block;
 }
 
 
 /* Personnages */
 
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ecriture/Personnages"] .nav-folder-title-content::before {
-	content: var(--perso);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--perso);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture/Personnages"], .nav-file-title[data-path*="Ecriture/Personnages"]{
-	color: var(--perso-font) !important;
+.nav-folder-title[data-path^="Ecriture/Personnages"],
+.nav-file-title[data-path*="Ecriture/Personnages"] {
+    color: var(--perso-font) !important;
 }
 
-.nav-file-title[data-path*="Ecriture/Personnages"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indic-perso);
-	display: inline-block;
+.nav-file-title[data-path*="Ecriture/Personnages"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-perso);
+    display: inline-block;
 }
+
 
 /* Fiches */
+
 .nav-folder-title[data-path^="Ecriture/Personnages/Fiches"] .nav-folder-title-content::before {
-	content: var(--fiches);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--fiches);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture/Personnages/Fiches"], .nav-file-title[data-path*="Ecriture/Personnages/Fiches"]{
-	color: var(--fiches-font) !important;
+.nav-folder-title[data-path^="Ecriture/Personnages/Fiches"],
+.nav-file-title[data-path*="Ecriture/Personnages/Fiches"] {
+    color: var(--fiches-font) !important;
 }
 
-.nav-file-title[data-path*="Ecriture/Personnages/Fiches"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indic-fiches);
+.nav-file-title[data-path*="Ecriture/Personnages/Fiches"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-fiches);
 }
+
 
 /* OC */
 
 .nav-folder-title[data-path^="Ecriture/Personnages/OC"] .nav-folder-title-content::before {
-	content: var(--oc);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--oc);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture/Personnages/OC"], .nav-file-title[data-path*="Ecriture/Personnages/OC"]{
-	color: var(--oc-font) !important;
+.nav-folder-title[data-path^="Ecriture/Personnages/OC"],
+.nav-file-title[data-path*="Ecriture/Personnages/OC"] {
+    color: var(--oc-font) !important;
 }
 
-.nav-file-title[data-path*="Ecriture/Personnages/OC"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator-oc);
+.nav-file-title[data-path*="Ecriture/Personnages/OC"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-oc);
 }
 
 
 /* Univers */
 
 .nav-folder-title[data-path^="Ecriture/Univers"] .nav-folder-title-content::before {
-	content: var(--univers);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+    content: var(--univers);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Ecriture/Univers"], .nav-file-title[data-path*="Ecriture/Univers"]{
-	color: var(--univers-font) !important;
+.nav-folder-title[data-path^="Ecriture/Univers"],
+.nav-file-title[data-path*="Ecriture/Univers"] {
+    color: var(--univers-font) !important;
 }
 
-.nav-file-title[data-path*="Ecriture/Univers"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indic-univers);
+.nav-file-title[data-path*="Ecriture/Univers"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-univers);
 }
+
 
 /* Files */
 
-.nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--indicator);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-5px, 5px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
-	padding-right: 10px; 
-	}
+.nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 5px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    padding-right: 10px;
+}
 
 
 /* Hover */
-body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-	background-color: transparent !important;
+
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+    background-color: transparent !important;
 }
 
 .nav-folder-title[data-path^="/"] {
-	display: none;
+    display: none;
 }
 
-body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator, body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-	color: currentColor !important;
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+    color: currentColor !important;
 }
 
 
 /* Bookmark */
 
-.nav-folder-title[data-path^="00. Inbox/Bookmark"] .nav-folder-title-content::before {
-	content: var(--bookmark);
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-2px, 3px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
+.nav-folder-title[data-path^="Box/Bookmark"] .nav-folder-title-content::before {
+    content: var(--bookmark);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
 }
 
-.nav-file-title[data-path*="00. Inbox/Bookmark"] .nav-file-title-content:only-child:before, .search-result-collapse-indicator + span:before, .nav-file-icon:before {
-	content: var(--bookmark) !important;
-	background-size: 14px 14px; /* adopt this to your file tree font height */
-	transform: translate(-5px, 5px); /* to position the icon */
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 16px;
-	width: 16px;
-	margin: -4px 2px 0 0;
-	padding-right: 10px; 
+.nav-file-title[data-path*="Box/Bookmark"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--bookmark) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 5px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    padding-right: 10px;
 }
-

@@ -13,7 +13,7 @@ div[data-path='Master 1/Stage/Data/export']+div.nav-folder-children {
     display: none;
 }
 
-.nav-file-title[data-path="00. Inbox/Changelog.md"] {
+.nav-file-title[data-path="Box/Changelog.md"] {
     display: none;
 }
 
