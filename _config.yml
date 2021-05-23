@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: Mara's files
+description: Juste un site pour partager des markdown écrit via obsidian.
+show_download: false
+logo: logo.gif
