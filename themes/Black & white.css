@@ -334,8 +334,16 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-size: 100%;
 }
 
+span.cm-hmd-frontmatter {
+    font-family: var(--text) !important;
+}
+
 .cm-header-6 {
     font-size: 100%;
+}
+
+#text {
+    font-family: var(--text);
 }
 
 pre.CodeMirror-line:not(.cm-s-obsidian .HyperMD-table-row) {
