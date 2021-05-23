@@ -9,4 +9,4 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - Agent Of Shield.md
+  - Agent.md
