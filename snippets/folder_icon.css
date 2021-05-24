@@ -1,10 +1,10 @@
 :root {
     /* Inbox */
-    --inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%23549083&height=16');
-    --inbox-font: #549083;
-    --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%23549083&height=18');
-    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23549083&height=18');
-    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%23549083&height=16');
+    --inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%235892c3&height=16');
+    --inbox-font: #5892c3;
+    --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%235892c3&height=18');
+    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%235892c3&height=18');
+    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%235892c3&height=16');
     /*Template */
     --template: url('https://api.iconify.design/carbon:template.svg?color=%23a5a5af&height=18');
     --template-font: #a5a5af;
@@ -37,7 +37,7 @@
     --m1-font: #717A96;
     --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23717A96&height=18');
     --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%23549083&height=18');
+    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%235892c3&height=18');
 }
 
 
