@@ -1,46 +1,46 @@
 :root {
     /* Inbox */
-    --inbox: url('https://api.iconify.design/dashicons:database-add.svg?color=%235892c3&height=18');
-    --inbox-font: #5892c3;
-    --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%235892c3&height=18');
-    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%235892c3&height=18');
-    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%235892c3&height=16');
-    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%235892c3&height=16');
-    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%235892c3&height=16');
-    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%235892c3&height=16');
+    --inbox: url('https://api.iconify.design/dashicons:database-add.svg?color=%236183B5&height=18');
+    --inbox-font: #6183B5;
+    --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
+    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%236183B5&height=18');
+    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%236183B5&height=16');
+    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%236183B5&height=16');
+    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%236183B5&height=16');
+    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%236183B5&height=16');
     /*Template */
-    --template: url('https://api.iconify.design/carbon:template.svg?color=%23a5a5af&height=18');
-    --template-font: #a5a5af;
-    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23a5a5af&height=18');
+    --template: url('https://api.iconify.design/carbon:template.svg?color=%23699B96&height=18');
+    --template-font: #699B96;
+    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23699B96&height=18');
     /* Templater */
-    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23a5a5af&height=18');
-    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23a5a5af&height=18');
+    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23699B96&height=18');
+    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23699B96&height=18');
     /* Ecriture */
-    --ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%235D79D5&height=18');
-    --ecriture-font: #5D79D5;
-    --indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%235D79D5&height=18');
+    --ecriture: url('https://api.iconify.design/tabler:writing-sign.svg?color=%2384A3CB&height=18');
+    --ecriture-font: #84A3CB;
+    --indicator-ecri: url('https://api.iconify.design/codicon:note.svg?color=%2384A3CB&height=18');
     /* Personnages */
-    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%23808ed7&height=18');
-    --perso-font: #808ed7;
-    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%23808ed7&height=18');
+    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%239298C9&height=18');
+    --perso-font: #9298C9;
+    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%239298C9&height=18');
     /* Fiches */
-    --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%23a6b9d7&height=18');
-    --fiches-font: #a6b9d7;
-    --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%23a6b9d7&height=18');
+    --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%236d9ce4&height=18');
+    --fiches-font: #6d9ce4;
+    --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%236d9ce4&height=18');
     /* OC */
-    --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%23a6b9d7&height=18');
-    --oc-font: #a6b9d7;
-    --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%23a6b9d7&height=18');
+    --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%236183B5&height=18');
+    --oc-font: #6183B5;
+    --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
     /* Univers */
-    --univers: url('https://api.iconify.design/jam:universe.svg?color=%23808ed7&height=18');
-    --univers-font: #808ed7;
-    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%23808ed7&height=18');
+    --univers: url('https://api.iconify.design/jam:universe.svg?color=%235B98B5&height=18');
+    --univers-font: #5B98B5;
+    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%235B98B5&height=18');
     /* M1 */
-    --m1: url('https://api.iconify.design/cil:school.svg?color=%23717A96&height=18');
-    --m1-font: #717A96;
-    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23717A96&height=18');
+    --m1: url('https://api.iconify.design/cil:school.svg?color=%23518590&height=18');
+    --m1-font: #518590;
+    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23518590&height=18');
     --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%235892c3&height=18');
+    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%236183B5&height=18');
 }
 
 
@@ -102,7 +102,7 @@
 
 /* Archive */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Archive"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Database/Archive"] .nav-folder-title-content::before {
     content: var(--archive);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -134,7 +134,7 @@
 
 /* Cuisine */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Cuisine"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Database/Cuisine"] .nav-folder-title-content::before {
     content: var(--food);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -166,8 +166,8 @@
 
 /* Media */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Média"] .nav-folder-title-content::before {
-    content: var(--media);
+.nav-folder-title[data-path^="Database/Média"] .nav-folder-title-content::before {
+    content: var(--media) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
     transform: translate(-2px, 3px);
@@ -198,7 +198,7 @@
 
 /* Perso */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Perso"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Database/Perso"] .nav-folder-title-content::before {
     content: var(--personal);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
