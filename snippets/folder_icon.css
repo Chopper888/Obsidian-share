@@ -1,10 +1,13 @@
 :root {
     /* Inbox */
-    --inbox: url('https://api.iconify.design/fluent:mail-inbox-add-16-regular.svg?color=%235892c3&height=16');
+    --inbox: url('https://api.iconify.design/dashicons:database-add.svg?color=%235892c3&height=18');
     --inbox-font: #5892c3;
     --indicator-inbox: url('https://api.iconify.design/codicon:note.svg?color=%235892c3&height=18');
     --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%235892c3&height=18');
     --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%235892c3&height=16');
+    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%235892c3&height=16');
+    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%235892c3&height=16');
+    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%235892c3&height=16');
     /*Template */
     --template: url('https://api.iconify.design/carbon:template.svg?color=%23a5a5af&height=18');
     --template-font: #a5a5af;
@@ -43,7 +46,7 @@
 
 /* Inbox*/
 
-.nav-folder-title[data-path^="Box"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="Database"] .nav-folder-title-content::before {
     content: var(--inbox);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -56,18 +59,18 @@
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Box"],
-.nav-file-title[data-path*="Box"] {
+.nav-folder-title[data-path^="Database"],
+.nav-file-title[data-path*="Database"] {
     color: var(--inbox-font) !important;
 }
 
-.nav-file-title[data-path*="Box"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="Database"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--indicator-inbox);
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Box/Organisation"] .nav-folder-title-content::before {
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Organisation"] .nav-folder-title-content::before {
     content: var(--organisation);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -80,7 +83,122 @@
     margin: -4px 2px 0 0;
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Box/Perso"] .nav-folder-title-content::before {
+.nav-file-title[data-path*="Database/Organisation"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--organisation) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -2px 0 0;
+    padding-right: 10px;
+}
+
+
+/* Archive */
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Archive"] .nav-folder-title-content::before {
+    content: var(--archive);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Database/Archive"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--archive) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -5px 0 0;
+    padding-right: 10px;
+}
+
+
+/* Cuisine */
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Cuisine"] .nav-folder-title-content::before {
+    content: var(--food);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Database/Cuisine"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--food) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -5px 0 0;
+    padding-right: 10px;
+}
+
+
+/* Media */
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Média"] .nav-folder-title-content::before {
+    content: var(--media);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Database/Média"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--media) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -5px 0 0;
+    padding-right: 10px;
+}
+
+
+/* Perso */
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Database/Perso"] .nav-folder-title-content::before {
     content: var(--personal);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -91,6 +209,38 @@
     height: 16px;
     width: 16px;
     margin: -4px 2px 0 0;
+}
+
+
+/* Bookmark */
+
+.nav-folder-title[data-path^="Database/Bookmark"] .nav-folder-title-content::before {
+    content: var(--bookmark);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-2px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Database/Bookmark"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--bookmark) !important;
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: translate(-5px, 3px);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    padding-right: 10px;
 }
 
 
@@ -323,7 +473,7 @@
     content: var(--indicator);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 5px);
+    transform: translate(-5px, 3px);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -348,36 +498,4 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: currentColor !important;
-}
-
-
-/* Bookmark */
-
-.nav-folder-title[data-path^="Box/Bookmark"] .nav-folder-title-content::before {
-    content: var(--bookmark);
-    background-size: 14px 14px;
-    /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
-    /* to position the icon */
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: -4px 2px 0 0;
-}
-
-.nav-file-title[data-path*="Box/Bookmark"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--bookmark) !important;
-    background-size: 14px 14px;
-    /* adopt this to your file tree font height */
-    transform: translate(-5px, 5px);
-    /* to position the icon */
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: -4px 2px 0 0;
-    padding-right: 10px;
 }
