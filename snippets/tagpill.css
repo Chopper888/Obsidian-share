@@ -1,56 +1,25 @@
 /* ====== Tag Pills ======== */
 
 :root {
-	--tag: rgb(29, 88, 143);
+    --tag: rgb(29, 88, 143);
+    --tag-background-color: #80cbee67;
+    --tag-border-color: #0493ec;
 }
 
-.tag:not(.token)  {
-	content:"";
-	border-radius:7px !important;
-	color: white !important;
-	padding: 1px 8px !important;
-	text-align: center;
-	text-decoration: none;
-	margin: 0px 0px;
-	cursor: pointer;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	background-color:var(--tag);
-	font-size: 80%;
+.tag,
+.cm-s-obsidian span.cm-hashtag-end {
+    background-color: var(--tag-background-color);
+    border: 1px solid var(--tag-border-color);
+    color: var(--tag-border-color);
+    font-size: 1em;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 10px !important;
+    padding-right: 10px;
 }
 
-.cm-s-obsidian span.cm-hashtag{
-  background-color: var(--tag);
-  color:white;
-}
-
-.CodeMirror-line span.cm-hashtag-begin {
-  color: rgba(0, 0, 0, 0.178) !important;
-  font-family: 'Nunito', sans-serif !important;
-  font-weight: 700 !important;
-  border-radius: 5px !important;
-  background-color: transparent
-}
-
-.CodeMirror-line span.cm-hashtag-begin:before {
-	content:"";
-}
-
-.CodeMirror-line span.cm-hashtag-end{
-	content:"";
-	color: white !important;
-	padding: 1px 8px !important;
-	text-align: center;
-	text-decoration: none;
-	margin: 0px 0px;
-	cursor: pointer;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	  background-color: var(--tag);
-  color:white;
-  border-radius: 5px !important;
-  font-size: 80%;
-}
-.markdown-preview-section a:hover {
-	text-shadow: 1px 1px 0 rgba(182, 176, 238, 0.438) !important;
+.markdown-preview-view a.tag {
+    color: var(--tag-border-color);
 }

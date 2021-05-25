@@ -1,3 +1,7 @@
+:root {
+    --link-background-color: #cdecff;
+}
+
 @media screen and (min-width: 1080px) {
     .markdown-preview-view {
         max-width: 90ch;
@@ -54,7 +58,7 @@ h6+table.dataview.table-view-table {
     margin: 0.5em;
 }
 
-pre.CodeMirror-line:not(.HyperMD-list-line, pre.HyperMD-header.HyperMD-header-1.CodeMirror-line) {
+pre.CodeMirror-line:not(.HyperMD-list-line, pre.HyperMD-header.HyperMD-header-1.CodeMirror-line, pre.HyperMD-header.HyperMD-header-2.CodeMirror-line, pre.HyperMD-header.HyperMD-header-3.CodeMirror-line, pre.HyperMD-header.HyperMD-header-4.CodeMirror-line, pre.HyperMD-header.HyperMD-header-5.CodeMirror-line, pre.HyperMD-header.HyperMD-header-6.CodeMirror-line) {
     padding-left: 3% !important;
 }
 
