@@ -199,3 +199,7 @@ li.dataview-result-list-li>span[data-tag-name="p"]>a {
 li.dataview-result-list-li>span[data-tag-name="p"]>a:hover {
     color: var(--blue) !important;
 }
+
+.container.svelte-180qotg>h3.svelte-180qotg {
+    display: none;
+}

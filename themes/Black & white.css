@@ -56,6 +56,7 @@
     --text-accent: rgb(67, 95, 121) !important;
     --text-accent-hover: rgb(124, 178, 228);
     --font: #3c3c3c;
+    --font-secondary: var(--background-primary);
     --text-nav: rgba(190, 190, 190, 255);
     --text-normal: var(--text-nav);
     --code-block-border: transparent;
@@ -511,9 +512,17 @@ div.markdown-preview-view {
     background: inherit;
 }
 
-button.mod-cta {
+button.mod-cta,
+button:hover,
+.nav-action-button.is-active:hover {
     color: var(--interactive-normal);
     background-color: var(--interactive-accent)
+}
+
+button,
+.nav-action-button.is-active {
+    color: black;
+    background-color: var(--blue)
 }
 
 .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
@@ -767,4 +776,15 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
 
 .smalltalk .page {
     background-color: var(--background-secondary) !important;
+}
+
+.container.svelte-180qotg.svelte-180qotg,
+.synonyms.svelte-1fio09r {
+    color: var(--font-secondary) !important;
+}
+
+.synonyms.svelte-1fio09r>ul.svelte-1fio09r.svelte-1fio09r {
+    color: var(--font-secondary) !important;
+    opacity: 0.5;
+    font-style: italic;
 }
