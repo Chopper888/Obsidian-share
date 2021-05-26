@@ -71,6 +71,7 @@
     --list-color: #d6ba7c;
     --text-faint: rgba(150, 150, 150, 255);
     --text-highlight-bg: #dbaa205e;
+    --todo: var(--font);
 }
 
 .theme-dark {
@@ -102,6 +103,7 @@
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
     --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --todo: var(--font);
 }
 
 
@@ -763,7 +765,7 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
 
 .tag-base.svelte-yzsyxo,
 .tag-sub.svelte-yzsyxo {
-    color: rgba(255, 255, 255, 0.664) !important;
+    color: var(--todo);
 }
 
 .count.svelte-yzsyxo {
@@ -787,4 +789,10 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
     color: var(--font-secondary) !important;
     opacity: 0.5;
     font-style: italic;
+}
+
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+.modal button:not(.mod-cta):not(.mod-warning) {
+    color: var(--font-secondary) !important;
+    opacity: 0.5;
 }
