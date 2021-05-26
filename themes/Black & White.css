@@ -1,13 +1,10 @@
-/* Font → You can found it in the src/theme or change it*/
-
-
 /* @settings
 
 name: Black & White
-id: blackandwhitethemes
+id: blackwhite
 settings:
     - 
-        id: my-title
+        id: Font-title
         title: Font settings
         type: heading
         level: 3
@@ -42,7 +39,7 @@ settings:
         type: variable-text
         default: Bierstadt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
     - 
-        id: my-title
+        id: colors-settings
         title: Colors settings
         type: heading
         level: 3
@@ -75,7 +72,7 @@ settings:
         format: hex
         default: '#d3d3d3'
     -
-        id: my-title
+        id: colors-themes
         title: Themed colors
         type: heading
         level: 4
@@ -266,7 +263,6 @@ settings:
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
     --link-background-color: #cdecff;
-    --text-selection: #bbd9f623;
 }
 
 .theme-light {
@@ -1151,14 +1147,26 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
     border-radius: 0 !important;
 }
 
-summary.svelte-1352yt {
-    text-decoration: underline;
-    color: var(--text-faint);
+.container.svelte-14wlot0>h3.svelte-14wlot0 {
+    color: var(--background-primary) !important
 }
 
-p.svelte-1352yt {
-    color: var(--text-faint);
-    text-decoration-color: transparent !important;
+.main.svelte-nmuzfy details.svelte-nmuzfy>summary.svelte-nmuzfy {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.label.svelte-nmuzfy.svelte-nmuzfy.svelte-nmuzfy,
+.main.svelte-nmuzfy details.svelte-nmuzfy>summary.svelte-nmuzfy {
+    text-decoration: underline;
+    color: var(--background-primary);
+}
+
+p.svelte-1352yt,
+.synonyms.svelte-nmuzfy>p.svelte-nmuzfy.svelte-nmuzfy,
+.definition.svelte-nmuzfy>p.svelte-nmuzfy.svelte-nmuzfy,
+.main.svelte-nmuzfy blockquote.svelte-nmuzfy.svelte-nmuzfy {
+    color: var(--text-faint) !important;
     margin-left: 6px;
 }
 
@@ -1171,4 +1179,16 @@ p.svelte-1352yt {
     color: var(--font-secondary) !important;
     opacity: 0.5;
     font-style: italic;
+}
+
+.dict-s-popover.svelte-1j3cg25>.dict-s-popover__select-option.svelte-1j3cg25:last-child,
+.dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25 {
+    background-color: var(--background-secondary);
+}
+
+.dict-s-popover.svelte-1j3cg25>.dict-s-popover__select-option.svelte-1j3cg25:last-child:hover,
+.dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25:hover,
+.dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25:hover,
+.dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25:hover {
+    background-color: var(--blue);
 }
