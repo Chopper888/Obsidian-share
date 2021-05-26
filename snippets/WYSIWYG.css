@@ -94,7 +94,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: var(--background-modifier-border);
+    background: var(--blue);
     left: 0;
     top: 50%;
 }

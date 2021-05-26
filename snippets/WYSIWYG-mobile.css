@@ -15,8 +15,7 @@
 .cm-hmd-internal-link,
 .cm-comment,
 .cm-s-obsidian span.cm-hmd-escape-backslash {
-    font-size: 60%;
-    opacity: 0.5;
+    display: none;
 }
 
 .cm-hmd-barelink,
