@@ -1,26 +1,250 @@
 /* Font → You can found it in the src/theme or change it*/
 
-@font-face {
-    font-family: "Seaford";
-    src: url("/Home/.obsidian/src/seaford.ttf")
-}
 
-@font-face {
-    font-family: "Seaford";
-    src: url("/Home/.obsidian/src/seaford-bold.ttf");
-    font-weight: bold;
-}
+/* @settings
 
-@font-face {
-    font-family: "Bierstadt";
-    src: url("/Home/.obsidian/src/bierstadt.ttf")
-}
-
-@font-face {
-    font-family: "Bierstadt";
-    src: url("/Home/.obsidian/src/bierstad-bold.ttf");
-    font-weight: bold;
-}
+name: Black & White
+id: blackandwhitethemes
+settings:
+    - 
+        id: my-title
+        title: Font settings
+        type: heading
+        level: 3
+    - 
+        id: text
+        title: Editor font
+        description: Font used for the editor body
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace
+    -   
+        id: text-preview
+        title: Preview font
+        description: Font used for the preview body
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    - 
+        id: header
+        title: Header Font
+        description: Font used for the header
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    - 
+        id: font-monospace
+        title: Code font
+        description: Font used for coding
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, 'Fira Code', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace
+    - 
+        id: default-font
+        title: Default font
+        description: Font used by default
+        type: variable-text
+        default: Bierstadt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif
+    - 
+        id: my-title
+        title: Colors settings
+        type: heading
+        level: 3
+    - 
+        id: tag-background-color
+        title: Tag Background color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#80cbee67'
+    -   
+        id: tag-border-color
+        title: Tag border color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#0493ec'
+    - 
+        id: link-background-color
+        title: Link background color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#cdecff'
+    -
+        id: border-dt
+        title: Border colors
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#d3d3d3'
+    -
+        id: my-title
+        title: Themed colors
+        type: heading
+        level: 4
+    -
+        id: background-primary
+        title: Background Primary
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#292525'
+        default-dark: '#fafafa'
+    -
+        id: background-primary-alt
+        title: Background Primary (alt)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#f5f6f8'
+        default-dark: '#292C2E'
+    -
+        id: background-secondary-alt
+        title: Background Secondary (alt)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#d8d8d8'
+        default-dark: '#292C2E'
+    -
+        id: background-nav
+        title: Navigator colors (primary)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#d8d8d8'
+        default-dark: '#292C2E'
+    -
+        id: background-nav-alt
+        title: Navigator colors (alt)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#d8d8d8'
+        default-dark: '#292C2E'
+    -
+        id: text-accent
+        title: Text accent
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#435f79'
+        default-dark: '#435f79'
+    -
+        id: text-accent-hover
+        title: Text accent (hover)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#7cb2e4'
+        default-dark: '#7cb2e4'
+    -
+        id: font
+        title: Font color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#bdbdbd'
+        default-dark: '#3c3c3c'
+    -
+        id: font-secondary
+        title: Font secondary color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#292525'
+        default-dark: '#fafafa'
+    -
+        id: text-nav
+        title: Navigator text
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#313131'
+        default-dark: '#bebebe'
+    -
+        id: text-normal
+        title: Normal text
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#000000'
+        default-dark: '#bebebe'
+    -
+        id: code-block-background
+        title: Code block (background)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#dee1e42a'
+        default-dark: '#d9ecfa'
+    -
+        id: interactive-accent
+        title: Interactive accent
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        alt-format:
+        - 
+            id: interactive-accent-rgb
+            format: rgb
+        default-light: '#63a0d0'
+        default-dark: '#63a0d0'
+    -
+        id: interactive-accent-hover
+        title: Interactive accent (hover)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#6db2e7'
+        default-dark: '#6db2e7'
+    -
+        id: blue
+        title: Main color bonus
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#1e648d'
+        default-dark: '#1e648d'
+    -
+        id: list-color
+        title: List color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#d6ba7c'
+        default-dark: '#d6ba7c'
+    -
+        id: text-faint
+        title: Text Faint
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#969696'
+        default-dark: '#969696'
+    -
+        id: text-hightlight-bg
+        title: Hightlight Background
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#dbaa205e'
+        default-dark: '#dbaa205e'
+    -
+        id: text-selection
+        title: Selection color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#4e6e8d71'
+        default-dark: '#4e6e8d71'
+    -
+        id: font-tag
+        title: Tag color (font)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#000000'
+        default-dark: '#000000'
+    -
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&family=PT+Mono');
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
@@ -31,7 +255,7 @@
     --accent-s: 100%;
     --accent-l: 50%;
     --accent-d: calc(var(--accent-l) + 2%);
-    --border-dt: lightgrey;
+    --border-dt: #d3d3d3;
     --color-black-rgb: 0, 0, 0;
     --color-white-rgb: 255, 255, 255;
     --text: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
@@ -46,42 +270,42 @@
 }
 
 .theme-light {
-    --background-primary: rgb(41, 37, 37);
-    --text-accent: rgb(67, 95, 121) !important;
-    --text-accent-hover: rgb(124, 178, 228);
+    --background-primary: #292525;
+    --text-accent: #435f79 !important;
+    --text-accent-hover: #7cb2e4;
     --font: #bdbdbd;
     --font-secondary: var(--background-primary);
-    --text-nav: rgb(49, 49, 49);
-    --text-normal: black;
+    --text-nav: #313131;
+    --text-normal: #000000;
     --code-block-border: transparent;
-    --code-block-background: rgba(222, 225, 228, 0.164);
+    --code-block-background: #dee1e42a;
     --interactive-accent: #63a0d0;
     --interactive-accent-rgb: rgb(99, 160, 208);
     --interactive-accent-hover: #6db2e7;
     --blue: #1e648d;
-    --background-secondary-alt: rgb(216, 216, 216) !important;
+    --background-secondary-alt: #d8d8d8 !important;
     --background-nav-alt: var(--background-secondary-alt);
     --background-nav: var(--background-nav-alt);
     --list-color: #d6ba7c;
     --text-faint: rgba(150, 150, 150, 255);
     --text-highlight-bg: #dbaa205e;
     --text-selection: #4e6e8d71;
-    --font-tag: black;
+    --font-tag: #000000;
 }
 
 .theme-dark {
-    --background-primary: rgba(250, 250, 250);
+    --background-primary: #fafafa;
     --background-secondary: #292C2E;
     --background-secondary-alt: #292C2E;
     --background-primary-alt: #292C2E;
-    --text-accent: rgb(67, 95, 121) !important;
-    --text-accent-hover: rgb(124, 178, 228);
+    --text-accent: #435f79 !important;
+    --text-accent-hover: #7cb2e4;
     --font: #3c3c3c;
     --font-secondary: var(--background-primary);
-    --text-nav: rgba(190, 190, 190, 255);
+    --text-nav: #bebebe;
     --text-normal: var(--text-nav);
     --code-block-border: transparent;
-    --code-block-background: rgb(217, 236, 250);
+    --code-block-background: #d9ecfa;
     --interactive-accent: #63a0d0;
     --interactive-accent-rgb: rgb(99, 160, 208);
     --interactive-accent-hover: #6db2e7;
@@ -919,4 +1143,9 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
 .modal button:not(.mod-cta):not(.mod-warning) {
     color: var(--font-secondary) !important;
     opacity: 0.5;
+}
+
+.pickr .pcr-button:after,
+.pickr .pcr-button:before {
+    border-radius: 0;
 }
