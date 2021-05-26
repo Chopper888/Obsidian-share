@@ -1,6 +1,6 @@
 /* @settings
 
-name: Black & White
+name: "Black and White"
 id: blackwhite
 settings:
     - 
@@ -43,6 +43,11 @@ settings:
         title: Colors settings
         type: heading
         level: 3
+    - 
+        id: root-settings
+        title: General settings
+        type: heading
+        level: 4
     - 
         id: tag-background-color
         title: Tag Background color
@@ -178,10 +183,6 @@ settings:
         type: variable-themed-color
         opacity: true
         format: hex
-        alt-format:
-        - 
-            id: interactive-accent-rgb
-            format: rgb
         default-light: '#63a0d0'
         default-dark: '#63a0d0'
     -
@@ -240,7 +241,6 @@ settings:
         format: hex
         default-light: '#000000'
         default-dark: '#000000'
-    -
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&family=PT+Mono');
@@ -258,7 +258,6 @@ settings:
     --text: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
     --text-preview: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
     --font-monospace: 'Fira Code', monospace !important;
-    --bullet: rgb(68, 64, 64);
     --header: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
@@ -266,7 +265,7 @@ settings:
 }
 
 .theme-light {
-    --background-primary: #292525;
+    --background-primary: #131212c4;
     --text-accent: #435f79 !important;
     --text-accent-hover: #7cb2e4;
     --font: #bdbdbd;
@@ -287,6 +286,7 @@ settings:
     --text-highlight-bg: #dbaa205e;
     --text-selection: #4e6e8d71;
     --font-tag: #000000;
+    --bullet: var(--font);
 }
 
 .theme-dark {
@@ -314,6 +314,7 @@ settings:
     --text-highlight-bg: #dbaa205e;
     --text-selection: #4e6e8d71;
     --font-tag: inherit;
+    --bullet: var(--font);
 }
 
 
@@ -1191,4 +1192,11 @@ p.svelte-1352yt,
 .dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25:hover,
 .dict-s-popover__select-option.svelte-1j3cg25.svelte-1j3cg25:hover {
     background-color: var(--blue);
+}
+
+.theme-light .cm-s-obsidian .cm-hmd-frontmatter.cm-atom,
+.theme-light .cm-s-obsidian .cm-math.cm-atom,
+.theme-light .cm-s-obsidian pre.HyperMD-codeblock .cm-atom,
+.theme-light .cm-def.cm-hmd-frontmatter {
+    color: var(--text-highlight-bg);
 }
