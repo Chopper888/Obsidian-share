@@ -1140,17 +1140,6 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
     background-color: var(--background-secondary) !important;
 }
 
-.container.svelte-180qotg.svelte-180qotg,
-.synonyms.svelte-1fio09r {
-    color: var(--font-secondary) !important;
-}
-
-.synonyms.svelte-1fio09r>ul.svelte-1fio09r.svelte-1fio09r {
-    color: var(--font-secondary) !important;
-    opacity: 0.5;
-    font-style: italic;
-}
-
 .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
 .modal button:not(.mod-cta):not(.mod-warning) {
     color: var(--font-secondary) !important;
@@ -1160,4 +1149,26 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
 .pickr .pcr-button:after,
 .pickr .pcr-button:before {
     border-radius: 0 !important;
+}
+
+summary.svelte-1352yt {
+    text-decoration: underline;
+    color: var(--text-faint);
+}
+
+p.svelte-1352yt {
+    color: var(--text-faint);
+    text-decoration-color: transparent !important;
+    margin-left: 6px;
+}
+
+.container.svelte-180qotg.svelte-180qotg,
+.synonyms.svelte-1fio09r {
+    color: var(--font-secondary) !important;
+}
+
+.synonyms.svelte-1fio09r>ul.svelte-1fio09r.svelte-1fio09r {
+    color: var(--font-secondary) !important;
+    opacity: 0.5;
+    font-style: italic;
 }
