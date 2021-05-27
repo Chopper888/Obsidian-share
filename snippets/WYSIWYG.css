@@ -84,8 +84,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
 
 /* Horizontal line in edit mode. Changes --- to full-width line */
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr,
-div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-formatting-escape:not(span.cm-hmd-escape-backslash) {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
     color: transparent;
 }
 
@@ -97,6 +97,14 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     background: var(--blue);
     left: 0;
     top: 50%;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
+    opacity: 0.1 !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-char {
+    opacity: 0.1 !important;
 }
 
 

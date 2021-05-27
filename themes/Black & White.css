@@ -1050,11 +1050,12 @@ textarea {
 
 .lt-message,
 .lt-title {
-    color: var(--background-modifier-border);
+    color: var(--text-faint);
 }
 
 .lt-buttoncontainer>button {
-    color: var(--background-secondary-alt)
+    color: var(--font-secondary);
+    opacity: 0.8;
 }
 
 
