@@ -828,8 +828,7 @@ div.markdown-preview-view {
 }
 
 .nav-file-tag {
-    background-color: #3c3c3c;
-    color: #808080;
+    color: var(--text-faint);
 }
 
 .search-result-file-title:hover {
