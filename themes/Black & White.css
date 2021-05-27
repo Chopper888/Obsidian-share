@@ -1137,8 +1137,8 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
     background-color: var(--background-secondary) !important;
 }
 
-.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
-.modal button:not(.mod-cta):not(.mod-warning) {
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning):not(.pcr-button),
+.modal button:not(.mod-cta):not(.mod-warning):not(.pcr-button) {
     color: var(--font-secondary) !important;
     opacity: 0.5;
 }
