@@ -546,7 +546,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .cm-s-obsidian .cm-header-3,
 .cm-s-obsidian .cm-header-4,
 .cm-s-obsidian .cm-header-5,
-.cm-s-obsidian .cm-header-6 {
+.cm-s-obsidian .cm-header-6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--header);
 }
 
@@ -865,7 +871,7 @@ button:hover,
 
 button,
 .nav-action-button.is-active {
-    color: black;
+    color: white;
     background-color: var(--blue)
 }
 
@@ -1199,4 +1205,14 @@ p.svelte-1352yt,
 .theme-light .cm-s-obsidian pre.HyperMD-codeblock .cm-atom,
 .theme-light .cm-def.cm-hmd-frontmatter {
     color: var(--text-highlight-bg);
+}
+
+textarea.kanban-plugin__lane-input {
+    background-color: var(--background-primary);
+    color: var(--font)
+}
+
+.kanban-plugin__lane-action-add {
+    background-color: var(--blue);
+    color: var(--font-secondary)
 }

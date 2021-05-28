@@ -194,3 +194,10 @@ span.cm-formatting.cm-formatting-em.cm-em {
 .cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
     opacity: 0.3;
 }
+
+pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
+    color: var(--blue) !important;
+    display: inline !important;
+    font-size: 100% !important;
+    opacity: 0.3;
+}

@@ -64,6 +64,7 @@ pre.CodeMirror-line:not(.HyperMD-list-line, pre.HyperMD-header.HyperMD-header-1.
 
 pre.HyperMD-list-line.HyperMD-list-line-1.CodeMirror-line {
     padding-left: 5% !important;
+    text-indent: 0 !important;
 }
 
 .tag,

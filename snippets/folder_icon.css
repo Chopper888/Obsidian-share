@@ -300,6 +300,10 @@
     margin: -8px -3px 0 0 !important;
 }
 
+.nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
+    content: var(--indicator-templater);
+}
+
 
 /* Master 1 */
 
