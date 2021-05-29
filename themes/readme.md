@@ -14,8 +14,8 @@ The main color of the theme is blue, but, with the style settings you can change
 
 Font used :
 
-- IA Quattro S for editor
-- Fira Code for monospace
+- [IA Writer Quattro S](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro/Static) for editor
+- [Fira Code](https://fonts.google.com/specimen/Fira+Code) for monospace
 - Bierstadt for preview
 - Seaford for header
 
