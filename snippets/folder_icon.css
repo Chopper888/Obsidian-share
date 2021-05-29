@@ -1,3 +1,70 @@
+/* @settings
+
+name: "Folder Icon"
+id: foldericon
+settings:
+    - 
+        id: files-folder
+        title: Translate pour les dossiers
+        type: heading
+        level: 3 
+    - 
+        id: folder-x
+        title: Variable X
+        type: variable-number
+        default: -2
+        format: px
+    - 
+        id: folder-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: files-icons
+        title: Translate pour les fichiers
+        type: heading
+        level: 3 
+    -
+        id: icon-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: icon-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: preconfigured
+        title: Sélection pour des thèmes
+        type: heading
+        level: 3
+    -
+        id: folder-icon-transform
+        title: Folder icon translate
+        type: variable-select
+        default: translate(var(--folder-x), var(--folder-y));
+        options:
+            - translate(var(--folder-x), var(--folder-y))
+            - translate(-2px, 3px)
+            - translate(-2px, 0px)
+    - 
+        id: content-icon-transform
+        title: Files icon translate
+        description: 1. Default 2. Black & White 3. California Coast
+        type: variable-select
+        default: translate(var(--icon-x), var(--icon-y))
+        options: 
+            - translate(var(--icon-x), var(--icon-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            
+
+*/
+
 :root {
     /* Inbox */
     --inbox: url('https://api.iconify.design/dashicons:database-add.svg?color=%236183B5&height=18');
@@ -41,6 +108,12 @@
     --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23518590&height=18');
     --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
     --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%236183B5&height=18');
+    --folder-x: -2px;
+    --folder-y: 3px;
+    --folder-icon-transform: translate(var(--folder-x), var(--folder-y));
+    --icon-x: -3px;
+    --icon-y: 3px;
+    --content-icon-transform: translate(var(--icon-x), var(--icon-y));
 }
 
 
@@ -50,7 +123,7 @@
     content: var(--inbox);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -74,7 +147,7 @@
     content: var(--organisation);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -89,7 +162,7 @@
     content: var(--organisation) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -106,7 +179,7 @@
     content: var(--archive);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -121,7 +194,7 @@
     content: var(--archive) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -138,7 +211,7 @@
     content: var(--food);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -153,7 +226,7 @@
     content: var(--food) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -170,7 +243,7 @@
     content: var(--media) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -185,7 +258,7 @@
     content: var(--media) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -202,7 +275,7 @@
     content: var(--personal);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -218,7 +291,7 @@
     content: var(--bookmark);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -233,7 +306,7 @@
     content: var(--bookmark) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -250,7 +323,7 @@
     content: var(--template);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -270,7 +343,7 @@
     content: var(--indicator-template);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -284,7 +357,7 @@
 
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
     content: var(--templater);
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -311,7 +384,7 @@
     content: var(--m1);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -338,7 +411,7 @@
     content: var(--ecriture);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -366,7 +439,7 @@
     content: var(--perso);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -394,7 +467,7 @@
     content: var(--fiches);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -421,7 +494,7 @@
     content: var(--oc);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -448,7 +521,7 @@
     content: var(--univers);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-2px, 3px);
+    transform: var(--folder-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -477,7 +550,7 @@
     content: var(--indicator);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: translate(-5px, 3px);
+    transform: var(--content-icon-transform);
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;

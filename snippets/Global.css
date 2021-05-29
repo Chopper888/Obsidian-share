@@ -1,5 +1,139 @@
+/* @settings
+
+name: "Global"
+id: global
+settings:
+    - 
+        id: Color
+        title: Colors
+        type: heading
+        level: 3 
+    - 
+        id: tag-background-color
+        title: Tag Background Color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#80cbee67'
+    - 
+        id: link-background-color
+        title: Link background color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#cdecff'  
+    - 
+        id: text-accent
+        title: Text accent
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#435f79'
+        default-dark: '#435f79'    
+    - 
+        id: text-accent-hover
+        title: Text accent (hover)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#7cb2e4'
+        default-dark: '#7cb2e4'
+    -
+        id: interactive-accent
+        title: Interactive accent
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#63a0d0'
+        default-dark: '#63a0d0'
+    -
+        id: interactive-accent-hover
+        title: Interactive accent (hover)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#6db2e7'
+        default-dark: '#6db2e7'
+    -
+        id: blue
+        title: Main color bonus
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#1e648d'
+        default-dark: '#1e648d'
+    -    
+        id: text-faint
+        title: Text Faint
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#969696'
+        default-dark: '#969696'
+    -
+        id: text-hightlight-bg
+        title: Hightlight Background
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#dbaa205e'
+        default-dark: '#dbaa205e'
+    -
+        id: text-selection
+        title: Selection color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#4e6e8d71'
+        default-dark: '#4e6e8d71'
+    -
+        id: font-tag
+        title: Tag color (font)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#000000'
+        default-dark: '#000000'
+    - 
+        id: Font-title
+        title: Font settings
+        type: heading
+        level: 3
+    -
+        id: text-edit
+        title: Editor font
+        description: Font used for the editor body
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace
+    -   
+        id: text-preview
+        title: Preview font
+        description: Font used for the preview body
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    - 
+        id: header
+        title: Header Font
+        description: Font used for the header
+        type: variable-text
+        default: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    - 
+        id: font-small
+        title: Font small
+        description: Font used for frontmatter
+        type: variable-number
+        default: 15
+        format: px
+        
+*/
+
 :root {
     --link-background-color: #cdecff;
+    --header: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    --text-preview: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    --default-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    --text-edit: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
+    --font-small: 15px;
 }
 
 @media screen and (min-width: 1080px) {
@@ -29,6 +163,19 @@
     }
 }
 
+span.cm-hmd-frontmatter,
+span.cm-hmd-codeblock {
+    font-family: var(--font-monospace) !important;
+}
+
+#text {
+    font-family: var(--text-edit);
+}
+
+div.markdown-preview-view {
+    font-family: var(--text-preview);
+}
+
 div[data-tag-name='h1']+div[data-tag-name='ul'],
 div[data-tag-name='h2']+div[data-tag-name='ul'],
 div[data-tag-name='h3']+div[data-tag-name='ul'],
@@ -36,6 +183,21 @@ div[data-tag-name='h4']+div[data-tag-name='ul'],
 div[data-tag-name='h5']+div[data-tag-name='ul'],
 div[data-tag-name='h6']+div[data-tag-name='ul'] {
     margin: 1em;
+}
+
+.cm-s-obsidian .cm-header-1,
+.cm-s-obsidian .cm-header-2,
+.cm-s-obsidian .cm-header-3,
+.cm-s-obsidian .cm-header-4,
+.cm-s-obsidian .cm-header-5,
+.cm-s-obsidian .cm-header-6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header) !important;
 }
 
 div[data-tag-name='h1']+div .block-language-dataview,
@@ -67,18 +229,22 @@ pre.HyperMD-list-line.HyperMD-list-line-1.CodeMirror-line {
     text-indent: 0 !important;
 }
 
+span.cm-list-1 {
+    padding-right: 10px;
+}
+
 .tag,
 .cm-s-obsidian span.cm-hashtag-end {
     background-color: var(--tag-background-color);
-    border: 1px solid var(--tag-border-color);
+    border: 0 !important;
     color: var(--tag-border-color);
     font-size: 1em;
     padding-bottom: 1px;
     padding-top: 1px;
     text-decoration: none;
-    border-radius: 20px;
-    padding-left: 10px !important;
-    padding-right: 10px;
+    border-radius: 5px !important;
+    padding-left: 100%;
+    padding-right: 0.5em !important;
 }
 
 .markdown-preview-view a.tag {

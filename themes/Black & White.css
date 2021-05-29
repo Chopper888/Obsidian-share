@@ -511,7 +511,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 .menu-item:hover {
     background-color: var(--background-secondary-alt);
-    color: var(--blue);
+    color: var(--font-secondary);
 }
 
 
@@ -882,7 +882,7 @@ button,
 }
 
 div.notice {
-    color: var(--interactive-normal) !important;
+    color: var(--font-secondary) !important;
     background-color: var(--interactive-accent)
 }
 
@@ -1124,6 +1124,7 @@ li.svelte-1q8cjhd.svelte-1q8cjhd {
     background-color: transparent !important;
     border-radius: 0 !important;
     margin: auto !important;
+    color: var(--font-secondary);
 }
 
 .tag-base.svelte-yzsyxo,
@@ -1200,7 +1201,7 @@ p.svelte-1352yt,
     background-color: var(--blue);
 }
 
-.theme-light .cm-s-obsidian .cm-hmd-frontmatter.cm-atom,
+.cm-s-obsidian .cm-hmd-frontmatter.cm-atom,
 .theme-light .cm-s-obsidian .cm-math.cm-atom,
 .theme-light .cm-s-obsidian pre.HyperMD-codeblock .cm-atom,
 .theme-light .cm-def.cm-hmd-frontmatter {
@@ -1215,4 +1216,12 @@ textarea.kanban-plugin__lane-input {
 .kanban-plugin__lane-action-add {
     background-color: var(--blue);
     color: var(--font-secondary)
+}
+
+.menu-item-title:hover {
+    color: var(--font-secondary) !important;
+}
+
+div.todo-item-view-item {
+    color: var(--font-secondary);
 }
