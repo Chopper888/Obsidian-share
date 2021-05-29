@@ -1,0 +1,16 @@
+.table-view-table>thead>tr>th,
+.table-view-table>tbody>tr>td {
+    text-align: center !important;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+    vertical-align: middle;
+    border: 1px solid var(--background-modifier-border) !important;
+}
+
+.cc-pretty-preview .markdown-preview-section ul li,
+.cc-pretty-preview .markdown-preview-section ol li {
+    margin-left: 3em !important;
+    width: max-content;
+}
