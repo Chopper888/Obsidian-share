@@ -266,78 +266,78 @@ settings:
 
 
 /*  ARCHIVE */
-    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%236183B5&height=16');
-    --archive-perso : url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%236183B5&height=18');
-    --archive-univers: url('https://api.iconify.design/jam:universe.svg?color=%236183B5&&height=18');
-    --archive-color: #6183B5;
-    --indicator-archive: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
+    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%23001219&height=16');
+    --archive-perso : url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%23001219&height=18');
+    --archive-univers: url('https://api.iconify.design/jam:universe.svg?color=%23001219&&height=18');
+    --archive-font: #001219;
+    --indicator-archive: url('https://api.iconify.design/codicon:note.svg?color=%23001219&height=18');
 
 /* BOOKMARK */
-    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%236183B5&height=18');
-    --bookmark-font: black ;
+    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%233E9C9D&height=18');
+    --bookmark-font: #3E9C9D ;
     --bookmark-x: -3px;
     --bookmark-y: 3px;
     --bookmark-transform: var(--content-transform);
 
 /* CUISINE */
-    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%236183B5&height=16');
-    --food-font: black;
+    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%2358A4C4&height=18');
+    --food-font: #58A4C4;
     --food-x: -3px;
     --food-y: 3px;
     --food-transform: var(--content-transform);
 
 /* M1 */
-    --m1: url('https://api.iconify.design/cil:school.svg?color=%23518590&height=18');
-    --m1-font: #518590;
-    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23518590&height=18');
+    --m1: url('https://api.iconify.design/cil:school.svg?color=%23906C58&height=18');
+    --m1-font: #906C58;
+    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23906C58&height=18');
 
 /* Media */
-    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%236183B5&height=16');
-    --media-font: black;
+    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%2350A686&height=18');
+    --media-font: #50A686;
     --média-x: -3px;
     --média-y: 3px;
     --média-transform: var(--content-transform);
 
 /* Organisation */
-    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%236183B5&height=18');
-    --organisation-font: black;
+    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%23476CBE&height=18');
+    --organisation-font: #476CBE;
     --todo-x: -3px;
     --todo-y: 3px;
     --todo-transform: var(--content-transform) !important;
  
 /* Personnages */
-    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%239298C9&height=18');
-    --perso-font: #9298C9;
-    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%239298C9&height=18');
+    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%234765AB&height=18');
+    --perso-font: #4765AB;
+    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%234765AB&height=18');
     /* Fiches */
-        --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%236d9ce4&height=18');
-        --fiches-font: #6d9ce4;
-        --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%236d9ce4&height=18');
+        --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%234765AB&height=18');
+        --fiches-font: #4765AB;
+        --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%234765AB&height=18');
     /* OC */
-        --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%236183B5&height=18');
-        --oc-font: #6183B5;
-        --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
+        --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%234765AB&height=18');
+        --oc-font: #4765AB;
+        --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%234765AB&height=18');
 
 /* Personnel */
-    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%236183B5&height=16');
-    --personal-font: black;
+    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%233633B8&height=16');
+    --personal-font: #3633B8;
 
 /* Univers */
-    --univers: url('https://api.iconify.design/jam:universe.svg?color=%235B98B5&height=18');
-    --univers-font: #5B98B5;
-    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%235B98B5&height=18');
+    --univers: url('https://api.iconify.design/jam:universe.svg?color=%238FA1CC&height=18');
+    --univers-font: #8FA1CC;
+    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%238FA1CC&height=18');
 
 /*Template */
-    --template: url('https://api.iconify.design/carbon:template.svg?color=%23699B96&height=18');
-    --template-font: #699B96;
-    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23699B96&height=18');
+    --template: url('https://api.iconify.design/carbon:template.svg?color=%23B69D91&height=18');
+    --template-font: #B69D91;
+    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23B69D91&height=18');
     --template-x: -3px;
     --template-y: 3px;
     --template-transform: var(--content-transform);   
 
 /* Templater */
-    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23699B96&height=18');
-    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23699B96&height=18');
+    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23B69D91&height=18');
+    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23B69D91&height=18');
     
     --script-x: -3px;
     --script-y: 3px;
@@ -347,7 +347,7 @@ settings:
     
     
 /* ============== ARCHIVE ============= */
-.nav-folder-title[data-path^="Archive"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="1. Archive"] .nav-folder-title-content::before {
     content: var(--archive);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -358,17 +358,23 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Archive/Fiches"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="1. Archive/Fiches"] .nav-folder-title-content::before {
     content: var(--archive-perso) !important;
 }
 
-.nav-folder-title[data-path^="Archive/Univers"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="1. Archive/Univers"] .nav-folder-title-content::before {
     content: var(--archive-univers) !important;
 }
 
+.nav-folder-title[data-path^="1. Archive"],
+.nav-file-title[data-path*="1. Archive"] {
+    color: var(--archive-font) !important;
+}
+
+
 /* =========== BOOKMARK =============== */
 
-.nav-folder-title[data-path^="Bookmark"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="5. Bookmark"] .nav-folder-title-content::before {
     content: var(--bookmark);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -379,7 +385,7 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-file-title[data-path*="Bookmark"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="5. Bookmark"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--bookmark) !important;
@@ -393,14 +399,14 @@ settings:
     padding-right: 5px;
 }
 
-.nav-folder-title[data-path^="Bookmark"],
-.nav-file-title[data-path*="Bookmark"] {
+.nav-folder-title[data-path^="5. Bookmark"],
+.nav-file-title[data-path*="5. Bookmark"] {
     color: var(--bookmark-font) !important;
 }
 
 /* ======== CUISINE ============ */
 
-.nav-folder-title[data-path^="Cuisine"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="4. Cuisine"] .nav-folder-title-content::before {
     content: var(--food);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -411,7 +417,7 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-file-title[data-path*="Cuisine"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="4. Cuisine"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--food) !important;
@@ -425,14 +431,14 @@ settings:
     padding-right: 10px;
 }
 
-.nav-folder-title[data-path^="Cuisine"],
-.nav-file-title[data-path*="Cuisine"] {
-    color: var(--bookmark-font) !important;
+.nav-folder-title[data-path^="4. Cuisine"],
+.nav-file-title[data-path*="4. Cuisine"] {
+    color: var(--food-font) !important;
 }
 
-/* ========== Faculté ============ */
+/* ========== Master 1 ============ */
 
-.nav-folder-title[data-path^="Faculté"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="9. Master 1"] .nav-folder-title-content::before {
     content: var(--m1);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -443,20 +449,14 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Faculté"],
-.nav-file-title[data-path*="Faculté"] {
+.nav-folder-title[data-path^="9. Master 1"],
+.nav-file-title[data-path*="9. Master 1"] {
     color: var(--m1-font) !important;
-}
-
-.nav-file-title[data-path*="Faculté"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--indicator-m1);
 }
 
 /* =========== Média ========== */
 
-.nav-folder-title[data-path^="Média"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="6. Média"] .nav-folder-title-content::before {
     content: var(--media) !important;
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -467,7 +467,7 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-file-title[data-path*="Média"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="6. Média"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--media) !important;
@@ -482,25 +482,21 @@ settings:
 }
 
 
-.nav-folder-title[data-path^="Média"],
-.nav-file-title[data-path*="Média"] {
-    color: var(--média-font) !important;
+.nav-folder-title[data-path^="6. Média"],
+.nav-file-title[data-path*="6. Média"] {
+    color: var(--media-font) !important;
 }
 
 /* ================= Organisation =========== */
 
-.nav-folder-title[data-path^="Organisation"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="3. Organisation"] .nav-folder-title-content::before {
     content: var(--organisation);
-    background-size: 14px 14px;
     transform: var(--folder-transform);
-    background-repeat: no-repeat;
     display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: -4px 2px 0 0;
+    margin: -4px 2px -2px -2px;
 }
 
-.nav-file-title[data-path*="Organisation"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="3. Organisation"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--organisation) !important;
@@ -514,14 +510,14 @@ settings:
     padding-right: 10px;
 }
 
-.nav-folder-title[data-path^="Organisation"],
-.nav-file-title[data-path*="Organisation"] {
+.nav-folder-title[data-path^="3. Organisation"],
+.nav-file-title[data-path*="3. Organisation"] {
     color: var(--organisation-font) !important;
 }
 
 /* ======== Personnages ===== */
 
-.nav-folder-title[data-path^="Personnages"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="7. Personnages"] .nav-folder-title-content::before {
     content: var(--perso);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -534,19 +530,14 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Personnages"],
-.nav-file-title[data-path*="Personnages"] {
+.nav-folder-title[data-path^="7. Personnages"],
+.nav-file-title[data-path*="7. Personnages"] {
     color: var(--perso-font) !important;
 }
 
-.nav-file-title[data-path*="Personnages"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--indic-perso);
-    display: inline-block;
-}
 
-.nav-folder-title[data-path^="Personnages/Fiches"] .nav-folder-title-content::before {
+
+.nav-folder-title[data-path^="7. Personnages/Fiches"] .nav-folder-title-content::before {
     content: var(--fiches);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -557,21 +548,17 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Personnages/Fiches"],
-.nav-file-title[data-path*="Personnages/Fiches"] {
+.nav-folder-title[data-path^="7. Personnages/Fiches"],
+.nav-file-title[data-path*="7. Personnages/Fiches"] {
     color: var(--fiches-font) !important;
 }
 
-.nav-file-title[data-path*="Personnages/Fiches"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--indic-fiches);
-}
+
 
 
 /* OC */
 
-.nav-folder-title[data-path^="Personnages/OC"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="7. Personnages/OC"] .nav-folder-title-content::before {
     content: var(--oc);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -582,20 +569,13 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Personnages/OC"],
-.nav-file-title[data-path*="Personnages/OC"] {
+.nav-folder-title[data-path^="7. Personnages/OC"],
+.nav-file-title[data-path*="7. Personnages/OC"] {
     color: var(--oc-font) !important;
 }
-
-.nav-file-title[data-path*="Personnages/OC"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--indicator-oc);
-}
-
 /* ========== Personnel ========== */
 
-.nav-folder-title[data-path^="Personnel"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="2. Personnel"] .nav-folder-title-content::before {
     content: var(--personal);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -606,14 +586,14 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="Personnel"],
-.nav-file-title[data-path*="Personnel"] {
+.nav-folder-title[data-path^="2. Personnel"],
+.nav-file-title[data-path*="2. Personnel"] {
     color: var(--personal-font) !important;
 }
 
 /* =========== UNIVERS ========= */
 
-div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path^="8. Univers"] div.nav-folder-title-content::before {
     content: var(--univers);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -627,20 +607,16 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
     z-index: 100;
 }
 
-.nav-folder-title[data-path^="Univers"],
-.nav-file-title[data-path*="Univers"] {
+.nav-folder-title[data-path^="8. Univers"],
+.nav-file-title[data-path*="8. Univers"] {
     color: var(--univers-font) !important;
 }
 
-.nav-file-title[data-path*="Univers"] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator+span:before,
-.nav-file-icon:before {
-    content: var(--indic-univers);
-}
+
 
 /* ========= TEMPLATE ========== */
 
-.nav-folder-title[data-path^="ZZ. Template"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="10. Template"] .nav-folder-title-content::before {
     content: var(--template);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -651,12 +627,12 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="ZZ. Template"],
-.nav-file-title[data-path*="ZZ. Template"] {
+.nav-folder-title[data-path^="10. Template"],
+.nav-file-title[data-path*="10. Template"] {
     color: var(--template-font) !important;
 }
 
-.nav-file-title[data-path*="ZZ. Template"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="10. Template"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--indicator-template);
@@ -672,7 +648,7 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
 
     /* Templater */
 
-        .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
+        .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="10. Template/Templater"] .nav-folder-title-content::before {
             content: var(--templater);
             transform: var(--folder-transform);
             background-repeat: no-repeat;
@@ -682,7 +658,7 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
             margin: -4px 4px 0 0;
         }
 
-        .nav-file-title.is-unsupported[data-path*="ZZ. Template/Templater/Script"]>.nav-file-title-content::before {
+        .nav-file-title.is-unsupported[data-path*="10. Template/Templater/Script"]>.nav-file-title-content::before {
             content: var(--indicator-templater) !important;
             transform: var(--script-transform) !important;
             background-repeat: no-repeat;
@@ -692,7 +668,7 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
             margin: -4px 4px 0 0;
         }
 
-        .nav-file-title[data-path*="ZZ. Template/Templater"] .nav-file-title-content:only-child:before,
+        .nav-file-title[data-path*="10. Template/Templater"] .nav-file-title-content:only-child:before,
         .search-result-collapse-indicator+span:before,
         .nav-file-icon:before {
             content: var(--indicator-templater);
@@ -700,7 +676,7 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
             margin: -8px -3px 0 0 !important;
         }
 
-        .nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
+        .nav-folder-title[data-path^="10. Template/Templater"] .nav-folder-title-content::before {
             content: var(--indicator-templater);
         }
 
@@ -709,7 +685,6 @@ div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before 
 .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
-    content: var(--indicator);
     background-size: 14px 14px;
     transform: var(--content-transform) !important;
     background-repeat: no-repeat;
@@ -731,12 +706,21 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-folder-title[data-path^="/"] {
     display: none;
 }
-
+/*
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-    color: currentColor !important;
-}
+    mix-blend-mode: difference !important;
+}*/
 
 .fx-icons .nav-folder:not(.nav-folder.mod-root) {
     margin-left: 0;
+}
+
+.collapse-icon {
+    color: currentColor !important;
+}
+
+.nav-file-title-content:hover, .nav-folder-title-content:hover, .collapse-icon:hover {
+   color: currentColor !important;
+    filter: saturate(150%);
 }
