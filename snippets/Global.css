@@ -138,7 +138,7 @@ settings:
 
 @media screen and (min-width: 1080px) {
     .markdown-preview-section>div {
-        max-width: 90ch;
+        max-width: 100ch;
         margin: auto;
     }
     .markdown-source-view {
@@ -151,7 +151,7 @@ settings:
     .markdown-preview-view h4,
     .markdown-preview-view h5,
     .markdown-preview-view h6 {
-        margin-bottom: -1%;
+        margin-bottom: 2%;
         margin-left: -2%;
         margin-top: 1%;
     }
@@ -176,6 +176,8 @@ div.markdown-preview-view {
     font-family: var(--text-preview);
 }
 
+
+/*
 div[data-tag-name='h1']+div[data-tag-name='ul'],
 div[data-tag-name='h2']+div[data-tag-name='ul'],
 div[data-tag-name='h3']+div[data-tag-name='ul'],
@@ -183,7 +185,7 @@ div[data-tag-name='h4']+div[data-tag-name='ul'],
 div[data-tag-name='h5']+div[data-tag-name='ul'],
 div[data-tag-name='h6']+div[data-tag-name='ul'] {
     margin: 1em;
-}
+}*/
 
 .cm-s-obsidian .cm-header-1,
 .cm-s-obsidian .cm-header-2,
@@ -198,6 +200,7 @@ h4,
 h5,
 h6 {
     font-family: var(--header) !important;
+    font-weight: 600 !important;
 }
 
 div[data-tag-name='h1']+div .block-language-dataview,
@@ -233,6 +236,15 @@ pre.HyperMD-header.HyperMD-header-6.CodeMirror-line) {
 pre.HyperMD-list-line.HyperMD-list-line-1.CodeMirror-line {
     padding-left: 5% !important;
     text-indent: 0 !important;
+}
+
+ul.contains-task-list {
+    padding-left: 6% !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+    top: 3px !important;
+    margin-left: 1% !important;
 }
 
 span.cm-list-1 {
@@ -316,6 +328,10 @@ div[data-tag-name='p']+div[data-tag-name='ul'] {
 
 div[data-tag-name='ul']+div[data-tag-name='p'] {
     margin-top: -20px;
+}
+
+.markdown-preview-view ul>li.task-list-item {
+    text-indent: -1.5em !important;
 }
 
 div[data-tag-name='p']+div[data-tag-name="h1"],

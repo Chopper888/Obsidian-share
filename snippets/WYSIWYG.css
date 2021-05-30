@@ -115,7 +115,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     color: transparent;
     position: relative;
     display: inline !important;
-    margin-right: -0.1rem;
+    margin-right: 1%;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,

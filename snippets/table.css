@@ -9,8 +9,8 @@
     border: 1px solid var(--background-modifier-border) !important;
 }
 
-.cc-pretty-preview .markdown-preview-section ul li,
-.cc-pretty-preview .markdown-preview-section ol li {
-    margin-left: 3em !important;
+li.dataview-result-list-li {
+    padding-left: 3px;
+    margin-left: 5em !important;
     width: max-content;
 }
