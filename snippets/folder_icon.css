@@ -64,7 +64,7 @@ settings:
         title: Folder icon translate
         description: 1. Manuel; 2. Black & White ; 3. California Coast ; 4. None
         type: variable-select
-        default: translate(var(--folder-x), var(--folder-y));
+        default: translate(var(--folder-x), var(--folder-y))
         options:
             - translate(var(--folder-x), var(--folder-y))
             - translate(-2px, 3px)
@@ -152,7 +152,7 @@ settings:
     --content-icon-transform: translate(var(--icon-x), var(--icon-y));
     --todo-x: -3px;
     --todo-y: 3px;
-    --content-todo-transform: var(--content-icon-transform)
+    --content-todo-transform: var(--content-icon-transform) !important
 }
 
 
@@ -201,7 +201,7 @@ settings:
     content: var(--organisation) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-todo-transform);
+    transform: var(--content-todo-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -233,7 +233,7 @@ settings:
     content: var(--archive) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -265,7 +265,7 @@ settings:
     content: var(--food) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -297,7 +297,7 @@ settings:
     content: var(--media) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -345,7 +345,7 @@ settings:
     content: var(--bookmark) !important;
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -382,7 +382,7 @@ settings:
     content: var(--indicator-template);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -407,7 +407,7 @@ settings:
 
 .nav-file-title.is-unsupported[data-path*="ZZ. Template/Templater/Script"]>.nav-file-title-content::before {
     content: var(--indicator-templater) !important;
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -596,7 +596,7 @@ settings:
 
 /* Univers */
 
-.nav-folder-title[data-path^="Ecriture/Univers"] .nav-folder-title-content::before {
+div.nav-folder-title[data-path^="Ecriture/Univers"] div.nav-folder-title-content::before {
     content: var(--univers);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
@@ -607,6 +607,7 @@ settings:
     height: 16px;
     width: 16px;
     margin: -4px 2px 0 0;
+    z-index: 100;
 }
 
 .nav-folder-title[data-path^="Ecriture/Univers"],
@@ -629,7 +630,7 @@ settings:
     content: var(--indicator);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform);
+    transform: var(--content-icon-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -654,4 +655,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: currentColor !important;
+}
+
+.fx-icons .nav-folder:not(.nav-folder.mod-root) {
+    margin-left: 0;
 }
