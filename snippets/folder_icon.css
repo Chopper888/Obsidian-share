@@ -55,6 +55,40 @@ settings:
         default: 3
         format: px
     - 
+        id: script-icon
+        title: Translate pour l'icons des scripts
+        type: heading
+        level: 3 
+    -
+        id: script-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: script-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: template-icon
+        title: Translate pour l'icons des template
+        type: heading
+        level: 3 
+    -
+        id: temmplate-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: template-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    -          
         id: preconfigured
         title: Sélection pour des thèmes
         type: heading
@@ -95,7 +129,32 @@ settings:
             - translate(0px, 3px)
             - translate(3px, 5px)
             - none
-
+    - 
+        id: content-script-transform
+        title: Files todo translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-icon-transform)
+        options: 
+            - var(--content-icon-transform)
+            - translate(var(--todo-x), var(--todo-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
+    - 
+        id: content-template-transform
+        title: Files todo translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-icon-transform)
+        options: 
+            - var(--content-icon-transform)
+            - translate(var(--todo-x), var(--todo-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none            
 
 */
 
@@ -152,7 +211,13 @@ settings:
     --content-icon-transform: translate(var(--icon-x), var(--icon-y));
     --todo-x: -3px;
     --todo-y: 3px;
-    --content-todo-transform: var(--content-icon-transform) !important
+    --content-todo-transform: var(--content-icon-transform) !important;
+    --script-x: -3px;
+    --script-y: 3px;
+    --content-script-transform: var(--content-icon-transform);
+    --template-x: -3px;
+    --template-y: 3px;
+    --content-template-transform: var(--content-icon-transform)
 }
 
 
@@ -382,7 +447,7 @@ settings:
     content: var(--indicator-template);
     background-size: 14px 14px;
     /* adopt this to your file tree font height */
-    transform: var(--content-icon-transform) !important;
+    transform: var(--content-template-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -407,7 +472,7 @@ settings:
 
 .nav-file-title.is-unsupported[data-path*="ZZ. Template/Templater/Script"]>.nav-file-title-content::before {
     content: var(--indicator-templater) !important;
-    transform: var(--content-icon-transform) !important;
+    transform: var(--content-script-transform) !important;
     /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
@@ -420,6 +485,7 @@ settings:
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--indicator-templater);
+    transform: var(--content-script-transform) !important;
     margin: -8px -3px 0 0 !important;
 }
 
