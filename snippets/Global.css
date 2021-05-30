@@ -139,7 +139,7 @@ settings:
     --header: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
     --text-preview: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
     --default-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-    --text-edit: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
+    --text-edit: 'iA Writer Quattro S', -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
     --font-frontmatter: var(--font-monospace);
     --boldpink: #286b9f
 }
@@ -173,12 +173,16 @@ span.cm-hmd-frontmatter {
     font-size: 90% !important;
 }
 
-#text {
+#text, .CodeMirror .CodeMirror-line {
     font-family: var(--text-edit);
 }
 
 div.markdown-preview-view {
     font-family: var(--text-preview);
+}
+
+span.cm-formatting-list, span.cm-formatting-code-block.cm-hmd-codeblock, span.cm-formatting-task {
+    font-family: var(--font-monospace) !important;
 }
 
 
@@ -235,25 +239,30 @@ pre.HyperMD-header.HyperMD-header-3.CodeMirror-line,
 pre.HyperMD-header.HyperMD-header-4.CodeMirror-line,
 pre.HyperMD-header.HyperMD-header-5.CodeMirror-line,
 pre.HyperMD-header.HyperMD-header-6.CodeMirror-line) {
-    padding-left: 3% !important;
+    padding-left: 1em !important;
 }
 
-pre.HyperMD-list-line.HyperMD-list-line-1.CodeMirror-line {
-    padding-left: 5% !important;
+pre.HyperMD-list-line.HyperMD-list-line {
+    padding-left: 2em !important;
     text-indent: 0 !important;
 }
 
 ul.contains-task-list {
-    padding-left: 6% !important;
+    padding-left: 2em !important;
+}
+
+ul, ol {
+    padding-left: 2em !important;
 }
 
 .markdown-preview-view .task-list-item-checkbox {
     top: 3px !important;
-    margin-left: 1% !important;
+    margin-left: 2% !important;
 }
 
-span.cm-list-1 {
-    padding-right: 10px;
+
+p {
+    margin-top: -2% !important;
 }
 
 .tag,
@@ -357,8 +366,11 @@ div[data-tag-name='p']+div[data-tag-name="h6"] {
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
     letter-spacing: 0 !important;
-    margin-top: 0;
+    margin-top: 0 !important;
+    position: initial !important;
+    margin-left: 0 !important;
 }
+
 
 .outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
     border-left: 0 !important
