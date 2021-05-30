@@ -415,3 +415,14 @@ li.dataview-result-list-li>span[data-tag-name="p"]>a:hover {
 .tree-item-icon.collapse-icon {
     content: "" !important;
 }
+
+.nav-folder-children {
+    padding-left: 0 !important;
+}
+
+img.emoji {
+    display: inline-block !important;
+    width: 4% !important;
+    margin: 0 !important;
+    height: 100% !important;
+}

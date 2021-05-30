@@ -1,0 +1,742 @@
+    /* @settings
+
+name: "Folder Icon"
+id: foldericon
+settings:
+    - 
+        id: files-folder
+        title: Translate pour les dossiers
+        type: heading
+        level: 3 
+    - 
+        id: folder-x
+        title: Variable X
+        type: variable-number
+        default: -2
+        format: px
+    - 
+        id: folder-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: files-icons
+        title: Translate pour les fichiers
+        type: heading
+        level: 3 
+    -
+        id: icon-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: icon-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: todo-icon
+        title: Translate pour le todo
+        type: heading
+        level: 3 
+    -
+        id: todo-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: todo-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: script-icon
+        title: Translate pour l'icons des scripts
+        type: heading
+        level: 3 
+    -
+        id: script-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: script-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: template-icon
+        title: Translate pour l'icons des template
+        type: heading
+        level: 3 
+    -
+        id: template-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: template-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    - 
+        id: food-icon
+        title: Translate pour l'icons des food
+        type: heading
+        level: 3 
+    -
+        id: food-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: food-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    -
+        id: bookmark-icon
+        title: Translate pour l'icons des bookmark
+        type: heading
+        level: 3 
+    -
+        id: bookmark-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: bookmark-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    -
+        id: média-icon
+        title: Translate pour l'icons des média
+        type: heading
+        level: 3 
+    -
+        id: média-x
+        title: Variable X
+        type: variable-number
+        default: -5
+        format: px
+    -
+        id: média-y
+        title: Variable Y
+        type: variable-number
+        default: 3
+        format: px
+    -                      
+        id: preconfigured
+        title: Sélection pour des thèmes
+        type: heading
+        level: 3
+    -
+        id: folder-transform
+        title: Folder icon translate
+        description: 1. Manuel; 2. Black & White ; 3. California Coast ; 4. None
+        type: variable-select
+        default: translate(var(--folder-x), var(--folder-y))
+        options:
+            - translate(var(--folder-x), var(--folder-y))
+            - translate(-2px, 3px)
+            - translate(-2px, 0px)
+            - None
+    - 
+        id: content-transform
+        title: Files icon translate
+        description: 1. Manuel ; 2. Black & White ; 3. Yin & yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: translate(var(--icon-x), var(--icon-y))
+        options: 
+            - translate(var(--icon-x), var(--icon-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - None
+    - 
+        id: todo-transform
+        title: Files todo translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--todo-x), var(--todo-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
+    - 
+        id: script-transform
+        title: Files script translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--script-x), var(--script-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
+    - 
+        id: template-transform
+        title: Files template translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--template-x), var(--template-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none            
+    - 
+        id: bookmark-transform
+        title: Files bookmark translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--bookmark-x), var(--bookmark-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none  
+    - 
+        id: food-transform
+        title: Files food translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--food-x), var(--food-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none  
+    - 
+        id: média-transform
+        title: Files média translate
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--média-x), var(--média-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none  
+
+*/
+    
+/* ============== ROOT ============= */
+
+:root {
+
+/*  TRANSFORM  */
+    --folder-x: -2px;
+    --folder-y: 3px;
+    --folder-transform: translate(var(--folder-x), var(--folder-y));
+    
+    --icon-x: -3px;
+    --icon-y: 3px;
+    --content-transform: translate(var(--icon-x), var(--icon-y));
+
+    --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
+
+
+
+/*  ARCHIVE */
+    --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%236183B5&height=16');
+    --archive-perso : url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%236183B5&height=18');
+    --archive-univers: url('https://api.iconify.design/jam:universe.svg?color=%236183B5&&height=18');
+    --archive-color: #6183B5;
+    --indicator-archive: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
+
+/* BOOKMARK */
+    --bookmark: url('https://api.iconify.design/uil:file-bookmark-alt.svg?color=%236183B5&height=18');
+    --bookmark-font: black ;
+    --bookmark-x: -3px;
+    --bookmark-y: 3px;
+    --bookmark-transform: var(--content-transform);
+
+/* CUISINE */
+    --food: url('https://api.iconify.design/bx:bx-food-menu.svg?color=%236183B5&height=16');
+    --food-font: black;
+    --food-x: -3px;
+    --food-y: 3px;
+    --food-transform: var(--content-transform);
+
+/* M1 */
+    --m1: url('https://api.iconify.design/cil:school.svg?color=%23518590&height=18');
+    --m1-font: #518590;
+    --indicator-m1: url('https://api.iconify.design/codicon:note.svg?color=%23518590&height=18');
+
+/* Media */
+    --media: url('https://api.iconify.design/clarity:media-changer-outline-alerted.svg?color=%236183B5&height=16');
+    --media-font: black;
+    --média-x: -3px;
+    --média-y: 3px;
+    --média-transform: var(--content-transform);
+
+/* Organisation */
+    --organisation: url('https://api.iconify.design/icons8:todo-list.svg?color=%236183B5&height=18');
+    --organisation-font: black;
+    --todo-x: -3px;
+    --todo-y: 3px;
+    --todo-transform: var(--content-transform) !important;
+ 
+/* Personnages */
+    --perso: url('https://api.iconify.design/fluent:people-settings-20-filled.svg?color=%239298C9&height=18');
+    --perso-font: #9298C9;
+    --indic-perso: url('https://api.iconify.design/codicon:note.svg?color=%239298C9&height=18');
+    /* Fiches */
+        --fiches: url('https://api.iconify.design/ic:sharp-bookmark.svg?color=%236d9ce4&height=18');
+        --fiches-font: #6d9ce4;
+        --indic-fiches: url('https://api.iconify.design/codicon:note.svg?color=%236d9ce4&height=18');
+    /* OC */
+        --oc: url('https://api.iconify.design/radix-icons:drawing-pin-filled.svg?color=%236183B5&height=18');
+        --oc-font: #6183B5;
+        --indicator-oc: url('https://api.iconify.design/codicon:note.svg?color=%236183B5&height=18');
+
+/* Personnel */
+    --personal: url('https://api.iconify.design/bi:person-bounding-box.svg?color=%236183B5&height=16');
+    --personal-font: black;
+
+/* Univers */
+    --univers: url('https://api.iconify.design/jam:universe.svg?color=%235B98B5&height=18');
+    --univers-font: #5B98B5;
+    --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%235B98B5&height=18');
+
+/*Template */
+    --template: url('https://api.iconify.design/carbon:template.svg?color=%23699B96&height=18');
+    --template-font: #699B96;
+    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23699B96&height=18');
+    --template-x: -3px;
+    --template-y: 3px;
+    --template-transform: var(--content-transform);   
+
+/* Templater */
+    --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23699B96&height=18');
+    --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23699B96&height=18');
+    
+    --script-x: -3px;
+    --script-y: 3px;
+    --script-transform: var(--content-transform);
+
+}
+    
+    
+/* ============== ARCHIVE ============= */
+.nav-folder-title[data-path^="Archive"] .nav-folder-title-content::before {
+    content: var(--archive);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Archive/Fiches"] .nav-folder-title-content::before {
+    content: var(--archive-perso) !important;
+}
+
+.nav-folder-title[data-path^="Archive/Univers"] .nav-folder-title-content::before {
+    content: var(--archive-univers) !important;
+}
+
+/* =========== BOOKMARK =============== */
+
+.nav-folder-title[data-path^="Bookmark"] .nav-folder-title-content::before {
+    content: var(--bookmark);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Bookmark"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--bookmark) !important;
+    background-size: 14px 14px;
+    transform: var(--bookmark-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    padding-right: 5px;
+}
+
+.nav-folder-title[data-path^="Bookmark"],
+.nav-file-title[data-path*="Bookmark"] {
+    color: var(--bookmark-font) !important;
+}
+
+/* ======== CUISINE ============ */
+
+.nav-folder-title[data-path^="Cuisine"] .nav-folder-title-content::before {
+    content: var(--food);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Cuisine"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--food) !important;
+    background-size: 14px 14px;
+    transform: var(--food-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -5px 0 0;
+    padding-right: 10px;
+}
+
+.nav-folder-title[data-path^="Cuisine"],
+.nav-file-title[data-path*="Cuisine"] {
+    color: var(--bookmark-font) !important;
+}
+
+/* ========== Faculté ============ */
+
+.nav-folder-title[data-path^="Faculté"] .nav-folder-title-content::before {
+    content: var(--m1);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Faculté"],
+.nav-file-title[data-path*="Faculté"] {
+    color: var(--m1-font) !important;
+}
+
+.nav-file-title[data-path*="Faculté"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-m1);
+}
+
+/* =========== Média ========== */
+
+.nav-folder-title[data-path^="Média"] .nav-folder-title-content::before {
+    content: var(--media) !important;
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Média"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--media) !important;
+    background-size: 14px 14px;
+    transform: var(--media-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -5px 0 0;
+    padding-right: 10px;
+}
+
+
+.nav-folder-title[data-path^="Média"],
+.nav-file-title[data-path*="Média"] {
+    color: var(--média-font) !important;
+}
+
+/* ================= Organisation =========== */
+
+.nav-folder-title[data-path^="Organisation"] .nav-folder-title-content::before {
+    content: var(--organisation);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-file-title[data-path*="Organisation"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--organisation) !important;
+    background-size: 14px 14px;
+    transform: var(--todo-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px -2px 0 0;
+    padding-right: 10px;
+}
+
+.nav-folder-title[data-path^="Organisation"],
+.nav-file-title[data-path*="Organisation"] {
+    color: var(--organisation-font) !important;
+}
+
+/* ======== Personnages ===== */
+
+.nav-folder-title[data-path^="Personnages"] .nav-folder-title-content::before {
+    content: var(--perso);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: var(--folder-transform);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Personnages"],
+.nav-file-title[data-path*="Personnages"] {
+    color: var(--perso-font) !important;
+}
+
+.nav-file-title[data-path*="Personnages"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-perso);
+    display: inline-block;
+}
+
+.nav-folder-title[data-path^="Personnages/Fiches"] .nav-folder-title-content::before {
+    content: var(--fiches);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Personnages/Fiches"],
+.nav-file-title[data-path*="Personnages/Fiches"] {
+    color: var(--fiches-font) !important;
+}
+
+.nav-file-title[data-path*="Personnages/Fiches"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-fiches);
+}
+
+
+/* OC */
+
+.nav-folder-title[data-path^="Personnages/OC"] .nav-folder-title-content::before {
+    content: var(--oc);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Personnages/OC"],
+.nav-file-title[data-path*="Personnages/OC"] {
+    color: var(--oc-font) !important;
+}
+
+.nav-file-title[data-path*="Personnages/OC"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-oc);
+}
+
+/* ========== Personnel ========== */
+
+.nav-folder-title[data-path^="Personnel"] .nav-folder-title-content::before {
+    content: var(--personal);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="Personnel"],
+.nav-file-title[data-path*="Personnel"] {
+    color: var(--personal-font) !important;
+}
+
+/* =========== UNIVERS ========= */
+
+div.nav-folder-title[data-path^="Univers"] div.nav-folder-title-content::before {
+    content: var(--univers);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: var(--folder-transform);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    z-index: 100;
+}
+
+.nav-folder-title[data-path^="Univers"],
+.nav-file-title[data-path*="Univers"] {
+    color: var(--univers-font) !important;
+}
+
+.nav-file-title[data-path*="Univers"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indic-univers);
+}
+
+/* ========= TEMPLATE ========== */
+
+.nav-folder-title[data-path^="ZZ. Template"] .nav-folder-title-content::before {
+    content: var(--template);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="ZZ. Template"],
+.nav-file-title[data-path*="ZZ. Template"] {
+    color: var(--template-font) !important;
+}
+
+.nav-file-title[data-path*="ZZ. Template"] .nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator-template);
+    background-size: 14px 14px;
+    transform: var(--template-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+
+    /* Templater */
+
+        .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
+            content: var(--templater);
+            transform: var(--folder-transform);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 12px;
+            width: 16px;
+            margin: -4px 4px 0 0;
+        }
+
+        .nav-file-title.is-unsupported[data-path*="ZZ. Template/Templater/Script"]>.nav-file-title-content::before {
+            content: var(--indicator-templater) !important;
+            transform: var(--script-transform) !important;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 12px;
+            width: 16px;
+            margin: -4px 4px 0 0;
+        }
+
+        .nav-file-title[data-path*="ZZ. Template/Templater"] .nav-file-title-content:only-child:before,
+        .search-result-collapse-indicator+span:before,
+        .nav-file-icon:before {
+            content: var(--indicator-templater);
+            transform: var(--script-transform) !important;
+            margin: -8px -3px 0 0 !important;
+        }
+
+        .nav-folder-title[data-path^="ZZ. Template/Templater"] .nav-folder-title-content::before {
+            content: var(--indicator-templater);
+        }
+
+/* Files */
+
+.nav-file-title-content:only-child:before,
+.search-result-collapse-indicator+span:before,
+.nav-file-icon:before {
+    content: var(--indicator);
+    background-size: 14px 14px;
+    transform: var(--content-transform) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    padding-right: 10px;
+}
+
+
+/* Hover */
+
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+    background-color: transparent !important;
+}
+
+.nav-folder-title[data-path^="/"] {
+    display: none;
+}
+
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+    color: currentColor !important;
+}
+
+.fx-icons .nav-folder:not(.nav-folder.mod-root) {
+    margin-left: 0;
+}
