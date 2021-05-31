@@ -269,9 +269,9 @@ p {
 
 .tag,
 .cm-s-obsidian span.cm-hashtag-end {
-    background-color: var(--tag-background-color);
+    background-color: var(--tag-background-color) !important;
     border: 0 !important;
-    color: var(--tag-border-color);
+    color: var(--tag) !important;
     font-size: 1em;
     padding-bottom: 1px;
     padding-top: 1px;
@@ -281,8 +281,13 @@ p {
     padding-right: 0.5em !important;
 }
 
+.tag:hover {
+    background-color: #a9ccfc  !important;
+    color:#ffffff !important;
+}
+
 .markdown-preview-view a.tag {
-    color: var(--tag-border-color);
+    color: var(--tag);
 }
 
 header.svelte-yzsyxo {
@@ -306,7 +311,6 @@ ul.svelte-yzsyxo>li.compact.svelte-1q8cjhd>div.content.svelte-1q8cjhd>p>a:hover 
 .markdown-preview-view .external-link,
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-    background-color: var(--link-background-color);
     color: var(--tag-border-color);
 }
 
