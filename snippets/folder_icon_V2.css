@@ -725,4 +725,19 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     filter: saturate(150%);
 }
 
-/*test*/
+.nav-file-title > .nav-file-tag + .nav-file-title-content:before {
+    transform: translate(5px, 0px) !important;
+}
+
+
+.nav-file-title > .nav-file-tag + .nav-file-title-content {
+    padding-left:6%;
+}
+
+.fx-icons .status-bar-item:after{
+    display:inline-block
+}
+
+.status-bar-item:after {
+    display: none;
+}

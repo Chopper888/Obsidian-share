@@ -444,3 +444,7 @@ img.emoji {
     margin: 0 !important;
     height: 100% !important;
 }
+
+.nav-file-title .is-unsupported{
+    margin-right:10% !important;
+}
