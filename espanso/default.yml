@@ -46,5 +46,7 @@ matches:
     replace: "↓"
   - trigger: "<_>"
     replace: "⟷"
-  - trigger: "$check"
+  - trigger: "$v"
     replace: "✓"
+  - trigger: ':v'
+    replace: "✅"

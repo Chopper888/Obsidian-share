@@ -212,6 +212,11 @@ h6 {
     font-weight: 600 !important;
 }
 
+div[data-tag-name='h3']+div[data-tag-name='p']
+ {
+    margin-top: 5% !important;
+}
+
 div[data-tag-name='h1']+div .block-language-dataview,
 div[data-tag-name='h2']+div .block-language-dataview,
 div[data-tag-name='h3']+div .block-language-dataview,
@@ -264,7 +269,7 @@ ul, ol {
 
 
 p {
-    margin-top: -2% !important;
+    margin-top: 0 !important;
 }
 
 .tag,

@@ -3,17 +3,21 @@ div[data-path='Image']+div.nav-folder-children {
     display: none;
 }
 
-div[data-path="Master 1/Stage/Ma bibliothèque"],
-div[data-path='Master 1/Stage/Ma bibliothèque']+div.nav-folder-children {
+div[data-path="9. Master 1/Stage/Ma bibliothèque"],
+div[data-path='9. Master 1/Stage/Ma bibliothèque']+div.nav-folder-children {
     display: none;
 }
 
-div[data-path="Master 1/Stage/Data/export"],
-div[data-path='Master 1/Stage/Data/export']+div.nav-folder-children {
+div[data-path="9. Master 1/Stage/Data/export"],
+div[data-path='9. Master 1/Stage/Data/export']+div.nav-folder-children {
     display: none;
 }
 
 .nav-file-title[data-path="Changelog.md"] {
+    display: none;
+}
+
+.nav-file-title[data-path="9. Master 1/Stage/Data/DATA.xlsx"],.nav-file-title[data-path="9. Master 1/Stage/Data/fetch_data.py"]  {
     display: none;
 }
 

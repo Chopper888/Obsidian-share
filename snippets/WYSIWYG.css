@@ -92,9 +92,9 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     content: "";
     position: absolute;
-    height: 3px;
+    height: 1px;
     width: 100%;
-    background: var(--blue);
+    background: var(--background-modifier-border);
     left: 0;
     top: 50%;
 }
