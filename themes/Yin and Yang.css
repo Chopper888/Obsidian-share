@@ -4546,7 +4546,7 @@ cursor: pointer;
 
 /*FILE EXPLORER ICONS*/
 
-.no-fx-folder .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
 content: "\F0770";
 font-family: 'Material Design Icons';
 font-size: calc(var(--large-font-size) + 3px);
@@ -5950,13 +5950,13 @@ content: "\e9ac" !important;
 
 /*STYLE SETTINGS*/
 
-/*.no-fx-icons .nav-folder-title .collapse-icon,
-.no-fx-folder-icons .nav-folder-title .collapse-icon{
+.nav-folder-title .collapse-icon,
+.nav-folder-title .collapse-icon{
   display: flex;
   font-family: boxicons;
   margin-left: 6px;
 }
-
+/*
 .no-fx-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before,
 .no-fx-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
 .no-fx-folder-icons .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before{
