@@ -22,3 +22,30 @@ content: url('https://api.iconify.design/simple-icons:coop.svg?color=%235f9dd8&w
 vertical-align: -0.125em;
 margin-right: 5px;
 }
+
+a.internal-link[data-link-status$="Solo" i]::before{
+content: url('https://api.iconify.design/noto-v1:face-with-open-mouth.svg?height=20');
+vertical-align: -0.2em;
+margin-right: 5px;
+}
+a.internal-link[data-link-Plateforme$="PS4" i]::before{
+    content: url('https://api.iconify.design/mdi:sony-playstation.svg?color=%233a73c0&height=22');
+    vertical-align: -0.3em;
+}
+
+a.internal-link[data-link-type$="Roman" i]::before{
+    content: url('https://api.iconify.design/bx:bx-book-heart.svg?color=%237e87a5&height=24');
+    vertical-align: -0.125em;
+}
+
+a.internal-link[data-link-type$="Manga" i]::before{
+    content: url('https://api.iconify.design/vs:neko.svg?color=%233e6791&height=18');
+    vertical-align: -0.143em;
+    margin-right: 0.5% ;
+}
+
+a.internal-link[data-link-type$="Light Novel" i]::before{
+    content: url('https://api.iconify.design/akar-icons:chat-bubble.svg?color=%2314375b&height=24');
+    vertical-align: -0.125em;
+    margin-right: 0.5% ;
+}

@@ -467,6 +467,10 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.nav-folder-title[data-path^="6. Média/"]>.nav-folder-title-content:before {
+    padding-left: 1%;
+}
+
 .nav-file-title[data-path*="6. Média"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
