@@ -303,6 +303,24 @@ ul.svelte-yzsyxo>li.compact.svelte-1q8cjhd>div.content.svelte-1q8cjhd>p>a:hover 
     color: var(--tag-border-color) !important;
 }
 
+li.svelte-1q8cjhd.svelte-1q8cjhd {
+    padding: 0 !important;
+}
+ul.svelte-yzsyxo {
+    margin-left: -30%;
+}
+
+header.svelte-yzsyxo {
+    background-color: rgba(255, 255, 255, 0.281) !important;
+    padding: 1% !important;
+    padding-left: 5% !important
+}
+
+.count.svelte-yzsyxo {
+    padding: 0 5% !important;
+    
+}
+
 .markdown-preview-view .internal-link,
 .markdown-preview-view .external-link,
 .cm-s-obsidian span.cm-link,
