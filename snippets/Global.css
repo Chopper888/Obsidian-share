@@ -62,7 +62,7 @@ settings:
         default-light: '#6db2e7'
         default-dark: '#6db2e7'
     -
-        id: blue
+        id: strong-color
         title: Main color bonus
         type: variable-themed-color
         opacity: true
@@ -141,7 +141,7 @@ settings:
     --default-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
     --text-edit: 'iA Writer Quattro S', -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace !important;
     --font-frontmatter: var(--font-monospace);
-    --boldpink: #286b9f
+    --strong-color: var(--blue)
 }
 
 @media screen and (min-width: 1080px) {
@@ -159,12 +159,9 @@ settings:
     .markdown-preview-view h4,
     .markdown-preview-view h5,
     .markdown-preview-view h6 {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
         margin-left: -2%;
         margin-top: 1%;
-    }
-    .markdown-embed-content {
-        display: inline-block;
     }
 }
 
@@ -211,12 +208,6 @@ h6 {
     font-family: var(--header) !important;
     font-weight: 600 !important;
 }
-
-div[data-tag-name='h3']+div[data-tag-name='p']
- {
-    margin-top: 5% !important;
-}
-
 div[data-tag-name='h1']+div .block-language-dataview,
 div[data-tag-name='h2']+div .block-language-dataview,
 div[data-tag-name='h3']+div .block-language-dataview,
@@ -454,3 +445,9 @@ img.emoji {
     margin-right:10% !important;
 }
 
+div.kanban-plugin__lane-header-wrapper>div.kanban-plugin__lane-title > span.markdown-preview-view.kanban-plugin__lane-title-text > p {
+    color: var(--boldpink) !important;
+    font-weight: 600 !important;
+    font-size: 115%;
+    font-family: var(--header);
+}

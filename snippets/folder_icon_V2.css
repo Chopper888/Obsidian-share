@@ -698,6 +698,10 @@ div.nav-folder-title[data-path^="8. Univers"] div.nav-folder-title-content::befo
 
 /* Hover */
 
+.nav-file-title.is-being-dragged, .nav-folder-title.is-being-dragged {
+    background-color: rgba(255, 255, 255, 0.575)
+}
+
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     background-color: transparent !important;
