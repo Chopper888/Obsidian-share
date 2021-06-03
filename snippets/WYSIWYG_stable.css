@@ -1,0 +1,216 @@
+.cm-s-obsidian .CodeMirror-line * {
+    -webkit-font-smoothing: auto;
+}
+
+
+/* Remove markdown clutter */
+
+.CodeMirror-activeline > .CodeMirror-line span.cm-formatting:not(span.cm-formatting-list) {
+    font-size: xx-small;
+}
+
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting ,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
+    display: none;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link) {
+    display: none;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+    display: inline !important;
+    opacity: 0 !important;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
+    visibility: visible;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
+    opacity: 0.5;
+}
+
+.cm-formatting.cm-formatting-link.cm-link {
+    font-size: inherit !important;
+    display: inline !important;
+}
+
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
+    opacity: 0.1;
+}
+
+
+/* except list markers */
+
+span.cm-formatting-list,
+
+/*code block backticks */
+
+span.cm-formatting-code-block.cm-hmd-codeblock,
+
+/* optionally header hashes */
+
+
+/*span.cm-formatting-header
+{ display: inline !important; }
+
+/* and task checkboxes */
+
+span.cm-formatting-task {
+    display: inline !important;
+    font-family: var(--font-monospace);
+    visibility: visible !important;
+}
+
+
+/* Blockquote: in edit mode with left border rendered instead of > */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote {
+    display: inline !important;
+    color: transparent !important;
+}
+
+div:not(.CodeMirror-activeline)>.HyperMD-quote {
+    background-color: rgba(231, 226, 226, 0.52);
+    border-left: 3px solid var(--text-selection);
+    border-color: rgb(21, 62, 122) !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
+    content: '';
+}
+
+
+/* Horizontal line in edit mode. Changes --- to full-width line */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
+    color: transparent;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--background-modifier-border);
+    left: 0;
+    top: 50%;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
+    opacity: 0.1 !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-char {
+    opacity: 0.1 !important;
+}
+
+
+/* Checkboxes instead of brackets in edit mode */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property {
+    color: transparent;
+    position: relative;
+    display: inline !important;
+    margin-right: 1%;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+    content: "☐" !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    color: var(--text-accent);
+    font-size: 30px;
+    display: inline !important;
+    visibility: visible !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+    content: "☒" !important;
+    color: var(--text-accent) !important;
+    font-size: 30px;
+    display: inline !important;
+    visibility: visible !important;
+}
+
+span.cm-formatting-task.cm-property~span {
+    color: var(--text-faint) !important;
+}
+
+
+/* except image markdown */
+
+
+/*Change links color*/
+
+.cm-s-obsidian span.cm-url {
+    color: rgb(15, 112, 223) !important;
+    text-decoration: underline;
+    z-index: -99999;
+    display: inline !important;
+    font-size: 0;
+}
+
+span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    font-size: 0 !important;
+}
+
+.cm-link::after {
+    content: ""
+}
+
+.CodeMirror-line span.cm-formatting {
+    display: inline !important;
+   
+}
+
+.cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
+    padding: 0;
+}
+
+.cm-s-obsidian span.cm-formatting-list {
+    color: var(--text-muted) !important;
+}
+
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul {
+    color: transparent !important;
+}
+
+.cm-s-obsidian .HyperMD-table-row {
+    white-space: normal;
+}
+
+.outliner-plugin-bls .cm-s-obsidian .HyperMD-list-line {
+    padding-top: 0 !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header {
+    display: none !important;
+}
+
+span.cm-formatting.cm-formatting-strong.cm-strong,
+span.cm-formatting.cm-formatting-em.cm-em {
+    font-size: 50%;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
+    opacity: 0.3;
+}
+
+pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
+    color: var(--blue) !important;
+    display: inline !important;
+    font-size: 100% !important;
+    opacity: 0.3;
+}

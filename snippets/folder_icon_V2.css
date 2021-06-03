@@ -734,6 +734,11 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: currentColor !important;
 }
 
+.is-collapsed .collapse-icon svg, .collapse-icon > svg {
+    display: inline-block !important;
+    color: currentColor !important;
+}
+
 .nav-file-title.is-active {
     background-color: transparent !important;
     filter: saturate(150%);
