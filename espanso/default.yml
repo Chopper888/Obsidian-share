@@ -50,3 +50,10 @@ matches:
     replace: "✓"
   - trigger: ':v'
     replace: "✅"
+  - trigger: ':git'
+    replace: 'git add . | git commit . -m "{{time}}" | git push'
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%m-%d-%Y_%H-%M"
