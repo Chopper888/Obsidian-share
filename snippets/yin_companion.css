@@ -18,12 +18,6 @@ input.document-search-input.mod-no-match, input.document-replace-input.mod-no-ma
     
 }
 
-
-
-
-
-
-
 .container.svelte-180qotg>h3.svelte-180qotg {
     display: none;
 }
@@ -71,4 +65,56 @@ div.kanban-plugin__lane-header-wrapper>div.kanban-plugin__lane-title > span.mark
     font-weight: 600 !important;
     font-size: 115%;
     font-family: var(--header);
+}
+
+.wys-enhanced span.cm-formatting-list-ul:after {
+    content: '' !important;
+    display: none !important;
+}
+
+.CodeMirror pre.CodeMirror-line, .markdown-source-view, .cm-s-obsidian {
+    font-family: var(--text-edit) ;
+}
+
+.HyperMD-table-row {
+    line-height: 1.5em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    white-space: pre !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    font-family: var(--tab-font) !important;
+    
+}
+
+.cm-s-obsidian .HyperMD-table-row span.cm-hmd-table-sep {
+  color: var(--text-faint);
+}
+.cm-s-obsidian .HyperMD-table-row-1 > span {
+  color: var(--text-faint);
+}
+.cm-s-obsidian .HyperMD-table-row.HyperMD-table-row-0 {
+  font-weight: 600;
+}
+.cm-s-obsidian .HyperMD-table-row.HyperMD-table-row-0 span.cm-strong {
+  font-weight: 800;
+}
+
+.cm-s-obsidian .HyperMD-table-row .hmd-table-column,
+.cm-s-obsidian .HyperMD-table-row .hmd-table-column-content {
+  display: inline-block !important;
+}
+.cm-s-obsidian .HyperMD-table-row .hmd-table-column-left {
+  text-align: left;
+}
+.cm-s-obsidian .HyperMD-table-row .hmd-table-column-center {
+  text-align: center;
+}
+.cm-s-obsidian .HyperMD-table-row .hmd-table-column-right {
+  text-align: right;
+}
+.cm-s-obsidian .HyperMD-table-row > :last-child {
+  padding-right: 22px !important;
 }
