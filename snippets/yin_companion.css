@@ -122,11 +122,6 @@ div.kanban-plugin__lane-header-wrapper>div.kanban-plugin__lane-title > span.mark
 img.emoji {
   width: 1em !important;
   cursor: default !important;
-}
-
-.markdown-preview-view img.emoji:active, .image-container img.emoji:active {
-  cursor: default !important;
-  position: relative !important;
-  transform: revert !important;
   pointer-events: none;
 }
+
