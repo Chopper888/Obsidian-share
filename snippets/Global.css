@@ -283,12 +283,13 @@ p {
 }
 
 .tag:hover {
-    background-color: #a9ccfc  !important;
+    background-color: var(--blue) !important;
     color:#ffffff !important;
 }
 
 .markdown-preview-view a.tag {
-    color: var(--tag);
+    color: var(--tag) !important;
+    background-color: var(--tag-background-color) !important
 }
 
 header.svelte-yzsyxo {
@@ -423,11 +424,12 @@ span.cm-header+span.cm-url {
 
 .table-view-table>tbody>tr>td>span>a,
 li.dataview-result-list-li>span[data-tag-name="p"]>a {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 .table-view-table>tbody>tr>td>span>a:hover,
 li.dataview-result-list-li>span[data-tag-name="p"]>a:hover {
-    color: var(--blue) !important;
+    background-color: var(--blue) !important;
+    color:#ffffff !important;
 }
 
