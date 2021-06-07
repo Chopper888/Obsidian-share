@@ -9,12 +9,8 @@
     font-size: xx-small;
 }
 
-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting ,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link {
-    display: none;
-}
-
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link, 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link) {
@@ -25,6 +21,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formattin
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
     display: inline !important;
     opacity: 0 !important;
+}
+
+.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock, div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
+    font-size: var(--editor-font-size) !important;
+    display: inline !important;
 }
 
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
@@ -49,19 +50,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
 /* except list markers */
 
 span.cm-formatting-list,
-
-/*code block backticks */
-
 span.cm-formatting-code-block.cm-hmd-codeblock,
-
-/* optionally header hashes */
-
-
-/*span.cm-formatting-header
-{ display: inline !important; }
-
-/* and task checkboxes */
-
 span.cm-formatting-task {
     display: inline !important;
     font-family: var(--font-monospace);
@@ -148,12 +137,6 @@ span.cm-formatting-task.cm-property~span {
     color: var(--text-faint) !important;
 }
 
-
-/* except image markdown */
-
-
-/*Change links color*/
-
 .cm-s-obsidian span.cm-url {
     color: rgb(15, 112, 223) !important;
     text-decoration: underline;
@@ -166,13 +149,8 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     font-size: 0 !important;
 }
 
-.cm-link::after {
-    content: ""
-}
-
 .CodeMirror-line span.cm-formatting {
     display: inline !important;
-   
 }
 
 .cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
