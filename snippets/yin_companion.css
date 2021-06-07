@@ -118,3 +118,15 @@ div.kanban-plugin__lane-header-wrapper>div.kanban-plugin__lane-title > span.mark
 .cm-s-obsidian .HyperMD-table-row > :last-child {
   padding-right: 22px !important;
 }
+
+img.emoji {
+  width: 1em !important;
+  cursor: default !important;
+}
+
+.markdown-preview-view img.emoji:active, .image-container img.emoji:active {
+  cursor: default !important;
+  position: relative !important;
+  transform: revert !important;
+  pointer-events: none;
+}
