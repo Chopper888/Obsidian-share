@@ -79,8 +79,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
 
 /* Horizontal line in edit mode. Changes --- to full-width line */
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
+.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
+.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
     color: transparent;
 }
 
@@ -105,21 +105,21 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-char {
 
 /* Checkboxes instead of brackets in edit mode */
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property {
     color: transparent;
     position: relative;
     display: inline !important;
     margin-right: 1%;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☐" !important;
     position: absolute;
     top: 3px;
     left: 0px;
-    color: var(--text-accent);
+    color: var(--tag);
     font-size: 30px;
     display: inline !important;
     visibility: visible !important;
@@ -127,7 +127,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☒" !important;
-    color: var(--text-accent) !important;
+    color: var(--tag) !important;
     font-size: 30px;
     display: inline !important;
     visibility: visible !important;
