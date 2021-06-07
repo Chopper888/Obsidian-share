@@ -251,19 +251,14 @@ settings:
 /* ============== ROOT ============= */
 
 :root {
-
 /*  TRANSFORM  */
     --folder-x: -2px;
     --folder-y: 3px;
     --folder-transform: translate(var(--folder-x), var(--folder-y));
-    
     --icon-x: -3px;
     --icon-y: 3px;
     --content-transform: translate(var(--icon-x), var(--icon-y));
-
     --indicator: url('https://api.iconify.design/codicon:note.svg?color=darkgrey&height=18');
-
-
 
 /*  ARCHIVE */
     --archive: url('https://api.iconify.design/radix-icons:archive.svg?color=%23001219&height=16');
@@ -326,6 +321,7 @@ settings:
     --univers: url('https://api.iconify.design/jam:universe.svg?color=%238FA1CC&height=18');
     --univers-font: #8FA1CC;
     --indic-univers: url('https://api.iconify.design/codicon:note.svg?color=%238FA1CC&height=18');
+    --bi: url('https://api.iconify.design/mdi:bookshelf.svg?color=%238FA1CC&height=18');
 
 /*Template */
     --template: url('https://api.iconify.design/carbon:template.svg?color=%23B69D91&height=18');
@@ -338,7 +334,6 @@ settings:
 /* Templater */
     --templater: url('https://api.iconify.design/clarity:command-outline-alerted.svg?color=%23B69D91&height=18');
     --indicator-templater: url('https://api.iconify.design/tabler:math-function.svg?color=%23B69D91&height=18');
-    
     --script-x: -3px;
     --script-y: 3px;
     --script-transform: var(--content-transform);
@@ -558,8 +553,6 @@ settings:
 }
 
 
-
-
 /* OC */
 
 .nav-folder-title[data-path^="7. Personnages/OC"] .nav-folder-title-content::before {
@@ -577,6 +570,7 @@ settings:
 .nav-file-title[data-path*="7. Personnages/OC"] {
     color: var(--oc-font) !important;
 }
+
 /* ========== Personnel ========== */
 
 .nav-folder-title[data-path^="2. Personnel"] .nav-folder-title-content::before {
@@ -614,6 +608,20 @@ div.nav-folder-title[data-path^="8. Univers"] div.nav-folder-title-content::befo
 .nav-folder-title[data-path^="8. Univers"],
 .nav-file-title[data-path*="8. Univers"] {
     color: var(--univers-font) !important;
+}
+
+div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-folder-title-content::before {
+    content: var(--bi);
+    background-size: 14px 14px;
+    /* adopt this to your file tree font height */
+    transform: var(--folder-transform);
+    /* to position the icon */
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+    z-index: 100;
 }
 
 
