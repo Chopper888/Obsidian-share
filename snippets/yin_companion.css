@@ -123,5 +123,6 @@ img.emoji {
   width: 1em !important;
   cursor: default !important;
   pointer-events: none;
+  height: inherit !important;
 }
 
