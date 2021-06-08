@@ -5,9 +5,9 @@ id: foldericon
 settings:
     - 
         id: files-folder
-        title: Translate pour les dossiers
+        title: DOSSIERS
         type: heading
-        level: 3 
+        level: 2 
     - 
         id: folder-x
         title: Variable X
@@ -20,11 +20,22 @@ settings:
         type: variable-number
         default: 3
         format: px
+    -
+        id: folder-transform
+        title: Folder icon translate
+        description: 1. Manuel; 2. Black & White ; 3. California Coast ; 4. None
+        type: variable-select
+        default: translate(var(--folder-x), var(--folder-y))
+        options:
+            - translate(var(--folder-x), var(--folder-y))
+            - translate(-2px, 3px)
+            - translate(-2px, 0px)
+            - None        
     - 
         id: files-icons
-        title: Translate pour les fichiers
+        title: FICHIERS
         type: heading
-        level: 3 
+        level: 2 
     -
         id: icon-x
         title: Variable X
@@ -37,11 +48,23 @@ settings:
         type: variable-number
         default: 3
         format: px
+    -
+        id: content-transform
+        title: PRECONFIGURATION
+        description: 1. Manuel ; 2. Black & White ; 3. Yin & yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: translate(var(--icon-x), var(--icon-y))
+        options: 
+            - translate(var(--icon-x), var(--icon-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - None        
     - 
         id: todo-icon
-        title: Translate pour le todo
+        title: TODO
         type: heading
-        level: 3 
+        level: 2 
     -
         id: todo-x
         title: Variable X
@@ -55,10 +78,23 @@ settings:
         default: 3
         format: px
     - 
+        id: todo-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--todo-x), var(--todo-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
+    -  
         id: script-icon
-        title: Translate pour l'icons des scripts
+        title: SCRIPTS
         type: heading
-        level: 3 
+        level: 2 
     -
         id: script-x
         title: Variable X
@@ -71,12 +107,25 @@ settings:
         type: variable-number
         default: 3
         format: px
+    -                     
+        id: script-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--script-x), var(--script-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
     - 
         id: template-icon
-        title: Translate pour l'icons des template
+        title: TEMPLATE
         type: heading
-        level: 3 
-    -
+        level: 2 
+    -    
         id: template-x
         title: Variable X
         type: variable-number
@@ -88,11 +137,25 @@ settings:
         type: variable-number
         default: 3
         format: px
-    - 
+        
+    -
+        id: template-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--template-x), var(--template-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none            
+    -     
         id: food-icon
-        title: Translate pour l'icons des food
+        title: CUISINE
         type: heading
-        level: 3 
+        level: 2 
     -
         id: food-x
         title: Variable X
@@ -104,12 +167,25 @@ settings:
         title: Variable Y
         type: variable-number
         default: 3
-        format: px
+        format: px        
     -
+        id: food-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--food-x), var(--food-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none  
+    -     
         id: bookmark-icon
-        title: Translate pour l'icons des bookmark
+        title: BOOKMARK
         type: heading
-        level: 3 
+        level: 2 
     -
         id: bookmark-x
         title: Variable X
@@ -123,10 +199,23 @@ settings:
         default: 3
         format: px
     -
+        id: bookmark-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options: 
+            - var(--content-transform)
+            - translate(var(--bookmark-x), var(--bookmark-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none  
+    -    
         id: média-icon
         title: Translate pour l'icons des média
         type: heading
-        level: 3 
+        level: 2 
     -
         id: média-x
         title: Variable X
@@ -139,102 +228,9 @@ settings:
         type: variable-number
         default: 3
         format: px
-    -                      
-        id: preconfigured
-        title: Sélection pour des thèmes
-        type: heading
-        level: 3
     -
-        id: folder-transform
-        title: Folder icon translate
-        description: 1. Manuel; 2. Black & White ; 3. California Coast ; 4. None
-        type: variable-select
-        default: translate(var(--folder-x), var(--folder-y))
-        options:
-            - translate(var(--folder-x), var(--folder-y))
-            - translate(-2px, 3px)
-            - translate(-2px, 0px)
-            - None
-    - 
-        id: content-transform
-        title: Files icon translate
-        description: 1. Manuel ; 2. Black & White ; 3. Yin & yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: translate(var(--icon-x), var(--icon-y))
-        options: 
-            - translate(var(--icon-x), var(--icon-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - None
-    - 
-        id: todo-transform
-        title: Files todo translate
-        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: var(--content-transform)
-        options: 
-            - var(--content-transform)
-            - translate(var(--todo-x), var(--todo-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - none
-    - 
-        id: script-transform
-        title: Files script translate
-        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: var(--content-transform)
-        options: 
-            - var(--content-transform)
-            - translate(var(--script-x), var(--script-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - none
-    - 
-        id: template-transform
-        title: Files template translate
-        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: var(--content-transform)
-        options: 
-            - var(--content-transform)
-            - translate(var(--template-x), var(--template-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - none            
-    - 
-        id: bookmark-transform
-        title: Files bookmark translate
-        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: var(--content-transform)
-        options: 
-            - var(--content-transform)
-            - translate(var(--bookmark-x), var(--bookmark-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - none  
-    - 
-        id: food-transform
-        title: Files food translate
-        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
-        type: variable-select
-        default: var(--content-transform)
-        options: 
-            - var(--content-transform)
-            - translate(var(--food-x), var(--food-y))
-            - translate(-3px, 3px)
-            - translate(0px, 3px)
-            - translate(3px, 5px)
-            - none  
-    - 
         id: média-transform
-        title: Files média translate
+        title: PRECONFIGURATION
         description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
         type: variable-select
         default: var(--content-transform)
