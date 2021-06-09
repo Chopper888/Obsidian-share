@@ -192,3 +192,14 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     font-size: 100% !important;
     opacity: 0.3;
 }
+
+/* H1 Underline */
+.cm-s-obsidian pre.HyperMD-header-1:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: 1px;
+  background: var(--text-accent);
+}

@@ -277,7 +277,7 @@ p {
 }
 
 .tag,
-.cm-s-obsidian span.cm-hashtag-end {
+.cm-s-obsidian span.cm-hashtag-end, div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
   background-color: var(--tag-background-color) !important;
   border: 0 !important;
   color: var(--tag) !important;
@@ -290,7 +290,9 @@ p {
   padding-right: 0.5em !important;
 }
 
-.tag:hover {
+
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, a.tag:hover, .markdown-preview-view a.tag:hover{
   background-color: var(--blue) !important;
   color: #ffffff !important;
 }
