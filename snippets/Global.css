@@ -134,7 +134,7 @@ settings:
       title: Tab editor font 
       description: Font used for the table
       type: variable-text
-      default: var(--font-monospace)        
+      default: --font-monospace      
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
@@ -152,8 +152,7 @@ settings:
     "Helvetica Neue", monospace !important;
   --font-frontmatter: var(--font-monospace);
   --strong-color: var(--blue);
-  --tab-font: "Roboto Mono", "Inter", -apple-system, BlinkMacSystemFont,
-    "Roboto Mono", monospace;
+  --tab-font: var(--font-monospace);
 }
 
 @media screen and (min-width: 1080px) {
