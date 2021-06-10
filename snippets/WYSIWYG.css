@@ -82,7 +82,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
 
 span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
-span.cm-formatting-task {
+span.cm-formatting-task, 
+.mobile span.cm-formatting-list,
+.mobile span.cm-formatting-code-block.cm-hmd-codeblock,
+.mobile span.cm-formatting-task  {
     display: inline !important;
     font-family: var(--font-monospace);
     visibility: visible !important;
