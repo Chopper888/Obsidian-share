@@ -114,11 +114,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
 /* Horizontal line in edit mode. Changes --- to full-width line */
 
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
-.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr, .mobile span.cm-hr, .cm-hr {
+.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr{
     color: transparent;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after, .mobile span.cm-hr:after {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     content: "";
     position: absolute;
     height: 1px;
@@ -135,6 +135,21 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after, .mobile span.
 .mobile .markdown-preview-section hr:after {
     background: lightgrey !important;
     opacity: 100%;
+}
+
+.mobile .cm-hr, .mobile span.cm-hr {
+    color: transparent !important;
+    content: '' !important;
+}
+
+.mobile .cm-hr:after, .mobile span.cm-hr:after {
+    content: "" !important;
+    position: absolute !important;
+    height: 3px !important;
+    width: 80% !important;
+    font-weight: bold !important;
+    background: var(--text-faint) !important;
+    left: 10% !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
