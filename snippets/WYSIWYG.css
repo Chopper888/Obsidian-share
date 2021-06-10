@@ -111,11 +111,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
 /* Horizontal line in edit mode. Changes --- to full-width line */
 
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
-.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr, .mobile .cm-hr, .cm-hr {
+.wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr, .mobile span.cm-hr, .cm-hr {
     color: transparent;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after, .mobile .cm-hr:after {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after, .mobile span.cm-hr:after {
     content: "";
     position: absolute;
     height: 1px;
