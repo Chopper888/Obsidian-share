@@ -150,6 +150,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     font-weight: bold !important;
     background: var(--text-faint) !important;
     left: 10% !important;
+    margin-top: 1% !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
