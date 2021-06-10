@@ -73,6 +73,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     display: inline !important;
 }
 
+.mobile .cm-formatting.cm-formatting-link.cm-link {
+    font-size: small !important ;
+}
+
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
     opacity: 0.1;
 }
@@ -264,12 +268,6 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 }
 
 /* H1 Underline */
-.cm-s-obsidian pre.HyperMD-header-1:after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  width: calc(100% - 10px);
-  height: 1px;
-  background: var(--text-accent);
+.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
+  border-bottom: 1px solid var(--text-normal) !important;
 }
