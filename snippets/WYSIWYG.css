@@ -128,10 +128,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after, .mobile span.
     top: 50%;
 }
 
-.mobile .markdown-preview-section hr {
-    margin: 0 !important;
-}
-
 .mobile .markdown-preview-section hr:after {
     background: lightgrey !important;
     opacity: 100%;
