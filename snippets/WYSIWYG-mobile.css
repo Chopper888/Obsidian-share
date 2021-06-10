@@ -76,7 +76,8 @@ div:not(.CodeMirror-activeline)>.HyperMD-quote {
 /* Checkboxes instead of brackets in edit mode */
 
 div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-meta,
-div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property {
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property, .wys-enhanced div:not(.CodeMirror-activeline)> span.cm-formatting-task.cm-meta,
+.wys-enhanced div:not(.CodeMirror-activeline)> span.cm-formatting-task.cm-property {
     color: transparent !important;
     position: relative;
     display: inline !important;
@@ -84,7 +85,9 @@ div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property {
 }
 
 div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-meta:after,
-div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after {
+div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after, 
+.wys-enhanced div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-meta:after, 
+.wys-enhanced div:not(.CodeMirror-activeline)> span.cm-formatting-task.cm-property:after {
     content: "☐" !important;
     position: absolute;
     top: 3px;
@@ -93,7 +96,7 @@ div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after {
     font-size: 30px;
 }
 
-div:not(.CodeMirror-activeline)>.cm-formatting-task.cm-property:after {
+div:not(.CodeMirror-activeline)> span.cm-formatting-task.cm-property:after, .wys-enhanced div:not(.CodeMirror-activeline)> span.cm-formatting-task.cm-property:after {
     content: "☑" !important;
     position: absolute;
     top: 3px;

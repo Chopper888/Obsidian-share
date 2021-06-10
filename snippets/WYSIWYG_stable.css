@@ -113,8 +113,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-char {
     margin-right: 1%;
 }
 
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
     content: "☐" !important;
     position: absolute;
     top: 3px;
@@ -125,9 +124,12 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-char {
     visibility: visible !important;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☒" !important;
-    color: var(--tag) !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    color: var(--tag);
     font-size: 30px;
     display: inline !important;
     visibility: visible !important;

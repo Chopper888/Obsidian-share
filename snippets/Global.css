@@ -396,7 +396,7 @@ div[data-tag-name="p"] + div[data-tag-name="h3"],
 div[data-tag-name="p"] + div[data-tag-name="h4"],
 div[data-tag-name="p"] + div[data-tag-name="h5"],
 div[data-tag-name="p"] + div[data-tag-name="h6"] {
-  margin-top: -20px !important;
+  margin-top: 0 !important;
 }
 
 /* Outliner support */
