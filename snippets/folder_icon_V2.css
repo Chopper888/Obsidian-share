@@ -757,11 +757,6 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     transform: translate(5px, 0px) !important;
 }
 
-
-.nav-file-title > .nav-file-tag + .nav-file-title-content {
-    padding-left:6%;
-}
-
 .fx-icons .status-bar-item:after{
     display:inline-block
 }

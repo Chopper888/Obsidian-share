@@ -21,7 +21,7 @@
 .cm-hmd-barelink,
 .cm-formatting-link:not(.cm-link),
 .cm-hmd-internal-link {
-    color: white !important;
+    color: var(--text-accent) !important;
     display: inline !important;
     opacity: 0.5 !important;
 }
@@ -40,7 +40,7 @@ span.cm-formatting-task {
 }
 
 
-/* Blockquote: in edit mode with left border rendered instead of > */
+/* Blockquote: in edit mode with left border rendered instead of > 
 
 div:not(.CodeMirror-activeline)>.cm-formatting.cm-formatting-quote,
 div:not(.CodeMirror-activeline)>.cm-hmd-indent-in-quote {
