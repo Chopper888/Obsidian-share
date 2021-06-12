@@ -180,12 +180,11 @@ span.cm-formatting-task.cm-property~span {
 }
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting, .CodeMirror-line span.cm-formatting {
-    display: inline !important;
+    display: inline;
 }
 
 
 .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-link {
-    text-decoration: underline !important;
     font-weight: bold;
 }
 
