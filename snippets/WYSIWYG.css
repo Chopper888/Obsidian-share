@@ -192,7 +192,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     font-size: inherit;
 }
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    display: none;
+    display: none !important;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {

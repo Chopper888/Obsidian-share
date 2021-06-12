@@ -39,6 +39,10 @@
     opacity: 0.7;
 }
 
+.token.tag {
+    background-color: transparent !important;
+}
+
 .theme-dark .token.property,
 .theme-dark .token.tag,
 .theme-dark .token.boolean,
