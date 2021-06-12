@@ -193,6 +193,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☒" !important;
     position: absolute;
+    
     top: 3px;
     left: 0px;
     color: var(--tag) !important;
@@ -206,6 +207,9 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
     content: "☐" !important;
     color: var(--text-accent) !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
     font-size: 50px !important;
     display: inline !important;
     visibility: visible !important;
@@ -220,6 +224,9 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     display: inline !important;
     visibility: visible !important; 
     opacity: 100 !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
 }
 
 
