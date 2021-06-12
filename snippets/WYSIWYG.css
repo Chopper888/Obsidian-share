@@ -298,12 +298,12 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     color: var(--text-accent) !important;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20px;
     font-size: 35px !important;
     display: inline !important;
     visibility: visible !important;
     opacity: 100% !important;
-    margin-right: -20px;
+   
 }
 
 .mobile span.cm-formatting-task.cm-property:after, 
@@ -316,8 +316,8 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: 0;
-    margin-right: -20px;
+    left: 20px;
+    
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
