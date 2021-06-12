@@ -285,7 +285,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 .mobile .cm-formatting-task.cm-meta,
 .mobile .cm-formatting-task.cm-property, .mobile .wys-enhanced span.cm-formatting-task.cm-meta,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property {
-    color: inherit;
+    color: transparent;
     position: relative;
     display: none;
     margin-right: -0.1rem;
