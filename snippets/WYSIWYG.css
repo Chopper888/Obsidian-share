@@ -237,7 +237,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 }
 
 /* H1 Underline */
-.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
+.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1, .hyperMD-header-1 {
   border-bottom: 1px solid var(--text-normal) !important;
 }
 
