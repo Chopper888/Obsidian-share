@@ -223,6 +223,18 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     opacity: 1 !important;
 }
 
+.mobile span.cm-formatting-task.cm-property, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, 
+.mobile .cm-formatting-task.cm-property, 
+.mobile .wys-enhanced .cm-formatting-task.cm-meta, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property, 
+.mobile .cm-formatting-task.cm-meta {
+    color: var(--text-accent) !important;
+    font-size: 30px;
+
+}
+
+
 /* except image markdown */
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
