@@ -7,10 +7,10 @@ settings:
       title: Mobile support
       description: Add the mobile support instead of pc
       type: class-toggle
-   - id: blockquote
-     title: Blockquote 
-     description: Add nice blockquote. 
-     type: class-toggle
+    - id: blockquote
+      title: Blockquote 
+      description: Add nice blockquote. 
+      type: class-toggle
     - id: color-blockquote
       title: Blockquote border color
       description: change the blockquote color
