@@ -407,8 +407,12 @@ div[data-tag-name="p"] + div[data-tag-name="h6"] {
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
   letter-spacing: 0 !important;
   margin-top: 0 !important;
-  position: initial !important;
-  margin-left: 0 !important;
+  margin-left: 15px !important;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 + span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta {
+  margin-left: 10px !important;
+  margin-right: -10px !important;
 }
 
 .outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
