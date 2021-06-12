@@ -95,8 +95,7 @@ span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
 span.cm-formatting-task, 
 .mobile span.cm-formatting-list,
-.mobile span.cm-formatting-code-block.cm-hmd-codeblock,
-.mobile span.cm-formatting-task  {
+.mobile span.cm-formatting-code-block.cm-hmd-codeblock {
     display: inline !important;
     font-family: var(--font-monospace);
     visibility: visible !important;
@@ -286,9 +285,9 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 .mobile .cm-formatting-task.cm-meta,
 .mobile .cm-formatting-task.cm-property, .mobile .wys-enhanced span.cm-formatting-task.cm-meta,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property {
-    color: transparent !important;
+    color: transparent;
     position: relative;
-    display: inline !important;
+    display: inline;
     margin-right: -0.1rem;
 }
 
@@ -297,7 +296,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
     content: "☐" !important;
     color: var(--text-accent) !important;
-    transform: translate(0px, 3px);
+    transform: translate(-5px, 0px);
     font-size: 35px !important;
     display: inline !important;
     visibility: visible !important;
@@ -312,7 +311,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     display: inline !important;
     visibility: visible !important; 
     opacity: 100% !important;
-    transform: translate(0px, 3px);
+    transform: translate(-5px, 0px);
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
