@@ -191,8 +191,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
     opacity: 1;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, 
-.mobile span.cm-formatting-task.cm-property:after, .mobile .wys-enhanced span.cm-formatting-task.cm-property:after  {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, 
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☒" !important;
     position: absolute;
     top: 3px;
@@ -200,8 +200,29 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     color: var(--tag) !important;
     font-size: 30px;
     display: inline !important;
+    visibility: visible !important; 
+}
+
+.mobile .cm-formatting-task.cm-property:after, 
+.mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
+    content: "☐" !important;
+    color: var(--tag) !important;
+    font-size: 30px !important;
+    display: inline !important;
     visibility: visible !important;
-    opacity: 1;
+    opacity: 1 !important;
+}
+
+.mobile span.cm-formatting-task.cm-property:after, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
+    content: "☒" !important;
+    color: var(--tag) !important;
+    font-size: 30px !important;
+    display: inline !important;
+    visibility: visible !important; 
+    font-size: 30px !important;
+    opacity: 1 !important;
 }
 
 /* except image markdown */
