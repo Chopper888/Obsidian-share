@@ -93,6 +93,8 @@ span.cm-formatting-task,
     display: inline !important;
     font-family: var(--font-monospace);
     visibility: visible !important;
+    opacity: 1;
+    color: var(--text-faint)
 }
 
 
@@ -182,10 +184,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
     position: absolute;
     top: 3px;
     left: 0px;
-    color: var(--tag);
+    color: var(--tag) !important;
     font-size: 30px;
     display: inline !important;
     visibility: visible !important;
+    opacity: 1;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, 
@@ -194,10 +197,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     position: absolute;
     top: 3px;
     left: 0px;
-    color: var(--tag);
+    color: var(--tag) !important;
     font-size: 30px;
     display: inline !important;
     visibility: visible !important;
+    opacity: 1;
 }
 
 /* except image markdown */
@@ -211,12 +215,20 @@ span.cm-formatting-task.cm-property~span {
     color: var(--text-faint) !important;
 }
 
-.cm-s-obsidian span.cm-url, .mobile .cm-s-obsidian .cm-url {
+.cm-s-obsidian span.cm-url {
     color: rgb(15, 112, 223) !important;
     text-decoration: underline;
     z-index: -99999;
     display: inline !important;
     font-size: 0;
+}
+
+.mobile .cm-s-obsidian span.cm-url {
+    color: rgb(15, 112, 223) !important;
+    text-decoration: underline;
+    z-index: -99999;
+    display: inline !important;
+    font-size: smaller;
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
