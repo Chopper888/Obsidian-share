@@ -249,7 +249,7 @@ span.cm-formatting-task.cm-property~span {
     text-decoration: underline;
     z-index: -99999;
     display: inline !important;
-    font-size: smaller;
+    font-size: 10px;
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
