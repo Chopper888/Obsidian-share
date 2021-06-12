@@ -40,7 +40,7 @@ settings:
 
 /* Remove markdown clutter */
 
-.CodeMirror-activeline > .CodeMirror-line span.cm-formatting:not(span.cm-formatting-list) {
+.CodeMirror-activeline > .CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
     font-size: xx-small;
 }
 
@@ -179,21 +179,36 @@ span.cm-formatting-task.cm-property~span {
     color: var(--text-faint) !important;
 }
 
-.cm-s-obsidian span.cm-url {
-    color: rgb(15, 112, 223) !important;
-    text-decoration: underline;
-    z-index: -99999;
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting, .CodeMirror-line span.cm-formatting {
     display: inline !important;
-    font-size: 0;
 }
 
 
+.cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-link {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    font-size: 0 !important;
+    font-size: inherit;
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    display: none;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
+    content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
+    display: inline !important;
+}
+
+ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting), .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
+    font-size: 0;
+    letter-spacing: 0.03em !important;
+    display: inline !important;
 }
 
 .CodeMirror-line span.cm-formatting {
-    display: inline !important;
+    display: inline !important
 }
 
 .cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
@@ -237,7 +252,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 }
 
 /* H1 Underline */
-.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1, .hyperMD-header-1 {
+.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
   border-bottom: 1px solid var(--text-normal) !important;
 }
 
