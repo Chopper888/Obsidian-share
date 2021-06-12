@@ -296,7 +296,9 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
     content: "☐" !important;
     color: var(--text-accent) !important;
-    transform: translate(-5px, -3px) !important;
+    position: absolute;
+    top: 3px;
+    left: 0;
     font-size: 35px !important;
     display: inline !important;
     visibility: visible !important;
@@ -311,7 +313,9 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     display: inline !important;
     visibility: visible !important; 
     opacity: 100% !important;
-    transform: translate(-5px, -3px) !important;
+    position: absolute;
+    top: 3px;
+    left: 0;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
