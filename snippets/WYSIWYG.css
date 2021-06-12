@@ -7,8 +7,31 @@ settings:
       title: Mobile support
       description: Add the mobile support instead of pc
       type: class-toggle
+   - id: blockquote
+     title: Blockquote 
+     description: Add nice blockquote. 
+     type: class-toggle
+    - id: color-blockquote
+      title: Blockquote border color
+      description: change the blockquote color
+      type: variable-color
+      opacity: false
+      format: hex
+      default: "#54b6c0"
+    - id: bg-blockquote
+      title: Blockquote background color
+      description: change the background color
+      type: variable-color
+      opacity: true
+      format: hex
+      default: "#d1b8b8"
 
 */
+
+:root {
+    --color-blockquote: #54b6c0;
+    --bg-blockquote: #d1b8b8;
+}
 
 .cm-s-obsidian .CodeMirror-line *, .mobile .cm-s-obsidian * {
     -webkit-font-smoothing: auto;
@@ -21,10 +44,7 @@ settings:
     font-size: xx-small;
 }
 
-.mobile .cm-formatting:not(span.cm-formatting-list) {
-    opacity: 0.1 ;
-    font-size: xx-small;
-}
+
 
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
@@ -48,13 +68,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formattin
     opacity: 0 !important;
 }
 
-.mobile .cm-hmd-barelink,
-.mobile .cm-formatting-link:not(.cm-link),
-.mobile .cm-hmd-internal-link {
-    color: var(--text-accent) !important;
-    display: inline !important;
-    opacity: 0.5 !important;
-}
 
 .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock, div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
     font-size: var(--editor-font-size) !important;
@@ -72,10 +85,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 .cm-formatting.cm-formatting-link.cm-link {
     font-size: inherit !important;
     display: inline !important;
-}
-
-.mobile .cm-formatting.cm-formatting-link.cm-link {
-    font-size: small !important ;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
@@ -99,26 +108,23 @@ span.cm-formatting-task,
 }
 
 
-/* Blockquote: in edit mode with left border rendered instead of > 
+/* Blockquote: in edit mode with left border rendered instead of > */
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
+.blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote {
     display: inline !important;
     color: transparent !important;
 }
 
-div:not(.CodeMirror-activeline)>.HyperMD-quote {
-    background-color: rgba(231, 226, 226, 0.52);
+.blockquote div:not(.CodeMirror-activeline)>.HyperMD-quote {
+    background-color: var(--bg-blockquote);
     border-left: 3px solid var(--text-selection);
-    border-color: rgb(21, 62, 122) !important;
+    border-color: var(--color-blockquote) !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
     content: '';
 }
-
-
-/* Horizontal line in edit mode. Changes --- to full-width line */
 
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr{
@@ -135,42 +141,14 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     top: 50%;
 }
 
-.mobile .markdown-preview-section hr {
-    margin: 0 !important;
-}
-
-.mobile .markdown-preview-section hr:after {
-    background: lightgrey !important;
-    opacity: 100%;
-}
-
-.mobile .cm-hr, .mobile span.cm-hr {
-    color: transparent !important;
-    content: '' !important;
-}
-
-.mobile .cm-hr:after, .mobile span.cm-hr:after {
-    content: "" !important;
-    position: absolute !important;
-    height: 3px !important;
-    width: 80% !important;
-    font-weight: bold !important;
-    background: var(--text-faint) !important;
-    left: 10% !important;
-    margin-top: 1% !important;
-}
-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
     opacity: 0.1 !important;
 }
 
-
 /* Checkboxes instead of brackets in edit mode */
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
-.mobile span.cm-formatting-task.cm-meta,
-.mobile span.cm-formatting-task.cm-property {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property {
     color: transparent;
     position: relative;
     display: inline !important;
@@ -192,49 +170,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after, 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content: "☒" !important;
-    position: absolute;
-    
+    position: absolute;    
     top: 3px;
     left: 0px;
     color: var(--tag) !important;
     font-size: 30px;
     display: inline !important;
     visibility: visible !important; 
-}
-
-.mobile .cm-formatting-task.cm-property:after, 
-.mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
-.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
-    content: "☐" !important;
-    color: var(--text-accent) !important;
-    position: absolute;
-    top: 3px;
-    left: 0px;
-    font-size: 50px !important;
-    display: inline !important;
-    visibility: visible !important;
-    opacity: 100 !important;
-}
-
-.mobile span.cm-formatting-task.cm-property:after, 
-.mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content: "☑" !important;
-    color: var(--text-accent) !important;
-    font-size: 50px !important;
-    display: inline !important;
-    visibility: visible !important; 
-    opacity: 100 !important;
-    position: absolute;
-    top: 3px;
-    left: 0px;
-}
-
-
-/* except image markdown */
-
-.mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
-.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
-    display: inline !important;
 }
 
 span.cm-formatting-task.cm-property~span {
@@ -249,20 +191,9 @@ span.cm-formatting-task.cm-property~span {
     font-size: 0;
 }
 
-.mobile .cm-s-obsidian span.cm-url {
-    color: rgb(15, 112, 223) !important;
-    text-decoration: underline;
-    z-index: -99999;
-    display: inline !important;
-    font-size: 10px;
-}
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     font-size: 0 !important;
-}
-
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, .mobile .cm-string .cm-url {
-    font-size:inherit !important;
 }
 
 .CodeMirror-line span.cm-formatting {
@@ -312,4 +243,98 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 /* H1 Underline */
 .CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
   border-bottom: 1px solid var(--text-normal) !important;
+}
+
+/* ============= Style settings Mobile specific =================================*/
+.mobile .cm-formatting:not(span.cm-formatting-list) {
+    opacity: 0.1 ;
+    font-size: xx-small;
+}
+.mobile .cm-hmd-barelink,
+.mobile .cm-formatting-link:not(.cm-link),
+.mobile .cm-hmd-internal-link {
+    color: var(--text-accent) !important;
+    display: inline !important;
+    opacity: 0.5 !important;
+}
+
+.mobile .cm-formatting.cm-formatting-link.cm-link {
+    font-size: small !important ;
+}
+.mobile .markdown-preview-section hr {
+    margin: 0 !important;
+}
+
+.mobile .markdown-preview-section hr:after {
+    background: lightgrey !important;
+    opacity: 100%;
+}
+
+.mobile .cm-hr, .mobile span.cm-hr {
+    color: transparent !important;
+    content: '' !important;
+}
+
+.mobile .cm-hr:after, .mobile span.cm-hr:after {
+    content: "" !important;
+    position: absolute !important;
+    height: 3px !important;
+    width: 80% !important;
+    font-weight: bold !important;
+    background: var(--text-faint) !important;
+    left: 10% !important;
+    margin-top: 1% !important;
+}
+
+.mobile .cm-formatting-task.cm-meta,
+.mobile .cm-formatting-task.cm-property, .mobile .wys-enhanced span.cm-formatting-task.cm-meta,
+.mobile .wys-enhanced span.cm-formatting-task.cm-property {
+    color: transparent !important;
+    position: relative;
+    display: inline !important;
+    margin-right: -0.1rem;
+}
+
+.mobile .cm-formatting-task.cm-property:after, 
+.mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
+    content: "☐" !important;
+    color: var(--text-accent) !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    font-size: 30px !important;
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
+.mobile span.cm-formatting-task.cm-property:after, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
+    content: "☑" !important;
+    color: var(--text-accent) !important;
+    font-size: 30px !important;
+    display: inline !important;
+    visibility: visible !important; 
+    opacity: 100 !important;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+
+.mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
+.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+    display: inline !important;
+}
+
+.mobile .cm-s-obsidian span.cm-url {
+    color: rgb(15, 112, 223) !important;
+    text-decoration: underline;
+    z-index: -99999;
+    display: inline !important;
+    font-size: 10px;
+}
+
+.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, .mobile .cm-string .cm-url {
+    font-size:inherit !important;
 }
