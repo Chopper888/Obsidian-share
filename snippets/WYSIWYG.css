@@ -21,8 +21,9 @@ settings:
     font-size: xx-small;
 }
 
-.mobile .cm-formatting {
-    opacity: 0.1 !important;
+.mobile .cm-formatting:not(span.cm-formatting-list) {
+    opacity: 0.1 ;
+    font-size: xx-small;
 }
 
 
@@ -176,10 +177,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
     margin-right: 1%;
 }
 
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
-.mobile .cm-formatting-task.cm-property:after, 
-.mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
-.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
     content: "☐" !important;
     position: absolute;
     top: 3px;
@@ -207,7 +205,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 .mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
     content: "☐" !important;
-    color: var(--tag) !important;
+    color: var(--text-accent) !important;
     font-size: 30px !important;
     display: inline !important;
     visibility: visible !important;
@@ -216,8 +214,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 
 .mobile span.cm-formatting-task.cm-property:after, 
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content: "☒" !important;
-    color: var(--tag) !important;
+    content: "☑" !important;
+    color: var(--text-accent) !important;
     font-size: 30px !important;
     display: inline !important;
     visibility: visible !important; 
