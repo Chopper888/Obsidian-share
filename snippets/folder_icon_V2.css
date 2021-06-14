@@ -349,16 +349,27 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.nav-folder-title[data-path^="1. Archive/Fiches"] .nav-folder-title-content::before {
+.oz-folder-element.false[data-path^="1. Archive"] > div > span + span:before{
+    content: var(--archive) !important;
+    background-size: 14px 14px;
+    transform: translate(-8px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
+.nav-folder-title[data-path^="1. Archive/Fiches"] .nav-folder-title-content::before, .oz-folder-element.false[data-path^="1. Archive/Fiches"] > div > span + span:before {
     content: var(--archive-perso) !important;
 }
 
-.nav-folder-title[data-path^="1. Archive/Univers"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="1. Archive/Univers"] .nav-folder-title-content::before, .oz-folder-element.false[data-path^="1. Archive/Univers"] > div > span + span:before {
     content: var(--archive-univers) !important;
 }
 
 .nav-folder-title[data-path^="1. Archive"],
-.nav-file-title[data-path*="1. Archive"] {
+.nav-file-title[data-path*="1. Archive"], 
+.oz-folder-element.false[data-path*="1. Archive"] > div > span{
     color: var(--archive-font) !important;
 }
 
@@ -376,6 +387,17 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element.false[data-path^="5. Bookmark"] > div > span + span:before{
+    content: var(--bookmark) !important;
+    background-size: 14px 14px;
+    transform: translate(-8px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
+
 .nav-file-title[data-path*="5. Bookmark"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
@@ -391,7 +413,8 @@ settings:
 }
 
 .nav-folder-title[data-path^="5. Bookmark"],
-.nav-file-title[data-path*="5. Bookmark"] {
+.nav-file-title[data-path*="5. Bookmark"], 
+.oz-folder-element.false[data-path^="5. Bookmark"] > div > span {
     color: var(--bookmark-font) !important;
 }
 
@@ -422,8 +445,19 @@ settings:
     padding-right: 10px;
 }
 
+.oz-folder-element.false[data-path^="4. Cuisine"] > div > span + span:before{
+    content: var(--food) !important;
+    background-size: 14px 14px;
+    transform: translate(-8px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="4. Cuisine"],
-.nav-file-title[data-path*="4. Cuisine"] {
+.nav-file-title[data-path*="4. Cuisine"],
+.oz-folder-element.false[data-path^="4. Cuisine"] > div > span {
     color: var(--food-font) !important;
 }
 
@@ -440,8 +474,18 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element.false[data-path^="9. Master 1"] > div > span + span:before{
+    content: var(--m1) !important;
+    background-size: 14px 14px;
+    transform: translate(-8px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="9. Master 1"],
-.nav-file-title[data-path*="9. Master 1"] {
+.nav-file-title[data-path*="9. Master 1"], .oz-folder-element.false[data-path^="9. Master 1"] > div > span {
     color: var(--m1-font) !important;
 }
 
@@ -456,6 +500,16 @@ settings:
     height: 16px;
     width: 16px;
     margin: -4px 2px 0 0;
+}
+
+.oz-folder-element.false[data-path^="6. Média"] > div > span + span:before{
+    content: var(--media) !important;
+    background-size: 14px 14px;
+    transform: translate(-8px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
 }
 
 .nav-folder-title[data-path^="6. Média/"]>.nav-folder-title-content:before {
@@ -478,7 +532,7 @@ settings:
 
 
 .nav-folder-title[data-path^="6. Média"],
-.nav-file-title[data-path*="6. Média"] {
+.nav-file-title[data-path*="6. Média"], .oz-folder-element.false[data-path^="6. Média"] > div > span {
     color: var(--media-font) !important;
 }
 
