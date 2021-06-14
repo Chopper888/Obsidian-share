@@ -38,6 +38,10 @@ settings:
 }
 
 
+.cm-tab {
+    margin-right: 10px;
+}
+
 /* Remove markdown clutter */
 
 .CodeMirror-activeline > .CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta) {
@@ -345,3 +349,4 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, .mobile .cm-string .cm-url {
     font-size:inherit !important;
 }
+
