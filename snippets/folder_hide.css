@@ -26,10 +26,15 @@ div[data-path='settings_sync']+div.nav-folder-children {
     display: none;
 }
 
-div[data-path^="6. Média/JV"]+div.nav-folder-children, div[data-path^="6. Média/Livre"]+div.nav-folder-children {
+div[data-path^="6. Média/JV"]+div.nav-folder-children, 
+div[data-path^="6. Média/Livre"]+div.nav-folder-children,
+div[data-path^="6. Média/Série"]+div.nav-folder-children {
     display:none !important;
 }
 
-.nav-folder-title[data-path^="6. Média/JV"]>.collapse-icon, .nav-folder-title[data-path^="6. Média/Livre"]>.collapse-icon {
+.nav-folder-title[data-path^="6. Média/JV"]>.collapse-icon, 
+.nav-folder-title[data-path^="6. Média/Livre"]>.collapse-icon,
+.nav-folder-title[data-path^="6. Média/Série"]>.collapse-icon {
     display: none !important;
 }
+

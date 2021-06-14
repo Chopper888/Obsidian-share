@@ -213,7 +213,7 @@ settings:
             - none  
     -    
         id: média-icon
-        title: Translate pour l'icons des média
+        title: MÉDIA
         type: heading
         level: 2 
     -
@@ -706,9 +706,7 @@ settings:
 div.nav-folder-title[data-path^="8. Univers"] div.nav-folder-title-content::before {
     content: var(--univers);
     background-size: 14px 14px;
-    /* adopt this to your file tree font height */
     transform: var(--folder-transform);
-    /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
