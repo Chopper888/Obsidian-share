@@ -1,22 +1,4 @@
-.status-bar, .is-translucent .status-bar {
-    line-height: normal !important;
-    padding: 0 !important;
-    display: block !important;   
-}
 
-.document-search-container {
-    bottom: 96% !important;
-}
-
-.document-search-container.mod-replace-mode {
-    bottom: 92% !important;
-}
-
-input.document-search-input.mod-no-match, input.document-replace-input.mod-no-match, input.document-search-input:focus, input.document-replace-input:focus {
-    font-size: inherit !important;
-    border-radius: 0 !important;
-    
-}
 
 .container.svelte-180qotg>h3.svelte-180qotg {
     display: none;
