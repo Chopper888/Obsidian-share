@@ -335,7 +335,14 @@ settings:
     --script-transform: var(--content-transform);
 
 }
-    
+
+.oz-folder-element {
+    font-size: larger !important;
+}
+
+.nav-file.oz-nav-file > .nav-file-title.oz-nav-file-title > .nav-file-title-content:before {
+    transform: translate(0px, 2px) !important;
+}
     
 /* ============== ARCHIVE ============= */
 .nav-folder-title[data-path^="1. Archive"] .nav-folder-title-content::before {
@@ -349,27 +356,27 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.oz-folder-element.false[data-path^="1. Archive"] > div > span + span:before{
+.oz-folder-element[data-path^="1. Archive"] > div > div > div + div:before{
     content: var(--archive) !important;
     background-size: 14px 14px;
-    transform: translate(-8px, 3px);
+    transform: translate(-5px, 3px);
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
     width: 16px;    
 }
 
-.nav-folder-title[data-path^="1. Archive/Fiches"] .nav-folder-title-content::before, .oz-folder-element.false[data-path^="1. Archive/Fiches"] > div > span + span:before {
+.nav-folder-title[data-path^="1. Archive/Fiches"] .nav-folder-title-content::before, .oz-folder-element[data-path^="1. Archive/Fiches"] > div > div > div + div:before {
     content: var(--archive-perso) !important;
 }
 
-.nav-folder-title[data-path^="1. Archive/Univers"] .nav-folder-title-content::before, .oz-folder-element.false[data-path^="1. Archive/Univers"] > div > span + span:before {
+.nav-folder-title[data-path^="1. Archive/Univers"] .nav-folder-title-content::before, .oz-folder-element[data-path^="1. Archive/Univers"] > div > div > div + div:before {
     content: var(--archive-univers) !important;
 }
 
 .nav-folder-title[data-path^="1. Archive"],
 .nav-file-title[data-path*="1. Archive"], 
-.oz-folder-element.false[data-path*="1. Archive"] > div > span{
+.oz-folder-element[data-path*="1. Archive"] > div > div > div + div{
     color: var(--archive-font) !important;
 }
 
@@ -387,10 +394,10 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.oz-folder-element.false[data-path^="5. Bookmark"] > div > span + span:before{
+.oz-folder-element[data-path^="5. Bookmark"] > div > div > div + div:before{
     content: var(--bookmark) !important;
     background-size: 14px 14px;
-    transform: translate(-8px, 3px);
+    transform: translate(-5px, 3px);
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -414,7 +421,7 @@ settings:
 
 .nav-folder-title[data-path^="5. Bookmark"],
 .nav-file-title[data-path*="5. Bookmark"], 
-.oz-folder-element.false[data-path^="5. Bookmark"] > div > span {
+.oz-folder-element[data-path^="5. Bookmark"] > div > div > div + div {
     color: var(--bookmark-font) !important;
 }
 
@@ -445,10 +452,10 @@ settings:
     padding-right: 10px;
 }
 
-.oz-folder-element.false[data-path^="4. Cuisine"] > div > span + span:before{
+.oz-folder-element[data-path^="4. Cuisine"] > div > div > div + div:before{
     content: var(--food) !important;
     background-size: 14px 14px;
-    transform: translate(-8px, 3px);
+    transform: translate(-5px, 3px);
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -457,7 +464,7 @@ settings:
 
 .nav-folder-title[data-path^="4. Cuisine"],
 .nav-file-title[data-path*="4. Cuisine"],
-.oz-folder-element.false[data-path^="4. Cuisine"] > div > span {
+.oz-folder-element[data-path^="4. Cuisine"] > div > div > div + div {
     color: var(--food-font) !important;
 }
 
@@ -474,10 +481,10 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.oz-folder-element.false[data-path^="9. Master 1"] > div > span + span:before{
+.oz-folder-element[data-path^="9. Master 1"] > div > div > div + div:before{
     content: var(--m1) !important;
     background-size: 14px 14px;
-    transform: translate(-8px, 3px);
+    transform: translate(-5px, 3px);
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -485,7 +492,7 @@ settings:
 }
 
 .nav-folder-title[data-path^="9. Master 1"],
-.nav-file-title[data-path*="9. Master 1"], .oz-folder-element.false[data-path^="9. Master 1"] > div > span {
+.nav-file-title[data-path*="9. Master 1"], .oz-folder-element[data-path^="9. Master 1"] > div > div > div + div {
     color: var(--m1-font) !important;
 }
 
@@ -502,10 +509,10 @@ settings:
     margin: -4px 2px 0 0;
 }
 
-.oz-folder-element.false[data-path^="6. Média"] > div > span + span:before{
+.oz-folder-element[data-path^="6. Média"] > div > div > div + div:before{
     content: var(--media) !important;
     background-size: 14px 14px;
-    transform: translate(-8px, 3px);
+    transform: translate(-5px, 3px);
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -532,7 +539,8 @@ settings:
 
 
 .nav-folder-title[data-path^="6. Média"],
-.nav-file-title[data-path*="6. Média"], .oz-folder-element.false[data-path^="6. Média"] > div > span {
+.nav-file-title[data-path*="6. Média"], 
+.oz-folder-element[data-path^="6. Média"] > div > div > div + div {
     color: var(--media-font) !important;
 }
 
@@ -543,6 +551,16 @@ settings:
     transform: var(--folder-transform);
     display: inline-block;
     margin: -4px 2px -2px -2px;
+}
+
+.oz-folder-element[data-path^="3. Organisation"] > div > div > div + div:before{
+    content: var(--organisation) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
 }
 
 .nav-file-title[data-path*="3. Organisation"] .nav-file-title-content:only-child:before,
@@ -560,7 +578,8 @@ settings:
 }
 
 .nav-folder-title[data-path^="3. Organisation"],
-.nav-file-title[data-path*="3. Organisation"] {
+.nav-file-title[data-path*="3. Organisation"],
+.oz-folder-element[data-path^="3. Organisation"] > div > div > div + div {
     color: var(--organisation-font) !important;
 }
 
@@ -569,9 +588,7 @@ settings:
 .nav-folder-title[data-path^="7. Personnages"] .nav-folder-title-content::before {
     content: var(--perso);
     background-size: 14px 14px;
-    /* adopt this to your file tree font height */
     transform: var(--folder-transform);
-    /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -579,13 +596,23 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element[data-path^="7. Personnages"] > div > div > div + div:before{
+    content: var(--perso) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="7. Personnages"],
-.nav-file-title[data-path*="7. Personnages"] {
+.nav-file-title[data-path*="7. Personnages"],
+.oz-folder-element[data-path^="7. Personnages"] > div > div > div + div {
     color: var(--perso-font) !important;
 }
 
-
-
+/* Fiches */
 .nav-folder-title[data-path^="7. Personnages/Fiches"] .nav-folder-title-content::before {
     content: var(--fiches);
     background-size: 14px 14px;
@@ -597,8 +624,19 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element[data-path^="7. Personnages/Fiches"] > div > div > div + div:before{
+    content: var(--fiches) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="7. Personnages/Fiches"],
-.nav-file-title[data-path*="7. Personnages/Fiches"] {
+.nav-file-title[data-path*="7. Personnages/Fiches"],
+.oz-folder-element[data-path^="7. Personnages/Fiches"] > div > div > div + div {
     color: var(--fiches-font) !important;
 }
 
@@ -616,8 +654,20 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element[data-path^="7. Personnages/OC"] > div > div > div + div:before{
+    content: var(--oc) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
+
 .nav-folder-title[data-path^="7. Personnages/OC"],
-.nav-file-title[data-path*="7. Personnages/OC"] {
+.nav-file-title[data-path*="7. Personnages/OC"],
+.oz-folder-element[data-path^="7. Personnages/OC"] > div > div > div + div {
     color: var(--oc-font) !important;
 }
 
@@ -634,8 +684,20 @@ settings:
     margin: -4px 2px 0 0;
 }
 
+.oz-folder-element[data-path^="2. Personnel"] > div > div > div + div:before{
+    content: var(--personal) !important;
+    background-size: 14px 14px;
+    transform: translate(-4px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
+
 .nav-folder-title[data-path^="2. Personnel"],
-.nav-file-title[data-path*="2. Personnel"] {
+.nav-file-title[data-path*="2. Personnel"],
+.oz-folder-element[data-path^="2. Personnel"] > div > div > div + div {
     color: var(--personal-font) !important;
 }
 
@@ -655,17 +717,26 @@ div.nav-folder-title[data-path^="8. Univers"] div.nav-folder-title-content::befo
     z-index: 100;
 }
 
+.oz-folder-element[data-path^="8. Univers"] > div > div > div + div:before{
+    content: var(--univers) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="8. Univers"],
-.nav-file-title[data-path*="8. Univers"] {
+.nav-file-title[data-path*="8. Univers"],
+.oz-folder-element[data-path^="8. Univers"] > div > div > div + div {
     color: var(--univers-font) !important;
 }
 
 div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-folder-title-content::before {
     content: var(--bi);
     background-size: 14px 14px;
-    /* adopt this to your file tree font height */
     transform: var(--folder-transform);
-    /* to position the icon */
     background-repeat: no-repeat;
     display: inline-block;
     height: 16px;
@@ -674,6 +745,15 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
     z-index: 100;
 }
 
+.oz-folder-element[data-path^="8. Univers/La Bibliothèque Infinie"] > div > div > div + div:before{
+    content: var(--bi) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
 
 
 /* ========= TEMPLATE ========== */
@@ -689,8 +769,20 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
     margin: -4px 2px 0 0;
 }
 
+
+.oz-folder-element[data-path^="10. Template"] > div > div > div + div:before{
+    content: var(--template) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
 .nav-folder-title[data-path^="10. Template"],
-.nav-file-title[data-path*="10. Template"] {
+.nav-file-title[data-path*="10. Template"],
+.oz-folder-element[data-path^="10. Template"] > div > div > div + div {
     color: var(--template-font) !important;
 }
 
@@ -720,6 +812,16 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
             margin: -4px 4px 0 0;
         }
 
+        .oz-folder-element[data-path^="10. Template/Templater"] > div > div > div + div:before{
+            content: var(--templater) !important;
+            background-size: 14px 14px;
+            transform: translate(-5px, 3px);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 16px;
+            width: 16px;    
+        }        
+
         .nav-file-title.is-unsupported[data-path*="10. Template/Templater/Script"]>.nav-file-title-content::before {
             content: var(--indicator-templater) !important;
             transform: var(--script-transform) !important;
@@ -729,6 +831,16 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
             width: 16px;
             margin: -4px 4px 0 0;
         }
+
+        .oz-folder-element[data-path^="10. Template/Templater/"] > div > div > div + div:before{
+            content: var(--indicator-templater) !important;
+            background-size: 14px 14px;
+            transform: translate(-5px, 3px);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 16px;
+            width: 16px;    
+        }            
 
         .nav-file-title[data-path*="10. Template/Templater"] .nav-file-title-content:only-child:before,
         .search-result-collapse-indicator+span:before,
