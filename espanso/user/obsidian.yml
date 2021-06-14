@@ -1,6 +1,6 @@
 name: Obsidian
 filter_title: "Obsidian"
-
+exclude_default_entries: true
 matches: 
   - trigger: ":gbi"
     replace: "<iframe src='{{clipboard}}' style='border: none;position: absolute;width: 1920;height: 100%;left:-420;top: -80px'>$|$</iframe>"
@@ -17,3 +17,36 @@ matches:
       ```
       $|$
       ```
+  - trigger: ":today"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m-%d-%Y"
+  - trigger: ":now"
+    replace: "{{now}}"
+    vars:
+      - name: now
+        type: date
+        params:
+          format: "%m-%d-%Y_%H-%M"
+  - trigger : "-- "
+    replace: "— "
+  - trigger : "$up"
+    replace: "↑"
+  - trigger: "$do"
+    replace: "↓"
+  - trigger: "<_>"
+    replace: "⟷"
+  - trigger: "$v"
+    replace: "✓"
+  - trigger: ':v'
+    replace: "✅"
+  - trigger: ':git'
+    replace: 'git add . | git commit . -m "{{time}}" | git push'
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%m-%d-%Y_%H-%M"
