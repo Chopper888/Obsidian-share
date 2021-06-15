@@ -414,16 +414,6 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
-.mobile .tag,
-.mobile .cm-s-obsidian span.cm-hashtag-end,
-.mobile .kanban-plugin .tag {
-    font-size: 1em;
-    padding-bottom: 1px;
-    line-height: 30px !important;
-    height: 30px !important;
-}
-
-
 .mobile .cm-s-obsidian span.cm-url  {
    opacity: 0.1 !important;
    display: inline !important;
