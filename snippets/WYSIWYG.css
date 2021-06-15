@@ -438,32 +438,6 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
     display: inline !important;
 }
 
-.mobile .tag,
-.mobile .cm-s-obsidian span.cm-hashtag-end,
-.mobile .kanban-plugin .tag {
-    background-color: var(--tag-background-color);
-    border: 1px solid var(--tag-border-color);
-    color: var(--tag) !important;
-    font-size: 1em;
-    padding-right: 10px !important;
-    margin:1px !important;
-    text-decoration: none;
-    border-radius: 20px;
-    line-height: revert ;
-    height: revert ;
-}
-
-.mobile span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, 
-.wys-enhanced .mobile span.cm-hashtag-end:hover, .mobile a.tag:hover, .mobile .markdown-preview-view a.tag:hover{
-  background-color: var(--tag) !important;
-  color: #ffffff !important;
-}
-
-.markdown-preview-view a.tag {
-  color: var(--tag) !important;
-  background-color: var(--tag-background-color) !important;
-}
-
 .mobile .HyperMD-header-1:after {
     border-top: 1px solid var(--text-normal) !important;
 }
