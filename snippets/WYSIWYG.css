@@ -433,8 +433,8 @@ a.tag:hover,
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: -15px !important;
-    margin-right:50px !important;
+    left: 0 !important;
+    margin-right:100px !important;
     
 }
 
