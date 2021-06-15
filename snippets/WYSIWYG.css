@@ -228,6 +228,10 @@ span.cm-formatting-task.cm-property~span {
     color: var(--text-accent) !important;
 }
 
+.cm-s-obsidian span.cm-hmd-internal-link {
+    color: var(--text-link)
+}
+
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     font-size: inherit;
 }
@@ -406,7 +410,7 @@ a.tag:hover,
 .mobile .cm-formatting-task.cm-property:after, 
 .mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
-    content: "☐" !important;
+    content: "☐ " !important;
     color: var(--text-accent) !important;
     position: absolute;
     top: 0;
@@ -420,7 +424,7 @@ a.tag:hover,
 
 .mobile span.cm-formatting-task.cm-property:after, 
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content: "☑" !important;
+    content: "☑ " !important;
     color: var(--text-accent) !important;
     font-size: 35px !important;
     display: inline !important;
