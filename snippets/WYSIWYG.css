@@ -424,6 +424,8 @@ a.tag:hover,
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     display: inline !important;
+    opacity: 1 !important;
+    content: "" !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
