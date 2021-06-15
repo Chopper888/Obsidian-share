@@ -420,13 +420,13 @@ a.tag:hover,
     display: inline !important;
 }
 
-.mobile span.cm-url:not(span.cm-formatting) {
+.mobile span.cm-url.cm-string:not(span.cm-formatting) {
    color: transparent !important;
    display: inline !important;
-   font-size: 1px;
+   font-size: xx-small;
 }
 
-span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     color: var(--text-normal);
     font-size: xx-small !important;
 }
