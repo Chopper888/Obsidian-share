@@ -423,6 +423,12 @@ a.tag:hover,
 .mobile span.cm-url:not(span.cm-formatting) {
    color: transparent !important;
    display: inline !important;
+   font-size: 1px;
+}
+
+span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    color: var(--text-normal);
+    font-size: xx-small !important;
 }
 
 .mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
