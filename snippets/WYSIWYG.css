@@ -433,7 +433,7 @@ a.tag:hover,
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: -100px !important;
+    left: -15px !important;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, 
