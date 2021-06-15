@@ -49,7 +49,7 @@ settings:
     font-size: xx-small;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link, 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
@@ -61,7 +61,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm
 .mobile .cm-comment,
 .mobile .cm-s-obsidian span.cm-hmd-escape-backslash, 
 .mobile .cm-attribute {
-    display: none;
+    display: none !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
