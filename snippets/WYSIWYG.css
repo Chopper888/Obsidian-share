@@ -307,11 +307,10 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     color: var(--tag) !important;
     font-size: 1em;
     padding-bottom: 1px;
-    padding-top: 1px;
     text-decoration: none;
-    border-radius: 20px;
-    padding-left: 10px !important;
-    padding-right: 10px;
+    border-radius: 15px;
+    line-height: 30px !important;
+    height: 30px !important;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, a.tag:hover, .markdown-preview-view a.tag:hover{
