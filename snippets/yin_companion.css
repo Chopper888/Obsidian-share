@@ -200,3 +200,7 @@ img.emoji {
 .markdown-preview-view li[data-task="x"]>.task-list-item-checkbox:checked::before, .markdown-preview-view li[data-task="X"]>.task-list-item-checkbox:checked::before {
   left: 2px !important;
 }
+
+.kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
+  top: -5% !important;
+}
