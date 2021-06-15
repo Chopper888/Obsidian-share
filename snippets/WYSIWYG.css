@@ -402,7 +402,6 @@ a.tag:hover,
 .mobile .cm-formatting-task.cm-property{
     color: transparent !important;
     position: relative;
-    display: none !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
