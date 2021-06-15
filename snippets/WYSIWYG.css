@@ -335,10 +335,7 @@ a.tag:hover,
 .mobile .tag,
 .mobile .kanban-plugin .tag {
     font-size: 1em;
-    padding-top: 0.15em !important;
-    padding-bottom: 0.15em !important;
-    padding-right: 3%;
-    padding-left: 3%;
+    padding: 0.15em 3% !important;
     text-decoration: none;
     border-radius: 15px;
     line-height: 30px !important;
