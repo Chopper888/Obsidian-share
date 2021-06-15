@@ -420,9 +420,8 @@ a.tag:hover,
     display: inline !important;
 }
 
-.mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
+.mobile span.cm-url:not(span.cm-formatting) {
    color: transparent !important;
-   font-size: 1px !important;
    display: inline !important;
 }
 
