@@ -422,6 +422,7 @@ a.tag:hover,
 
 .mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
    color: transparent !important;
+   font-size: 0 !important;
    display: inline !important;
 }
 
