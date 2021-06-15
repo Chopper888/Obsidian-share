@@ -338,8 +338,8 @@ a.tag:hover,
     padding: 0.15em !important;
     text-decoration: none;
     border-radius: 15px;
-    line-height: 15px !important;
-    height: 15px !important;
+    line-height: 20px !important;
+    height: 20px !important;
 }
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task) {
