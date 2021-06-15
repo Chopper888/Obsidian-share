@@ -413,16 +413,6 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
-.mobile .cm-s-obsidian span.cm-url {
-    color: rgb(15, 112, 223) !important;
-    text-decoration: underline;
-    display: inline !important;
-    font-size: 10px;
-}
-
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, .mobile .cm-string .cm-url {
-    font-size:inherit !important;
-}
 
 .mobile .cm-url {
     display: none !important;
