@@ -337,6 +337,7 @@ a.tag:hover,
     font-size: 1em;
     padding-top: 0.01em !important;
     padding-bottom: 0.15em !important;
+    padding-right: 3%;
     text-decoration: none;
     border-radius: 15px;
     line-height: 30px !important;
