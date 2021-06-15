@@ -338,8 +338,7 @@ a.tag:hover,
     text-decoration: none;
     border-radius: 15px;
     line-height: 30px !important;
-    height: 30px !important;
-    width: max-content !important;
+    height: 40px !important;
     padding-top: 2% !important;
 }
 
