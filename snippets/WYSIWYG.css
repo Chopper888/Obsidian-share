@@ -414,7 +414,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + span.cm-url {
+.mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
    display: none;
 }
 
@@ -431,8 +431,8 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     border: 1px solid var(--tag-border-color);
     color: var(--tag) !important;
     font-size: 1em;
-    padding: 1px;
-    margin:1px !important;
+    padding: 100px;
+    margin:100px !important;
     text-decoration: none;
     border-radius: 15px;
     line-height: revert ;
