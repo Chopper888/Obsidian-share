@@ -430,6 +430,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
     color: transparent !important;
+    display: inline !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:before {
