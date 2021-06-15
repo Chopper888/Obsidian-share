@@ -331,6 +331,17 @@ a.tag:hover,
 }
 
 /* ============= Style settings Mobile specific ================================= */
+
+.mobile .tag,
+.mobile .kanban-plugin .tag {
+    font-size: 1em;
+    padding: 0.15em;
+    text-decoration: none;
+    border-radius: 10px;
+    line-height: 30px !important;
+    height: 30px !important;
+}
+
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task) {
     opacity: 0.1 ;
     font-size: xx-small;
