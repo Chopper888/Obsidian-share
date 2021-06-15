@@ -431,8 +431,10 @@ a.tag:hover,
     display: inline !important;
     visibility: visible !important; 
     opacity: 100% !important;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 100px;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, 
