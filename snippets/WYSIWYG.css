@@ -437,6 +437,11 @@ a.tag:hover,
     margin-right: -50px !important;
 }
 
+.mobile span.cm-formatting-task.cm-property:after, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-property {
+    margin-right: -15px !important;
+}
+
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
     display: inline !important;
