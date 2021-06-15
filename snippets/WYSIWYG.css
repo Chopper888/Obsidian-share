@@ -424,7 +424,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     font-size:inherit !important;
 }
 
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+.mobile .cm-url {
     display: none !important;
 }
 
