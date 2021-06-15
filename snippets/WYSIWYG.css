@@ -416,6 +416,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
 
 .mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
    opacity: 1 !important;
+   display: inline !important
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
@@ -431,7 +432,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     border: 1px solid var(--tag-border-color);
     color: var(--tag) !important;
     font-size: 1em;
-    padding: 100px;
+    padding: 15px;
     margin:1px !important;
     text-decoration: none;
     border-radius: 15px;
