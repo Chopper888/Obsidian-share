@@ -421,7 +421,8 @@ a.tag:hover,
 }
 
 .mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
-   display: none !important;
+   color: transparent !important;
+   display: inline !important;
 }
 
 .mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
