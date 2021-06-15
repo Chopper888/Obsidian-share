@@ -403,6 +403,7 @@ a.tag:hover,
     color: transparent !important;
     position: relative !important;
     margin-right: -15px !important;
+    font-size: 0 !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
