@@ -3,138 +3,125 @@
 name: "Global"
 id: global
 settings:
-    - 
-        id: Color
-        title: Colors
-        type: heading
-        level: 3 
-    -
-        id: boldpink 
-        title: Bold colors
-        type: variable-color
-        opacity: true
-        format: hex
-        default: "#286b9f"
-    -
-        id: tag-background-color
-        title: Tag Background Color
-        type: variable-color
-        opacity: true
-        format: hex
-        default: '#80cbee67'
-    - 
-        id: link-background-color
-        title: Link background color
-        type: variable-color
-        opacity: true
-        format: hex
-        default: '#cdecff'  
-    - 
-        id: text-accent
-        title: Text accent
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#435f79'
-        default-dark: '#435f79'    
-    - 
-        id: text-accent-hover
-        title: Text accent (hover)
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#7cb2e4'
-        default-dark: '#7cb2e4'
-    -
-        id: interactive-accent
-        title: Interactive accent
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#63a0d0'
-        default-dark: '#63a0d0'
-    -
-        id: interactive-accent-hover
-        title: Interactive accent (hover)
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#6db2e7'
-        default-dark: '#6db2e7'
-    -
-        id: strong-color
-        title: Main color bonus
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#1e648d'
-        default-dark: '#1e648d'
-    -    
-        id: text-faint
-        title: Text Faint
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#969696'
-        default-dark: '#969696'
-    -
-        id: text-hightlight-bg
-        title: Hightlight Background
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#dbaa205e'
-        default-dark: '#dbaa205e'
-    -
-        id: text-selection
-        title: Selection color
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#4e6e8d71'
-        default-dark: '#4e6e8d71'
-    -
-        id: font-tag
-        title: Tag color (font)
-        type: variable-themed-color
-        opacity: true
-        format: hex
-        default-light: '#000000'
-        default-dark: '#000000'
-    - 
-        id: Font-title
-        title: Font settings
-        type: heading
-        level: 3
-    -
-        id: text-edit
-        title: Editor font
-        description: Font used for the editor body
-        type: variable-text
-        default: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace
-    -   
-        id: text-preview
-        title: Preview font
-        description: Font used for the preview body
-        type: variable-text
-        default: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
-    - 
-        id: header
-        title: Header Font
-        description: Font used for the header
-        type: variable-text
-        default: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
-    - 
-        id: font-frontmatter
-        title: Font for frontmatter
-        description: Font for the frontmatter
-        type: variable-text
-        default: --font-monospace
-    - id: tab-font
-      title: Tab editor font 
-      description: Font used for the table
-      type: variable-text
-      default: --font-monospace      
+  - 
+    id: Color
+    title: Colors
+    type: heading
+    level: 3 
+  -
+    id: boldpink 
+    title: Bold colors
+    type: variable-color
+    opacity: true
+    format: hex
+    default: "#286b9f"
+  
+  - 
+    id: link-background-color
+    title: Link background color
+    type: variable-color
+    opacity: true
+    format: hex
+    default: '#cdecff'  
+  - 
+    id: text-accent
+    title: Text accent
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#435f79'
+    default-dark: '#435f79'    
+  - 
+    id: text-accent-hover
+    title: Text accent (hover)
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#7cb2e4'
+    default-dark: '#7cb2e4'
+  -
+    id: interactive-accent
+    title: Interactive accent
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#63a0d0'
+    default-dark: '#63a0d0'
+  -
+    id: interactive-accent-hover
+    title: Interactive accent (hover)
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#6db2e7'
+    default-dark: '#6db2e7'
+  -
+    id: strong-color
+    title: Main color bonus
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#1e648d'
+    default-dark: '#1e648d'
+  -    
+    id: text-faint
+    title: Text Faint
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#969696'
+    default-dark: '#969696'
+  -
+    id: text-hightlight-bg
+    title: Hightlight Background
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#dbaa205e'
+    default-dark: '#dbaa205e'
+  -
+    id: text-selection
+    title: Selection color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#4e6e8d71'
+    default-dark: '#4e6e8d71'
+  - 
+    id: Font-title
+    title: Font settings
+    type: heading
+    level: 3
+  -
+    id: text-edit
+    title: Editor font
+    description: Font used for the editor body
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, 'iA Writer Quattro S', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", monospace
+  -   
+    id: text-preview
+    title: Preview font
+    description: Font used for the preview body
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+  - 
+    id: header
+    title: Header Font
+    description: Font used for the header
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+  - 
+    id: font-frontmatter
+    title: Font for frontmatter
+    description: Font for the frontmatter
+    type: variable-text
+    default: --font-monospace
+  - 
+    id: tab-font
+    title: Tab editor font 
+    description: Font used for the table
+    type: variable-text
+    default: --font-monospace      
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
@@ -197,6 +184,10 @@ span.cm-hmd-frontmatter {
 div.markdown-preview-view {
   font-family: var(--text-preview);
 }*/
+
+ul {
+  font-family: var(--preview-font);
+}
 
 span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
@@ -278,32 +269,6 @@ p {
   margin-top: 0 !important;
 }
 
-.tag,
-.cm-s-obsidian span.cm-hashtag-end, div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
-  background-color: var(--tag-background-color) !important;
-  border: 0 !important;
-  color: var(--tag) !important;
-  font-size: 1em;
-  padding-bottom: 1px;
-  padding-top: 1px;
-  text-decoration: none;
-  border-radius: 5px !important;
-  padding-left: 100%;
-  padding-right: 0.5em !important;
-}
-
-
-
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, a.tag:hover, .markdown-preview-view a.tag:hover{
-  background-color: var(--blue) !important;
-  color: #ffffff !important;
-}
-
-.markdown-preview-view a.tag {
-  color: var(--tag) !important;
-  background-color: var(--tag-background-color) !important;
-}
-
 header.svelte-yzsyxo {
   background-color: transparent !important;
   border: 0;
@@ -383,10 +348,10 @@ span.cm-hr {
 div[data-tag-name="p"] + div[data-tag-name="ul"] {
   margin-top: -20px;
 }
-
+/*
 div[data-tag-name="ul"] + div[data-tag-name="p"] {
   margin-top: -20px;
-}
+}*/
 
 .markdown-preview-view ul > li.task-list-item {
   text-indent: -1.5em !important;

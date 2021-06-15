@@ -1,65 +1,65 @@
 .admonition-example {
     border-color: #40924a !important;
 }
-.admonition-example > .admonition-title {
+.admonition-example > .admonition-title > .admonition-title-content {
     background-color: rgba(16, 97, 26, 0.1) !important;
 	color: #40924a !important;
 }
-.admonition-example > .admonition-title::before {
+.admonition-example > .admonition-title > .admonition-title-content::before {
     background-color: #40924a !important;
 }
 
 .admonition-question {
     border-color: #dca965 !important;
 }
-.admonition-question > .admonition-title {
+.admonition-question > .admonition-title > .admonition-title-content {
     background-color: rgba(220, 169, 101, 0.1) !important;
 	color:#dca965 !important;
 }
-.admonition-question > .admonition-title::before {
+.admonition-question > .admonition-title > .admonition-title-content::before {
     background-color: #dca965 !important;
 }
 
-.admonition-abstract > .admonition-title {
+.admonition-abstract > .admonition-title > .admonition-title-content {
 	color: #108dc5!important;
 }
-.admonition-info > .admonition-title {
+.admonition-info > .admonition-title > .admonition-title-content {
     color: #01899e;
 }
 
-.admonition-tip > .admonition-title {
+.admonition-tip > .admonition-title > .admonition-title-content {
     color: rgba(0, 191, 165);
 }
 
-.admonition-success > .admonition-title {
+.admonition-success > .admonition-title > .admonition-title-content {
     color: rgba(0, 200, 83);
 }
 
-.admonition-warning > .admonition-title {
-    color: rgba(255, 145, 0);
+.admonition-warning > .admonition-title > .admonition-title-content {
+    color: rgba(255, 145, 0) !important;
 }
 
-.admonition-failure > .admonition-title {
+.admonition-failure > .admonition-title > .admonition-title-content {
     color: rgba(255, 82, 82);
 }
 
-.admonition-danger > .admonition-title {
+.admonition-danger > .admonition-title > .admonition-title-content {
     color: rgba(255, 23, 68);
 }
 
-.admonition-bug > .admonition-title {
+.admonition-bug > .admonition-title > .admonition-title-content {
     color: rgba(245, 0, 87);
 }
 
-.admonition-quote > .admonition-title {
+.admonition-quote > .admonition-title > .admonition-title-content {
     color: hsla(0, 0%, 62%);
 }
 
-.admonition-note > .admonition-title {
+.admonition-note > .admonition-title > .admonition-title-content {
 color: rgba(68, 138, 255);
 }
 
-.admonition-title-icon {
+.admonition-title > .admonition-title-content-icon {
 	color: inherit !important;
 }
 

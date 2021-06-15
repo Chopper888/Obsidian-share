@@ -3,35 +3,70 @@
 name: "Pseudo-WYSIWYG"
 id: global
 settings:
-    - id: mobile
+    - 
+      id: mobile
       title: Mobile support
       description: Add the mobile support instead of pc
       type: class-toggle
-    - id: blockquote
+    - 
+      id: blockquote
       title: Blockquote 
       description: Add nice blockquote. 
       type: class-toggle
-    - id: color-blockquote
+    - 
+      id: color-blockquote
       title: Blockquote border color
       description: change the blockquote color
       type: variable-color
       opacity: false
       format: hex
       default: "#54b6c0"
-    - id: bg-blockquote
+    - 
+      id: bg-blockquote
       title: Blockquote background color
       description: change the background color
       type: variable-color
       opacity: true
       format: hex
       default: "#d1b8b8"
-     
+    - 
+      id: header-tags
+      title: Tags parameters
+      type: heading
+      level: 3
+      collapsed: true
+    - 
+      id: tag-background-color
+      title: Tag Background Color
+      type: variable-color
+      opacity: true
+      format: hex
+      default: '#80cbee67'
+    - 
+      id: tag
+      title: Tag color (font)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#1d588f'
+      default-dark: '#1d588f'
+    - 
+      id: tag-border-color
+      title: Tag border color
+      type: variable-color
+      opacity: true
+      format: hex
+      default: "#0493ec"
+      
 
 */
 
 :root {
     --color-blockquote: #54b6c0;
     --bg-blockquote: #d1b8b8;
+    --tag: #1d588f;
+    --tag-background-color: #80cbee67;
+    --tag-border-color: #0493ec;
 }
 
 .cm-s-obsidian .CodeMirror-line *, .mobile .cm-s-obsidian * {
@@ -65,7 +100,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape{
     display: inline !important;
     opacity: 0 !important;
 }
@@ -201,6 +237,12 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-for
     display: inline !important;
 }
 
+div:not(.codeMirror-activeline) > .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after,
+.wys-enhanced div:not(.codeMirror-activeline) > .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after {
+    content: "";
+
+}
+
  div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting), .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
     font-size: 0;
     letter-spacing: 0.03em !important;
@@ -254,6 +296,31 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 /* H1 Underline */
 .CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
   border-bottom: 1px solid var(--text-normal) !important;
+}
+
+/* Tags*/
+.tag,
+.cm-s-obsidian span.cm-hashtag-end {
+    background-color: var(--tag-background-color);
+    border: 1px solid var(--tag-border-color);
+    color: var(--tag) !important;
+    font-size: 1em;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 10px !important;
+    padding-right: 10px;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, a.tag:hover, .markdown-preview-view a.tag:hover{
+  background-color: var(--tag) !important;
+  color: #ffffff !important;
+}
+
+.markdown-preview-view a.tag {
+  color: var(--tag) !important;
+  background-color: var(--tag-background-color) !important;
 }
 
 /* ============= Style settings Mobile specific ================================= */
