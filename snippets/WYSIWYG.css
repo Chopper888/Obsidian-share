@@ -413,6 +413,10 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
+.mobile .cm-s-obsidian span.cm-url {
+    display: inline !important;
+    font-size: 10px;
+}
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after, 
 .wys-enhanced .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
