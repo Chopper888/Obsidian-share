@@ -424,13 +424,7 @@ a.tag:hover,
    display: none !important;
 }
 
-
-span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
-    display: inline !important;
-    opacity: 1 !important;
-}
-
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:before {
+.mobile span.cm-url:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
     content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
     opacity: 1 !important;
     display: inline !important;
