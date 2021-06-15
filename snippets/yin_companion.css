@@ -43,20 +43,20 @@ img.emoji {
 }
 
 div.kanban-plugin__lane-header-wrapper>div.kanban-plugin__lane-title > span.markdown-preview-view.kanban-plugin__lane-title-text > p {
-    color: var(--boldpink) !important;
-    font-weight: 600 !important;
-    font-size: 115%;
-    font-family: var(--header);
+  color: var(--boldpink) !important;
+  font-weight: 600 !important;
+  font-size: 115%;
+  font-family: var(--header);
 }
 
 .wys-enhanced span.cm-formatting-list-ul:after {
     content: '' !important;
     display: none !important;
 }
-
+/*
 .CodeMirror pre.CodeMirror-line, .markdown-source-view, .cm-s-obsidian {
     font-family: var(--text-edit) ;
-}
+}*/
 
 .HyperMD-table-row {
     line-height: 1.5em !important;

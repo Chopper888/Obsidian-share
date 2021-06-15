@@ -140,6 +140,7 @@ settings:
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root {
   --link-background-color: #cdecff;
+  /*
   --header: -apple-system, BlinkMacSystemFont, Seaford, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --text-preview: -apple-system, BlinkMacSystemFont, Bierstadt, Roboto,
@@ -150,6 +151,7 @@ settings:
   --text-edit: "iA Writer Quattro S", -apple-system, BlinkMacSystemFont,
     "iA Writer Quattro S", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     "Helvetica Neue", monospace !important;
+    */
   --font-frontmatter: var(--font-monospace);
   --strong-color: var(--blue);
   --tab-font: var(--font-monospace);
@@ -186,6 +188,7 @@ span.cm-hmd-frontmatter {
   font-size: 90% !important;
 }
 
+/*
 #text,
 .CodeMirror .CodeMirror-line {
   font-family: var(--text-edit);
@@ -193,7 +196,7 @@ span.cm-hmd-frontmatter {
 
 div.markdown-preview-view {
   font-family: var(--text-preview);
-}
+}*/
 
 span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
@@ -223,7 +226,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--header) !important;
+  /*font-family: var(--header) !important;*/
   font-weight: 600 !important;
 }
 div[data-tag-name="h1"] + div .block-language-dataview,
