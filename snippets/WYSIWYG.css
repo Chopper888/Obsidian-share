@@ -339,6 +339,7 @@ a.tag:hover,
     border-radius: 15px;
     line-height: 30px !important;
     height: 30px !important;
+    width: max-content !important;
 }
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task) {
