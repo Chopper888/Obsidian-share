@@ -100,7 +100,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape,
-.mobile span.cm-formatting{
+.mobile span.cm-formatting-escape{
     display: inline !important;
     opacity: 0 !important;
 }
@@ -293,7 +293,8 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 }
 
 /* H1 Underline */
-.CodeMirror .CodeMirror-line.HyperMD-header-1, .mobile .hyperMD-header-1 {
+.CodeMirror .CodeMirror-line.HyperMD-header-1, 
+.mobile pre.HyperMD-header.HyperMD-header-1 {
   border-bottom: 1px solid var(--text-normal) !important;
 }
 
