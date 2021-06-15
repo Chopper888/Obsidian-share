@@ -401,7 +401,8 @@ a.tag:hover,
 .mobile .cm-formatting-task.cm-meta,
 .mobile .cm-formatting-task.cm-property{
     color: transparent !important;
-    position: relative;
+    position: relative !important;
+    margin-right: -15px !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
