@@ -434,6 +434,7 @@ a.tag:hover,
     position: absolute;
     top: 0;
     left: -15px !important;
+    margin-right: -15px !important;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, 
