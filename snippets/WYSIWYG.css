@@ -146,7 +146,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote {
     color: transparent !important;
 }
 
-.blockquote div:not(.CodeMirror-activeline)>.HyperMD-quote {
+.blockquote div:not(.CodeMirror-activeline)>.HyperMD-quote,
+.blockquote .mobile .HyperMD-quote {
     background-color: var(--bg-blockquote);
     border-left: 3px solid var(--text-selection);
     border-color: var(--color-blockquote) !important;
@@ -178,7 +179,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
 /* Checkboxes instead of brackets in edit mode */
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, 
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
     color: transparent;
     position: relative;
     display: inline !important;
@@ -225,7 +227,8 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatt
     display: none !important;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after, .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after, 
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
     content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
     display: inline !important;
 }
@@ -236,7 +239,8 @@ div:not(.codeMirror-activeline) > .CodeMirror-line .cm-image.cm-image-alt-text.c
 
 }
 
- div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting), .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting), 
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
     font-size: 0;
     letter-spacing: 0.03em !important;
     display: inline !important;
@@ -294,10 +298,6 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
   border-bottom: 1px solid var(--text-normal) !important;
 }
 
-.mobile .HyperMD-header-1:after {
-    border-top: 1px solid var(--text-normal) !important;
-}
-
 /* Tags*/
 .tag,
 .cm-s-obsidian span.cm-hashtag-end,
@@ -314,7 +314,11 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     height: 30px !important;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, .wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, a.tag:hover, .markdown-preview-view a.tag:hover{
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, 
+.cm-s-obsidian span.cm-hashtag-end:hover, 
+.wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, 
+a.tag:hover, 
+.markdown-preview-view a.tag:hover{
   background-color: var(--tag) !important;
   color: #ffffff !important;
 }
@@ -452,4 +456,8 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 .markdown-preview-view a.tag {
   color: var(--tag) !important;
   background-color: var(--tag-background-color) !important;
+}
+
+.mobile .HyperMD-header-1:after {
+    border-top: 1px solid var(--text-normal) !important;
 }
