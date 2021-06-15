@@ -429,6 +429,8 @@ a.tag:hover,
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     color: var(--text-faint);
     font-size: xx-small !important;
+    display: inline !important;
+    opacity: 1 !important;
 }
 
 .mobile .cm-s-obsidian span.cm-link {
