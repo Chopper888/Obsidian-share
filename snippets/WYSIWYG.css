@@ -424,9 +424,6 @@ a.tag:hover,
    display: none !important;
 }
 
-span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
-    content: "" !important;
-}
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
     color: transparent !important;
@@ -437,6 +434,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
     content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
     opacity: 1 !important;
     display: inline !important;
+    color: black !important;
 }
 
 .mobile .HyperMD-header-1:after {
