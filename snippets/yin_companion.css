@@ -204,3 +204,7 @@ img.emoji {
 .kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
   top: -5% !important;
 }
+
+.modal {
+  overflow: scroll !important;
+}

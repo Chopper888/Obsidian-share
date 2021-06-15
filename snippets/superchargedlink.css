@@ -1,11 +1,11 @@
-a.internal-link[data-link-Plateforme$="Switch" i]::before{
+a.internal-link[data-link-Console$="Switch" i]::before{
     content: url('https://api.iconify.design/mdi:nintendo-switch.svg?color=%239d1f1f&height=15');
     vertical-align: -0.125em;
     transform:translate(20px, 10px) !important;
     margin-right: 5px;
 }
 
-a.internal-link[data-link-Plateforme$="PC" i]::before{
+a.internal-link[data-link-Console$="PC" i]::before{
     content: url('https://api.iconify.design/flat-ui:pc.svg?width=18&height=18');
     vertical-align: -0.14em !important;    
     margin-right: 5px;
@@ -73,7 +73,7 @@ content: url('https://api.iconify.design/noto-v1:face-with-open-mouth.svg?height
 vertical-align: -0.2em;
 margin-right: 5px;
 }
-a.internal-link[data-link-Plateforme$="PS4" i]::before{
+a.internal-link[data-link-Console$="PS4" i]::before{
     content: url('https://api.iconify.design/mdi:sony-playstation.svg?color=%233a73c0&height=22');
     vertical-align: -0.3em;
 }
