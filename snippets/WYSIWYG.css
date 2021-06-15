@@ -434,7 +434,6 @@ a.tag:hover,
     position: absolute;
     top: 0;
     left: -15px !important;
-    margin-right: -50px !important;
 }
 
 .mobile span.cm-formatting-task.cm-property:after, 
