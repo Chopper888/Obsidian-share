@@ -399,29 +399,23 @@ a.tag:hover,
 }
 
 .mobile .cm-formatting-task.cm-meta,
-.mobile .cm-formatting-task.cm-property, 
-.mobile .wys-enhanced span.cm-formatting-task.cm-meta,
-.mobile .wys-enhanced span.cm-formatting-task.cm-property {
+.mobile .cm-formatting-task.cm-property{
     color: transparent !important;
     position: relative;
-    display: none;
-    margin-right: -30px !important;
+    display: none !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
-.mobile .wys-enhanced .cm-formatting-task.cm-meta:after, 
-.mobile .wys-enhanced span.cm-formatting-task.cm-property:after, .mobile .cm-formatting-task.cm-meta:after {
+.mobile .cm-formatting-task.cm-meta:after {
     content: "☐ " !important;
     color: var(--text-accent) !important;
     position: absolute;
     top: 0;
     left: -15px !important;
-    margin-left:5px !important;
     font-size: 35px !important;
     display: inline !important;
     visibility: visible !important;
     opacity: 100% !important;
-   
 }
 
 .mobile span.cm-formatting-task.cm-property:after, 
