@@ -399,12 +399,13 @@ a.tag:hover,
 }
 
 .mobile .cm-formatting-task.cm-meta,
-.mobile .cm-formatting-task.cm-property, .mobile .wys-enhanced span.cm-formatting-task.cm-meta,
+.mobile .cm-formatting-task.cm-property, 
+.mobile .wys-enhanced span.cm-formatting-task.cm-meta,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property {
     color: transparent !important;
     position: relative;
     display: none;
-    margin-right: -15px !important;
+    margin-right: -30px !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
