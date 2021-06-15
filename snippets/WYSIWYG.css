@@ -414,7 +414,8 @@ a.tag:hover,
     color: var(--text-accent) !important;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 5px;
+    margin-left:5px;
     font-size: 35px !important;
     display: inline !important;
     visibility: visible !important;
@@ -432,7 +433,8 @@ a.tag:hover,
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 5px;
+    margin-left:5px;
     
 }
 
