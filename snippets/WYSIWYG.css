@@ -423,13 +423,11 @@ a.tag:hover,
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
-    display: inline !important;
-    opacity: 1 !important;
     content: "" !important;
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
-    display: inline !important;
+    display: none;
     opacity: 1 !important;
 }
 
@@ -446,7 +444,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
     border: 1px solid var(--tag-border-color);
     color: var(--tag) !important;
     font-size: 1em;
-    padding-right: 15px !important;
+    padding-right: 10px !important;
     margin:1px !important;
     text-decoration: none;
     border-radius: 20px;
