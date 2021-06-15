@@ -413,9 +413,9 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
-.mobile .cm-string.cm-url:not(.cm-formatting),
+.mobile span.cm-string.cm-url:not(.cm-formatting),
 .wys-enhanced .mobile span.cm-string.cm-url:not(.cm-formatting) {
-    display: none !important;
+    font-size: 0 !important;
 }
 
 .mobile .cm-string.cm-url:not(.cm-formatting):after, 
