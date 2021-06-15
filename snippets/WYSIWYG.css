@@ -335,11 +335,11 @@ a.tag:hover,
 .mobile .tag,
 .mobile .kanban-plugin .tag {
     font-size: 1em;
-    padding: 0.15em !important;
+    padding: 1% !important;
     text-decoration: none;
     border-radius: 15px;
-    line-height: 20px !important;
-    height: 20px !important;
+    line-height: 30px !important;
+    height: 30px !important;
 }
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task) {
