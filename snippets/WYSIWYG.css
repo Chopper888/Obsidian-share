@@ -28,7 +28,7 @@ settings:
       type: variable-color
       opacity: true
       format: hex
-      default: "#d1b8b8"
+      default: "#F7F7F7"
     - 
       id: header-tags
       title: Tags parameters
@@ -61,7 +61,7 @@ settings:
 
 :root {
     --color-blockquote: #54b6c0;
-    --bg-blockquote: #d1b8b8;
+    --bg-blockquote: #F7F7F7;
     --tag: #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
@@ -141,7 +141,9 @@ span.cm-formatting-task,
 /* Blockquote: in edit mode with left border rendered instead of > */
 
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote {
+.blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote,
+.mobile .blockquote span.cm-formatting.cm-formatting-quote,
+.mobile .blockquote span.cm-hmd-indent-in-quote {
     display: inline !important;
     color: transparent !important;
 }
@@ -413,8 +415,8 @@ a.tag:hover,
     
 }
 
-.mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, .mobile 
-.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+.mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link, 
+.mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
     display: inline !important;
 }
 
@@ -427,8 +429,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:after {
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
-    display: none;
-    opacity: 1 !important;
+    color: transparent !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url:before {
