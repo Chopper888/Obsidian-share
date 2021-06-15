@@ -426,14 +426,14 @@ a.tag:hover,
    font-size: 1px;
 }
 
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + *:not(span.cm-url.cm-string){
     color: var(--text-faint);
     font-size: xx-small !important;
     display: inline !important;
     opacity: 1 !important;
 }
 
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
    color: transparent !important;
    display: inline !important;
    font-size: 1px;
