@@ -307,7 +307,7 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     color: var(--tag) !important;
     font-size: 1em;
     padding-bottom: 1px;
-    padding: 0.em;
+    padding: 0.15em;
     text-decoration: none;
     border-radius: 15px;
     line-height: 30px !important;
