@@ -426,7 +426,6 @@ a.tag:hover,
 
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url{
-    color: transparent;
     display: inline !important;
     opacity: 0.1;
 }
