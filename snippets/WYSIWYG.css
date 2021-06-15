@@ -77,7 +77,7 @@ settings:
     font-size: xx-small;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list),
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting-task),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link, 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
@@ -222,6 +222,12 @@ span.cm-formatting-task.cm-property~span {
     font-weight: bold;
 }
 
+.cm-s-obsidian span.cm-url:hover, 
+.cm-s-obsidian span.cm-link:hover {
+    text-decoration: underline;
+    color: var(--text-accent) !important;
+}
+
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     font-size: inherit;
 }
@@ -337,9 +343,9 @@ a.tag:hover,
     font-size: 1em;
     text-decoration: none;
     border-radius: 15px;
-    line-height: 30px !important;
+    line-height: 40px !important;
     height: 40px !important;
-    padding: 0 !important;
+    padding: 0 3% !important;
 }
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task) {
