@@ -433,7 +433,7 @@ a.tag:hover,
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: content: '\F0B39'; !important;
+    left: 0 !important;
     margin-right:50px !important;
     
 }
