@@ -99,8 +99,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape,
-.mobile span.cm-formatting-escape{
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape{
     display: inline !important;
     opacity: 0 !important;
 }
@@ -328,6 +327,11 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     opacity: 0.1 ;
     font-size: xx-small;
 }
+
+.mobile span.cm-formatting-escape {
+    opacity: 0.2 ;
+}
+
 .mobile .cm-hmd-barelink,
 .mobile .cm-formatting-link:not(.cm-link),
 .mobile .cm-hmd-internal-link {

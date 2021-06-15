@@ -1,4 +1,93 @@
+@media screen and (max-width:1024px) {
+.HyperMD-header-1{
+  line-height: 1.2em;
+  font-weight: 750;
+  font-size: var(--s-header-1-pre);
+  color: var(--text-normal);
+}
 
+.HyperMD-header-2{
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: var(--s-header-2-pre);
+  color: var(--text-normal);
+}
+
+.HyperMD-header-3{
+  line-height: 1.2em;
+  font-weight: 650;
+  font-size: var(--s-header-3-pre);
+  color: var(--text-normal);
+}
+
+.HyperMD-header-4{
+  font-weight: 650;
+  font-size: var(--s-header-4-pre);
+  color: var(--text-normal);
+}
+
+.HyperMD-header-5{
+  line-height: 1.2em;
+  font-weight: 650;
+  font-size: var(--s-header-5-pre);
+  color: var(--text-normal);
+}
+
+.HyperMD-header-6{
+  font-weight: 600;
+  font-size: var(--s-header-6-pre);
+  color: var(--text-normal);
+}
+}
+
+@media screen and (min-width:1025px) {
+  .CodeMirror .CodeMirror-line.HyperMD-header-1,
+.markdown-preview-section h1{
+  line-height: 1.2em;
+  font-weight: 750;
+  font-size: var(--s-header-1-pre);
+  color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-2,
+.markdown-preview-section h2{
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: var(--s-header-2-pre);
+  color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-3,
+.markdown-preview-section h3{
+  line-height: 1.2em;
+  font-weight: 650;
+  font-size: var(--s-header-3-pre);
+  color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-4,
+.markdown-preview-section h4{
+  font-weight: 650;
+  font-size: var(--s-header-4-pre);
+  color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-5,
+.markdown-preview-section h5{
+  line-height: 1.2em;
+  font-weight: 650;
+  font-size: var(--s-header-5-pre);
+  color: var(--text-normal);
+}
+
+.CodeMirror .CodeMirror-line.HyperMD-header-6,
+.markdown-preview-section h6{
+  font-weight: 600;
+  font-size: var(--s-header-6-pre);
+  color: var(--text-normal);
+}
+
+}
 
 .container.svelte-180qotg>h3.svelte-180qotg {
     display: none;
