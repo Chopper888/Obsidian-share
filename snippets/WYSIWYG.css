@@ -441,7 +441,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     border: 1px solid var(--tag-border-color);
     color: var(--tag) !important;
     font-size: 1em;
-    padding: 5px;
+    padding-right: 5px;
     margin:1px !important;
     text-decoration: none;
     border-radius: 20px;
