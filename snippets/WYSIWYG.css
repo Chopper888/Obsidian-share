@@ -420,15 +420,19 @@ a.tag:hover,
     display: inline !important;
 }
 
-.mobile span.cm-url.cm-string:not(span.cm-formatting) {
+.mobile span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
    color: transparent !important;
    display: inline !important;
    font-size: xx-small;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    color: var(--text-normal);
+    color: var(--text-faint);
     font-size: xx-small !important;
+}
+
+.mobile .cm-s-obsidian span.cm-link {
+    text-decoration: underline;
 }
 
 .mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before{
