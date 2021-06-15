@@ -414,7 +414,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     display: inline !important;
 }
 
-.mobile .cm-s-obsidian span.cm-url:not(cm-formatting.cm-formatting-link-string.cm-string.cm-url)  {
+.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + span.cm-string.cm-url {
    display: none !important;
 }
 
@@ -434,8 +434,8 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
     padding: 1px;
     text-decoration: none;
     border-radius: 15px;
-    line-height: 50px !important;
-    height: 50px !important;
+    line-height: revert ;
+    height: revert ;
 }
 
 .mobile span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-end:hover, 
