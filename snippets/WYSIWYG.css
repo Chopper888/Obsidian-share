@@ -422,4 +422,5 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover, .c
 .wys-enhanced .mobile span.cm-string.cm-url:not(.cm-formatting):after {
     content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
     opacity: 1 !important;
+    display: inline !important;
 }
