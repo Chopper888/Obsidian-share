@@ -433,7 +433,7 @@ a.tag:hover,
     opacity: 100% !important;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100px;
     right: 100px;
 }
 
