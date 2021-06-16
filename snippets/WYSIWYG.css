@@ -71,8 +71,7 @@ settings:
     -webkit-font-smoothing: auto;
 }
 
-/* Remove markdown clutter */
-
+/* Markdown Clutter */
 .CodeMirror-activeline > .CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta) {
     font-size: xx-small;
 }
@@ -81,7 +80,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link, 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link), 
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header, 
 .mobile .cm-string.cm-url,
 .mobile .cm-formatting-link:not(.cm-link),
 .mobile .cm-hmd-barelink,
@@ -99,32 +99,51 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape{
     opacity: 0 !important;
 }
 
+span.cm-formatting.cm-formatting-strong.cm-strong,
+span.cm-formatting.cm-formatting-em.cm-em {
+    font-size: 50%;
+}
 
-.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock, div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
+
+/* Codeblocks */
+.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock, 
+div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
     font-size: var(--editor-font-size) !important;
     display: inline !important;
 }
-
-span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
-    visibility: visible;
+.cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
+    opacity: 0.3;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
-    opacity: 0.5;
-}
 
-.cm-formatting.cm-formatting-link.cm-link {
-    font-size: inherit !important;
-    display: inline !important;
-}
-
+/* Comment */
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
     opacity: 0.1;
 }
 
+/* HTML */
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-end,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-attribute,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string {
+    display: none !important;
+}
+
+div .CodeMirror-activeline >.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin,
+div .CodeMirror-activeline >.CodeMirror-line span.cm-tag,
+div .CodeMirror-activeline >.CodeMirror-line span.cm-tag.cm-bracket,
+div .CodeMirror-activeline >.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-end,
+div .CodeMirror-activeline >.CodeMirror-line span.cm-attribute,
+div .CodeMirror-activeline >.CodeMirror-line span.cm-string {
+    font-size: small;
+    opacity: 0.5;
+
+}
+
 
 /* except list markers */
-
 span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
 span.cm-formatting-task, 
@@ -138,8 +157,9 @@ span.cm-formatting-task,
 }
 
 
-/* Blockquote: in edit mode with left border rendered instead of > */
 
+
+/* Blockquote: in edit mode with left border rendered instead of > */
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote,
 .mobile .blockquote span.cm-formatting.cm-formatting-quote,
@@ -155,14 +175,14 @@ span.cm-formatting-task,
     border-color: var(--color-blockquote) !important;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
-    content: '';
-}
 
+/* Yin Yang WYS compatibility */
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
 .wys-enhanced  div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr{
     color: transparent;
 }
+
+/* Line instead of --- */
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     content: "";
@@ -179,7 +199,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
 }
 
 /* Checkboxes instead of brackets in edit mode */
-
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property, 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
@@ -189,7 +208,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
     margin-right: 1%;
 }
 
-.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after, div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after{
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after, 
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after{
     content: "☐" !important;
     position: absolute;
     top: 3px;
@@ -215,6 +235,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 
 span.cm-formatting-task.cm-property~span {
     color: var(--text-faint) !important;
+}
+
+/* Links */
+
+.cm-formatting.cm-formatting-link.cm-link {
+    font-size: inherit !important;
+    display: inline !important;
 }
 
 .cm-s-obsidian span.cm-url, 
@@ -262,6 +289,11 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-for
     display: inline !important
 }
 
+/* List - Outliner support */
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
+    visibility: visible;
+}
+
 .cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
     padding: 0;
 }
@@ -282,19 +314,8 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-for
     padding-top: 0 !important;
 }
 
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header {
-    display: none !important;
-}
 
-span.cm-formatting.cm-formatting-strong.cm-strong,
-span.cm-formatting.cm-formatting-em.cm-em {
-    font-size: 50%;
-}
-
-.cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
-    opacity: 0.3;
-}
-
+/* Dataview */
 pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
     color: var(--blue) !important;
     display: inline !important;
@@ -311,6 +332,14 @@ pre.HyperMD-table-2.HyperMD-table-row>span>span.cm-string.cm-url {
 }
 
 /* Tags*/
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
+    content: '';
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
+    opacity: 0.5;
+}
+
 .tag,
 .cm-s-obsidian span.cm-hashtag-end,
 .kanban-plugin .tag {
@@ -475,4 +504,14 @@ a.tag:hover,
 
 .mobile .HyperMD-header-1:after {
     border-top: 1px solid var(--text-normal) !important;
+}
+
+.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin,
+.mobile span.cm-tag,
+.mobile span.cm-tag.cm-bracket,
+.mobile span.cm-tag.cm-bracket.cm-hmd-html-end,
+.mobile span.cm-attribute,
+.mobile span.cm-string {
+    font-size: small;
+    opacity: 0.5;
 }
