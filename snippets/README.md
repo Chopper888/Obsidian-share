@@ -8,16 +8,6 @@ I use, here :
 - [Yin and Yang theme](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/)  
   Note that my WYSIWYG will edit some WYSIWYG item of the option in this theme. 
 
-**Font used :**
-- Preview : Tenorite
-- Editor : IA Writer Quattro S
-- Title (preview & editor) : Seaford
-- Mobile : Tenorite
-
-Style Settings option : 
-- Quote block color
-- Mobile support. 
-
 ---
 
 ### Information about mobile support
@@ -44,8 +34,25 @@ Note : With this setup, you **will not be able** to edit the file, because each 
 ---
 
 ## Screenshot and preview.
+
+**Font used :**
+- Preview : Tenorite
+- Editor : IA Writer Quattro S
+- Title (preview & editor) : Seaford
+- Mobile : Tenorite
+
+Style Settings option : 
+- Quote block color
+- Mobile support. 
+
 ### PC
 
 ![image](https://user-images.githubusercontent.com/30244939/122135791-78370580-ce41-11eb-9d6f-386960e015fa.png)
 ![image](https://user-images.githubusercontent.com/30244939/122135835-97359780-ce41-11eb-81da-b5557391f7e4.png)
 ![image](https://user-images.githubusercontent.com/30244939/122137099-26dc4580-ce44-11eb-8b3a-a19e3f0ab9ed.png)
+
+[Live presentation](https://www.youtube.com/watch?v=lcAEHRMZS9o)
+
+### Mobile
+
+

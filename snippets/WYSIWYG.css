@@ -128,7 +128,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-end,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-attribute,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string {
-    display: none !important;
+    display: none;
 }
 
 div .CodeMirror-activeline >.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin,
@@ -140,6 +140,14 @@ div .CodeMirror-activeline >.CodeMirror-line span.cm-string {
     font-size: small;
     opacity: 0.5;
 
+}
+
+/* UNLESS IN CODE BLOCKS */
+
+span.cm-string.cm-hmd-codeblock{
+    display: inline !important;
+    font-size: inherit !important;
+    opacity: 1 !important;
 }
 
 
