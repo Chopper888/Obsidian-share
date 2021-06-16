@@ -1,5 +1,4 @@
 /* @settings
-
 name: "Pseudo-WYSIWYG"
 id: global
 settings:
@@ -8,7 +7,14 @@ settings:
       title: Mobile support
       description: Add the mobile support instead of pc
       type: class-toggle
-    - 
+    -
+      id : header-Blockquote
+      title: Blockquote
+      type: heading
+      description: Active and change the color for the blockquote.
+      level: 3
+      collapsed: true 
+    -
       id: blockquote
       title: Blockquote 
       description: Add nice blockquote. 
@@ -17,31 +23,35 @@ settings:
       id: color-blockquote
       title: Blockquote border color
       description: change the blockquote color
-      type: variable-color
+      type: variable-themed-color
       opacity: false
       format: hex
-      default: "#54b6c0"
+      default-light: "#54b6c0"
+      default-dark: "#54b6c0"
     - 
       id: bg-blockquote
       title: Blockquote background color
       description: change the background color
-      type: variable-color
+      type: variable-themed-color
       opacity: true
       format: hex
-      default: "#F7F7F7"
+      default-light: "#F7F7F7"
+      default-dark: "#F7F7F7"
     - 
       id: header-tags
-      title: Tags parameters
+      title: Tags
+      description: Change the color for the tags pills.
       type: heading
       level: 3
       collapsed: true
     - 
       id: tag-background-color
       title: Tag Background Color
-      type: variable-color
+      type: variable-themed-color
       opacity: true
       format: hex
-      default: '#80cbee67'
+      default-light: '#80cbee67'
+      default-dark: '#80cbee67'
     - 
       id: tag
       title: Tag color (font)
@@ -53,10 +63,11 @@ settings:
     - 
       id: tag-border-color
       title: Tag border color
-      type: variable-color
+      type: variable-themed-color
       opacity: true
       format: hex
-      default: "#0493ec"
+      default-light: "#0493ec"
+      default-dark: "#0493ec"
 */
 
 :root {
@@ -143,7 +154,6 @@ div .CodeMirror-activeline >.CodeMirror-line span.cm-string {
 }
 
 /* UNLESS IN CODE BLOCKS */
-
 span.cm-string.cm-hmd-codeblock{
     display: inline !important;
     font-size: inherit !important;
@@ -298,6 +308,26 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-for
 }
 
 /* List - Outliner support */
+
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {
+  letter-spacing: 0 !important;
+}
+
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
+  letter-spacing: 0 !important;
+  margin-top: 0 !important;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 + span.cm-formatting.cm-formatting-task.cm-property, 
+span.cm-formatting.cm-formatting-task.cm-meta {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
+  border-left: 0 !important;
+}
+
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
     visibility: visible;
 }
@@ -507,7 +537,6 @@ a.tag:hover,
     content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
     opacity: 1 !important;
     display: inline !important;
-    color: black !important;
 }
 
 .mobile .HyperMD-header-1:after {

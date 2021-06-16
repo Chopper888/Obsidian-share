@@ -7,6 +7,11 @@ I use, here :
 - [Outliner](https://github.com/vslinko/obsidian-outliner)
 - [Yin and Yang theme](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/)  
   Note that my WYSIWYG will edit some WYSIWYG item of the option in this theme. 
+  
+Style Settings option : 
+- Quote block color
+- Mobile support. 
+
 
 ---
 
@@ -41,18 +46,28 @@ Note : With this setup, you **will not be able** to edit the file, because each 
 - Title (preview & editor) : Seaford
 - Mobile : Tenorite
 
-Style Settings option : 
-- Quote block color
-- Mobile support. 
-
 ### PC
 
 ![image](https://user-images.githubusercontent.com/30244939/122135791-78370580-ce41-11eb-9d6f-386960e015fa.png)
 ![image](https://user-images.githubusercontent.com/30244939/122135835-97359780-ce41-11eb-81da-b5557391f7e4.png)
 ![image](https://user-images.githubusercontent.com/30244939/122137099-26dc4580-ce44-11eb-8b3a-a19e3f0ab9ed.png)
+![image](https://user-images.githubusercontent.com/30244939/122203069-f5906380-ce9d-11eb-9554-330a4e23941f.png)
 
-[Live presentation](https://www.youtube.com/watch?v=lcAEHRMZS9o)
+https://www.youtube.com/watch?v=lcAEHRMZS9o
 
 ### Mobile
 
+![IMG_0329](https://user-images.githubusercontent.com/30244939/122211028-9256ff00-cea6-11eb-8d6f-dccb13dc3766.PNG)
+![IMG_0330](https://user-images.githubusercontent.com/30244939/122211037-95ea8600-cea6-11eb-87ad-f652599d56b7.PNG)
+![IMG_0332](https://user-images.githubusercontent.com/30244939/122211049-997e0d00-cea6-11eb-8202-4cf5f7db0053.PNG)
+![IMG_0333](https://user-images.githubusercontent.com/30244939/122211063-9d119400-cea6-11eb-9893-0c60c63d0456.PNG)
+![IMG_0336](https://user-images.githubusercontent.com/30244939/122211085-a13db180-cea6-11eb-80c0-ca29643faaf8.PNG)
 
+https://youtu.be/2U9TEmWFTTw
+
+
+----
+#### Source
+- [Clutter Free](https://forum.obsidian.md/t/clutter-free-edit-mode/6791)
+- [Pseudo Like WYSIWYG](https://forum.obsidian.md/t/psuedo-live-markdown-with-css/6257/3)
+- [Base](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/develop/Snippets/WYSIWYG.md)
