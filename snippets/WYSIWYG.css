@@ -514,12 +514,8 @@ a.tag:hover,
     border-top: 1px solid var(--text-normal) !important;
 }
 
-.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin,
-.mobile span.cm-tag,
-.mobile span.cm-tag.cm-bracket,
-.mobile span.cm-tag.cm-bracket.cm-hmd-html-end,
-.mobile span.cm-attribute,
-.mobile span.cm-string {
+.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin + *:not(.mobile span.cm-tag.cm-bracket.cm-hmd-html-end)
+{
     font-size: small;
     opacity: 0.5;
 }
