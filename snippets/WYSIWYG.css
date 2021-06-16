@@ -404,6 +404,7 @@ a.tag:hover,
     position: relative !important;
     margin-right: -15px !important;
     font-size: xx-small !important;
+    vertical-align: middle !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after, 
