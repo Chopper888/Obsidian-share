@@ -8,6 +8,14 @@ settings:
       description: Add the mobile support instead of pc
       type: class-toggle
     -
+      id: text-link
+      title: Unresolved Link color
+      type: variable-themed-color
+      opacity: false 
+      format: hex
+      default-light: "#4d77bb"
+      default-dark: "#d7e9f0"
+    -
       id : header-Blockquote
       title: Blockquote
       type: heading
@@ -76,6 +84,7 @@ settings:
     --tag: #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
+    --text-link: #4d77bb;
 }
 
 .cm-s-obsidian .CodeMirror-line *, .mobile .cm-s-obsidian * {

@@ -51,7 +51,7 @@ matches:
         params:
           format: "%m-%d-%Y_%H-%M"
   - trigger: ':wys'
-    replace: 'git add WYSIWYG.css | git commit .\WYSIWYG.css -m {{form1.commit}} | git push'
+    replace: 'git add WYSIWYG.css | git commit .\WYSIWYG.css -m "{{form1.commit}}" | git push'
     vars:
       - name: "form1"
         type: form 
