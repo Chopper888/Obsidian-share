@@ -514,8 +514,12 @@ a.tag:hover,
     border-top: 1px solid var(--text-normal) !important;
 }
 
-.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin + *:not(.mobile span.cm-tag.cm-bracket.cm-hmd-html-end)
+.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin + *:not(span.cm-tag.cm-bracket.cm-hmd-html-end, span.cm-tag.cm-bracket)
 {
     font-size: small;
     opacity: 0.5;
+}
+
+.mobile span.cm-tag.cm-bracket.cm-hmd-html-begin + * + span.cm-tag.cm-bracket.cm-hmd-html-end {
+    color: transparent;
 }
