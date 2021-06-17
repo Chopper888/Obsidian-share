@@ -148,3 +148,18 @@
 .theme-light .cm-def {
     color: #e90 !important;
 }
+
+.cm-s-obsidian .cm-templater-command.cm-property,
+.cm-s-obsidian .cm-templater-command.cm-variable,
+span.cm-templater-command.cm-undefined {
+    color: #697a74 !important;
+}
+
+.cm-s-obsidian .templater-command-bg,
+.cm-s-obsidian .templater-inline .cm-templater-command {
+    background-color: transparent !important;
+}
+
+.cm-s-obsidian .cm-templater-command.cm-string {
+    color: #e3ba31 !important;
+}

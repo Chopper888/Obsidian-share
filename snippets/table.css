@@ -14,3 +14,13 @@ li.dataview-result-list-li {
     margin-left: 5em !important;
     width: max-content;
 }
+
+table {
+  border-collapse: separate;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--background-modifier-border); /* this draws the table border  */ 
+}

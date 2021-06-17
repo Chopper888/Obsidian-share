@@ -416,6 +416,20 @@ a.tag:hover,
   background-color: var(--tag-background-color) !important;
 }
 
+/* Templater Update compatibility */
+.cm-s-obsidian .cm-templater-command.cm-property,
+.cm-s-obsidian .cm-templater-command.cm-variable,
+span.cm-templater-command.cm-undefined {
+    font-size: 0.85em !important;
+}
+
+span.cm-templater-command.cm-string {
+    display: inline !important;
+    opacity: 1 !important;
+    font-size: 0.85em !important;
+}
+
+
 /* ============= Style settings Mobile specific ================================= */
 
 .mobile .tag,
