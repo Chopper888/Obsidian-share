@@ -1,7 +1,9 @@
 div[data-path='Image'],
 div[data-path='Image']+div.nav-folder-children,
 div[data-path='Mochi'],
-div[data-path='Mochi']+div.nav-folder-children {
+div[data-path='Mochi']+div.nav-folder-children,
+div[data-path='Calendrier'],
+div[data-path='Calendrier']+div.nav-folder-children {
     display: none;
 }
 
