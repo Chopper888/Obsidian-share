@@ -7,7 +7,8 @@ settings:
         id: files-folder
         title: DOSSIERS
         type: heading
-        level: 2 
+        level: 2
+        collapsed: true
     - 
         id: folder-x
         title: Variable X
@@ -35,7 +36,8 @@ settings:
         id: files-icons
         title: FICHIERS
         type: heading
-        level: 2 
+        level: 2
+        collapsed: true
     -
         id: icon-x
         title: Variable X
@@ -65,6 +67,7 @@ settings:
         title: TODO
         type: heading
         level: 2 
+        collapsed: true
     -
         id: todo-x
         title: Variable X
@@ -95,6 +98,7 @@ settings:
         title: SCRIPTS
         type: heading
         level: 2 
+        collapsed: true
     -
         id: script-x
         title: Variable X
@@ -125,6 +129,7 @@ settings:
         title: TEMPLATE
         type: heading
         level: 2 
+        collapsed: true
     -    
         id: template-x
         title: Variable X
@@ -151,11 +156,43 @@ settings:
             - translate(0px, 3px)
             - translate(3px, 5px)
             - none            
-    -     
+    -
+        id: supercharged-icon
+        title: SUPERCHARGED LINKS
+        type: heading
+        collapsed: true
+        level: 2
+    -
+        id: sl-x
+        title: Variable X
+        type: variable-number
+        default: 3
+        format: px
+    -
+        id: sl-y
+        title: Variable Y
+        type: variable-number
+        default: -3
+        format: px
+    -
+        id: sl-transform
+        title: PRECONFIGURATION
+        description: 0. Default ; 1. Manuel ; 2. Black & White ; 3. Yin & Yang ; 4. California Coast ; 5. None
+        type: variable-select
+        default: var(--content-transform)
+        options:
+            - var(--content-transform)
+            - translate(var(--sl-x), var(--sl-y))
+            - translate(-3px, 3px)
+            - translate(0px, 3px)
+            - translate(3px, 5px)
+            - none
+    -
         id: food-icon
         title: CUISINE
         type: heading
         level: 2 
+        collapsed: true
     -
         id: food-x
         title: Variable X
@@ -186,6 +223,7 @@ settings:
         title: BOOKMARK
         type: heading
         level: 2 
+        collapsed: true
     -
         id: bookmark-x
         title: Variable X
@@ -216,6 +254,7 @@ settings:
         title: MÉDIA
         type: heading
         level: 2 
+        collapsed: true
     -
         id: média-x
         title: Variable X
@@ -321,8 +360,9 @@ settings:
 
 /*Template */
     --template: url('https://api.iconify.design/carbon:template.svg?color=%23B69D91&height=18');
+    --mod: url('https://api.iconify.design/octicon:dependabot-16.svg?color=%23B69D91&height=18');
     --template-font: #B69D91;
-    --indicator-template: url('https://api.iconify.design/codicon:notebook-template.svg?color=%23B69D91&height=18');
+    --indicator-template: url('https://api.iconify.design/wpf:renew-subscription.svg?color=%23B69D91&height=18');
     --template-x: -3px;
     --template-y: 3px;
     --template-transform: var(--content-transform);   
@@ -334,6 +374,14 @@ settings:
     --script-y: 3px;
     --script-transform: var(--content-transform);
 
+/* Supercharged Links */
+    --SL: url('https://api.iconify.design/fa-brands:superpowers.svg?color=%23B69D91&height=18');
+    --sl-files:url('https://api.iconify.design/mdi:car-turbocharger.svg?color=%23B69D91&height=18');
+    --sl-x: -3px;
+    --sl-y: 3px;
+    --sl-transform: var(--content-transform);
+
+    
 }
 
 .oz-folder-element {
@@ -756,7 +804,7 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
 
 /* ========= TEMPLATE ========== */
 
-.nav-folder-title[data-path^="10. Template"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="10. Ressource"] .nav-folder-title-content::before {
     content: var(--template);
     background-size: 14px 14px;
     transform: var(--folder-transform);
@@ -767,8 +815,40 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
     margin: -4px 2px 0 0;
 }
 
+.nav-folder-title[data-path^="10. Ressource/Modèle"] .nav-folder-title-content::before {
+    content: var(--mod);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
 
-.oz-folder-element[data-path^="10. Template"] > div > div > div + div:before{
+.nav-folder-title[data-path^="10. Ressource/Script"] .nav-folder-title-content::before {
+    content: var(--templater);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.nav-folder-title[data-path^="10. Ressource/Supercharged Link"] .nav-folder-title-content::before {
+    content: var(--SL);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.oz-folder-element[data-path^="10. Ressource"] > div > div > div + div:before{
     content: var(--template) !important;
     background-size: 14px 14px;
     transform: translate(-5px, 3px);
@@ -778,13 +858,13 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
     width: 16px;    
 }
 
-.nav-folder-title[data-path^="10. Template"],
-.nav-file-title[data-path*="10. Template"],
-.oz-folder-element[data-path^="10. Template"] > div > div > div + div {
+.nav-folder-title[data-path^="10. Ressource"],
+.nav-file-title[data-path*="10. Ressource"],
+.oz-folder-element[data-path^="10. Ressource"] > div > div > div + div {
     color: var(--template-font) !important;
 }
 
-.nav-file-title[data-path*="10. Template"] .nav-file-title-content:only-child:before,
+.nav-file-title[data-path*="10. Ressource"] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
     content: var(--indicator-template);
@@ -799,28 +879,8 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
 
 
     /* Templater */
-
-        .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="10. Template/Templater"] .nav-folder-title-content::before {
-            content: var(--templater);
-            transform: var(--folder-transform);
-            background-repeat: no-repeat;
-            display: inline-block;
-            height: 12px;
-            width: 16px;
-            margin: -4px 4px 0 0;
-        }
-
-        .oz-folder-element[data-path^="10. Template/Templater"] > div > div > div + div:before{
-            content: var(--templater) !important;
-            background-size: 14px 14px;
-            transform: translate(-5px, 3px);
-            background-repeat: no-repeat;
-            display: inline-block;
-            height: 16px;
-            width: 16px;    
-        }        
-
-        .nav-file-title.is-unsupported[data-path*="10. Template/Templater/Script"]>.nav-file-title-content::before {
+        
+        .nav-file-title.is-unsupported[data-path*="10. Ressource/Script"]>.nav-file-title-content::before {
             content: var(--indicator-templater) !important;
             transform: var(--script-transform) !important;
             background-repeat: no-repeat;
@@ -829,28 +889,17 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
             width: 16px;
             margin: -4px 4px 0 0;
         }
-
-        .oz-folder-element[data-path^="10. Template/Templater/"] > div > div > div + div:before{
-            content: var(--indicator-templater) !important;
-            background-size: 14px 14px;
-            transform: translate(-5px, 3px);
+        .nav-file-title[data-path*="10. Ressource/Supercharged Link"]>.nav-file-title-content::before {
+            content: var(--sl-files) !important;
+            transform: var(--sl-transform) !important;
             background-repeat: no-repeat;
             display: inline-block;
-            height: 16px;
-            width: 16px;    
-        }            
-
-        .nav-file-title[data-path*="10. Template/Templater"] .nav-file-title-content:only-child:before,
-        .search-result-collapse-indicator+span:before,
-        .nav-file-icon:before {
-            content: var(--indicator-templater);
-            transform: var(--script-transform) !important;
-            margin: -8px -3px 0 0 !important;
+            height: 12px;
+            width: 16px;
+            margin: -4px 4px 0 0;
         }
 
-        .nav-folder-title[data-path^="10. Template/Templater"] .nav-folder-title-content::before {
-            content: var(--indicator-templater);
-        }
+        
 
 /* Files */
 

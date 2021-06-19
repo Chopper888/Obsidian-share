@@ -283,7 +283,7 @@ span.cm-formatting-task.cm-property~span {
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link {
-    color: var(--text-link)
+    color: var(--text-link) !important;
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
