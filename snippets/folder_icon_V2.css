@@ -870,8 +870,9 @@ div.nav-folder-title[data-path^="8. Univers/La Bibliothèque Infinie"] div.nav-f
 
 /* Hover */
 
-.nav-file-title.is-being-dragged, .nav-folder-title.is-being-dragged {
-    background-color: rgba(255, 255, 255, 0.575)
+.nav-file-title.is-being-dragged, 
+.nav-folder-title.is-being-dragged {
+    background-color: #8e939349 !important;
 }
 
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,

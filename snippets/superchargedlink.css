@@ -94,3 +94,8 @@ a.internal-link[data-link-type$="Light Novel" i]::before{
     vertical-align: -0.125em;
     margin-right: 0.5% ;
 }
+
+.kanban-plugin__meta-value .kanban-plugin__markdown-preview-view p, 
+.kanban-plugin__meta-value .kanban-plugin__markdown-preview-view {
+    width: 100% !important;
+}

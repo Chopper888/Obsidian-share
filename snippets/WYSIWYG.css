@@ -421,6 +421,7 @@ a.tag:hover,
 .cm-s-obsidian .cm-templater-command.cm-variable,
 span.cm-templater-command.cm-undefined {
     font-size: 0.85em !important;
+    opacity: 1 !important;
 }
 
 span.cm-templater-command.cm-string {

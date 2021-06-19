@@ -15,12 +15,13 @@ li.dataview-result-list-li {
     width: max-content;
 }
 
-table {
-  border-collapse: separate;
-  overflow: hidden;
-  table-layout: fixed;
-  width: 100%;
-  border-style: hidden; /* hide standard table (collapsed) border */
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px var(--background-modifier-border); /* this draws the table border  */ 
+/*
+.kanban-plugin__meta-table td+td {
+    padding-left: 5em;
+    width: 90% !important;
 }
+
+.kanban-plugin__meta-value .kanban-plugin__markdown-preview-view p, .kanban-plugin__meta-value .kanban-plugin__markdown-preview-view {
+    width: 100%;
+}
+*/

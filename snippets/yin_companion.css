@@ -201,10 +201,6 @@ img.emoji {
   left: 2px !important;
 }
 
-.kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
-  top: -5% !important;
-}
-
 .modal {
   overflow: scroll !important;
 }
@@ -212,3 +208,4 @@ img.emoji {
 a:hover, .external-link:hover, .cm-hmd-internal-link:hover {
   color: var(--text-accent) !important;
 }
+
