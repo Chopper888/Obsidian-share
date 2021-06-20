@@ -5,3 +5,4 @@ config
 sync.json
 workspace
 *.json
+pull.sh
