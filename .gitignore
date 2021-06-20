@@ -4,3 +4,4 @@ command-palette.json
 config
 sync.json
 workspace
+*.json
