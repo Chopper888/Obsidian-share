@@ -404,3 +404,12 @@ li.dataview-result-list-li > span[data-tag-name="p"] > a:hover {
   color: #ffffff !important;
 }
 
+.kanban-plugin__markdown-preview-view {
+  font-family: var(--preview-font) !important;
+  font-size: 1.15em !important;
+}
+
+.kanban-plugin__grow-wrap>textarea, .kanban-plugin__grow-wrap:after {
+  font-family: var(--preview-font) !important;
+  font-size: 1.05em !important;
+}
