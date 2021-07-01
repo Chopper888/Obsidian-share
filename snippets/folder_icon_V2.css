@@ -544,6 +544,32 @@ settings:
     color: var(--m1-font) !important;
 }
 
+.nav-folder-title[data-path^="9. Master 2"] .nav-folder-title-content::before {
+    content: var(--m1);
+    background-size: 14px 14px;
+    transform: var(--folder-transform);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: -4px 2px 0 0;
+}
+
+.oz-folder-element[data-path^="9. Master 2"] > div > div > div + div:before{
+    content: var(--m1) !important;
+    background-size: 14px 14px;
+    transform: translate(-5px, 3px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;    
+}
+
+.nav-folder-title[data-path^="9. Master 2"],
+.nav-file-title[data-path*="9. Master 2"], .oz-folder-element[data-path^="9. Master 2"] > div > div > div + div {
+    color: var(--m1-font) !important;
+}
+
 /* =========== Média ========== */
 
 .nav-folder-title[data-path^="6. Média"] .nav-folder-title-content::before {
